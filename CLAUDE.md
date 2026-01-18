@@ -255,6 +255,7 @@ The project now supports **multiple characters** with diverse backgrounds, cultu
 ### Character Templates Created
 
 **1. Matt (Primary Character) - American Professional**
+- **Directory:** matt_wm_25_yo/
 - **Age:** ~30 years old
 - **Gender:** Male
 - **Ethnicity:** Caucasian
@@ -263,10 +264,13 @@ The project now supports **multiple characters** with diverse backgrounds, cultu
 - **Culture:** American suburban
 - **Transportation:** Personal car
 - **Total Scenes:** ~308
-- **File:** [matt_daily_life_scenes.md](matt_daily_life_scenes.md)
+- **File:** [matt_wm_25_yo/matt_daily_life_scenes.md](matt_wm_25_yo/matt_daily_life_scenes.md)
+- **Config Files:** matt_wm_25_yo/config/{scenes_poc.json, character_profile.json, locations.json}
+- **Images:** matt_wm_25_yo/images/{poc,full}/
 - **POC Status:** ✅ Complete (config files ready)
 
 **2. Catalina - Colombian University Student**
+- **Directory:** catalina_lf_21_yo/
 - **Age:** 21 years old
 - **Gender:** Female
 - **Ethnicity:** Colombian/Latina
@@ -275,7 +279,9 @@ The project now supports **multiple characters** with diverse backgrounds, cultu
 - **Culture:** Colombian/Latin American (Bogotá)
 - **Transportation:** Public transit (TransMilenio)
 - **Total Scenes:** ~280 (103 detailed scenes created)
-- **File:** [catalina_daily_life_scenes.md](catalina_daily_life_scenes.md)
+- **File:** [catalina_lf_21_yo/catalina_daily_life_scenes.md](catalina_lf_21_yo/catalina_daily_life_scenes.md)
+- **Config Files:** catalina_lf_21_yo/config/ (to be created)
+- **Images:** catalina_lf_21_yo/images/{poc,full}/
 - **POC Status:** ⏳ Not yet created (will follow Matt's validation)
 - **Language:** Bilingual vocabulary (Spanish-English)
 
@@ -299,14 +305,21 @@ The project now supports **multiple characters** with diverse backgrounds, cultu
 ### Technical Implications
 
 **Character-Specific Requirements:**
+- Each character gets their own directory: `{name}_{gender}_{age}_yo/`
+  - Example: `matt_wm_25_yo/` for Matt (white male, 25 years old)
+  - Example: `catalina_lf_21_yo/` for Catalina (latina female, 21 years old)
 - Each character needs their own LoRA model for visual consistency
-- Each character has their own config files:
-  - `config/{name}_character_profile.json`
-  - `config/{name}_scenes_poc.json`
-  - `config/{name}_locations.json`
-- Each character has their own output directory:
-  - `output/{name}_poc/`
-  - `output/{name}_full/`
+- Each character has their own config directory:
+  - `{character}/config/character_profile.json`
+  - `{character}/config/scenes_poc.json`
+  - `{character}/config/locations.json`
+- Each character has their own assets directory:
+  - `{character}/assets/location_refs/`
+  - `{character}/assets/character_refs/`
+  - `{character}/assets/lora_weights/`
+- Each character has their own images directory:
+  - `{character}/images/poc/`
+  - `{character}/images/full/`
 
 **Shared Infrastructure:**
 - Same RunPod automation scripts work for all characters
@@ -463,16 +476,9 @@ daily_life/
 ├── README.md                    ← Quick start guide
 ├── requirements.txt             ← Python dependencies
 ├── .gitignore                   ← Git ignore rules
+├── image_generation_pipeline.md ← Original technical planning doc
 │
-├── config/                      ← Configuration files
-│   ├── scenes_poc.json          ← 10-15 POC scenes with metadata
-│   ├── scenes_full.json         ← All 308 scenes (created later)
-│   ├── character_profile.json   ← Matt's appearance details
-│   ├── locations.json           ← Location metadata
-│   ├── lighting_presets.json    ← Lighting configurations
-│   └── comfyui_workflow.json    ← ComfyUI workflow export
-│
-├── scripts/                     ← Automation scripts
+├── scripts/                     ← Automation scripts (shared across all characters)
 │   ├── runpod_manager.py        ← RunPod API wrapper
 │   ├── remote_generate.py       ← Remote image generation
 │   ├── remote_train_lora.py     ← Remote LoRA training (optional)
@@ -480,36 +486,61 @@ daily_life/
 │   ├── prepare_lora_dataset.py  ← LoRA dataset prep utilities
 │   └── check_consistency.py     ← Quality checking utilities
 │
-├── assets/                      ← Generated assets (not committed to git)
-│   ├── location_refs/           ← AI-generated location references
-│   ├── character_refs/          ← Character reference images
-│   └── lora_weights/            ← Trained LoRA model files
+├── matt_wm_25_yo/               ← Matt's character directory
+│   ├── matt_daily_life_scenes.md ← ~308 scene descriptions
+│   ├── config/                  ← Matt's configuration files
+│   │   ├── scenes_poc.json      ← 15 POC scenes with metadata
+│   │   ├── scenes_full.json     ← All 308 scenes (created later)
+│   │   ├── character_profile.json ← Matt's appearance details
+│   │   └── locations.json       ← Location metadata
+│   ├── assets/                  ← Matt's generated assets (not committed)
+│   │   ├── location_refs/       ← AI-generated location references
+│   │   ├── character_refs/      ← Character reference images
+│   │   └── lora_weights/        ← Trained LoRA model files
+│   └── images/                  ← Matt's generated images (not committed)
+│       ├── poc/                 ← POC images (15)
+│       └── full/                ← Full project images (308)
 │
-├── output/                      ← Generated images (not committed to git)
-│   ├── poc/                     ← POC images (10-15)
-│   └── full/                    ← Full project images (308)
-│
-├── matt_daily_life_scenes.md    ← Original 308 scene descriptions
-└── image_generation_pipeline.md ← Original technical planning doc
+└── catalina_lf_21_yo/           ← Catalina's character directory
+    ├── catalina_daily_life_scenes.md ← ~280 scene descriptions
+    ├── config/                  ← Catalina's configuration files (to be created)
+    │   ├── scenes_poc.json      ← 15 POC scenes (to be created)
+    │   ├── scenes_full.json     ← All ~280 scenes (created later)
+    │   ├── character_profile.json ← Catalina's appearance details
+    │   └── locations.json       ← Location metadata
+    ├── assets/                  ← Catalina's generated assets (not committed)
+    │   ├── location_refs/       ← AI-generated location references
+    │   ├── character_refs/      ← Character reference images
+    │   └── lora_weights/        ← Trained LoRA model files
+    └── images/                  ← Catalina's generated images (not committed)
+        ├── poc/                 ← POC images (15)
+        └── full/                ← Full project images (~280)
 ```
 
 ### Config Files
 
-**config/scenes_poc.json**
-- Contains 10-15 selected scenes
+Each character has their own config directory with the following files:
+
+**{character}/config/scenes_poc.json**
+- Contains 10-15 selected scenes for POC
 - Each scene has: scene_id, location, time, lighting, description, objects, prompt
 
-**config/character_profile.json**
-- Matt's detailed appearance description
+**{character}/config/character_profile.json**
+- Character's detailed appearance description
 - Prompt templates for consistency
 - Negative prompts (what to avoid)
+- LoRA settings
 
-**config/locations.json**
+**{character}/config/locations.json**
 - Metadata for each location
-- Reference image paths
+- Reference image paths (pointing to {character}/assets/location_refs/)
 - IP-Adapter strength settings
 
-**config/comfyui_workflow.json**
+**{character}/config/scenes_full.json** (created later)
+- All scenes for the character
+- Generated from scenes markdown file
+
+**Shared:** config/comfyui_workflow.json (if needed)
 - Exported ComfyUI workflow
 - Node configuration
 - Model paths and parameters
@@ -536,33 +567,46 @@ python scripts/runpod_manager.py --test
 ### Generate Images (Automated)
 
 ```bash
-# Generate POC images (10-15 scenes)
+# Generate Matt's POC images (15 scenes)
 python scripts/remote_generate.py \
-  --config config/scenes_poc.json \
-  --output output/poc/ \
+  --config matt_wm_25_yo/config/scenes_poc.json \
+  --output matt_wm_25_yo/images/poc/ \
+  --gpu-type "RTX 4090" \
+  --auto-stop
+
+# Generate Catalina's POC images (15 scenes)
+python scripts/remote_generate.py \
+  --config catalina_lf_21_yo/config/scenes_poc.json \
+  --output catalina_lf_21_yo/images/poc/ \
   --gpu-type "RTX 4090" \
   --auto-stop
 
 # Generate with specific LoRA
 python scripts/remote_generate.py \
-  --config config/scenes_poc.json \
-  --output output/poc/ \
-  --lora assets/lora_weights/matt_lora.safetensors \
+  --config matt_wm_25_yo/config/scenes_poc.json \
+  --output matt_wm_25_yo/images/poc/ \
+  --lora matt_wm_25_yo/assets/lora_weights/matt_lora.safetensors \
   --lora-strength 0.8
 
 # Dry run (test without actually generating)
 python scripts/remote_generate.py \
-  --config config/scenes_poc.json \
+  --config matt_wm_25_yo/config/scenes_poc.json \
   --dry-run
 ```
 
 ### Generate Location References
 
 ```bash
-# Generate location reference images
+# Generate Matt's location reference images
 python scripts/generate_location_refs.py \
-  --config config/locations.json \
-  --output assets/location_refs/ \
+  --config matt_wm_25_yo/config/locations.json \
+  --output matt_wm_25_yo/assets/location_refs/ \
+  --count 3  # 3 variations per location
+
+# Generate Catalina's location reference images
+python scripts/generate_location_refs.py \
+  --config catalina_lf_21_yo/config/locations.json \
+  --output catalina_lf_21_yo/assets/location_refs/ \
   --count 3  # 3 variations per location
 ```
 
@@ -571,8 +615,15 @@ python scripts/generate_location_refs.py \
 ```bash
 # Train custom LoRA for Matt
 python scripts/remote_train_lora.py \
-  --dataset assets/character_refs/ \
-  --output assets/lora_weights/ \
+  --dataset matt_wm_25_yo/assets/character_refs/ \
+  --output matt_wm_25_yo/assets/lora_weights/ \
+  --epochs 10 \
+  --gpu-type "RTX 4090"
+
+# Train custom LoRA for Catalina
+python scripts/remote_train_lora.py \
+  --dataset catalina_lf_21_yo/assets/character_refs/ \
+  --output catalina_lf_21_yo/assets/lora_weights/ \
   --epochs 10 \
   --gpu-type "RTX 4090"
 ```
@@ -580,14 +631,19 @@ python scripts/remote_train_lora.py \
 ### Quality Checks
 
 ```bash
-# Check consistency of generated images
+# Check consistency of Matt's generated images
 python scripts/check_consistency.py \
-  --input output/poc/ \
-  --report consistency_report.json
+  --input matt_wm_25_yo/images/poc/ \
+  --report matt_consistency_report.json
 
-# Validate config files
+# Check consistency of Catalina's generated images
 python scripts/check_consistency.py \
-  --validate-configs config/
+  --input catalina_lf_21_yo/images/poc/ \
+  --report catalina_consistency_report.json
+
+# Validate config files for a character
+python scripts/check_consistency.py \
+  --validate-configs matt_wm_25_yo/config/
 ```
 
 ### Manual ComfyUI Testing (Local)
@@ -596,10 +652,11 @@ If you want to test locally before automating:
 
 ```bash
 # Export your ComfyUI workflow to JSON
-# Save to: config/comfyui_workflow.json
+# Save to: config/comfyui_workflow.json (shared)
+# Or character-specific: {character}/config/comfyui_workflow.json
 
-# Test workflow with sample prompt
-# (This would be manual in ComfyUI interface)
+# Test workflow with sample prompt from Matt's config
+# (This would be manual in ComfyUI interface using matt_wm_25_yo/config/scenes_poc.json)
 ```
 
 ---

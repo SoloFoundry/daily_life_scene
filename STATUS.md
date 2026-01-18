@@ -99,20 +99,24 @@
 ### Character Templates Created
 
 **Matt (Primary Character):**
-- **File:** matt_daily_life_scenes.md
+- **Directory:** matt_wm_25_yo/
+- **File:** matt_wm_25_yo/matt_daily_life_scenes.md
 - **Profile:** 30-year-old American white male, office professional
 - **Scenes:** ~308 total (15 selected for POC)
 - **Culture:** American suburban, solo apartment living
 - **Daily Routine:** Office work, commute by car
-- **POC Config:** ✅ Complete (config/scenes_poc.json, config/character_profile.json, config/locations.json)
+- **POC Config:** ✅ Complete (matt_wm_25_yo/config/scenes_poc.json, character_profile.json, locations.json)
+- **Images Path:** matt_wm_25_yo/images/{poc,full}/
 
 **Catalina (Second Character):**
-- **File:** catalina_daily_life_scenes.md
+- **Directory:** catalina_lf_21_yo/
+- **File:** catalina_lf_21_yo/catalina_daily_life_scenes.md
 - **Profile:** 21-year-old Colombian female university student
 - **Scenes:** ~103 detailed scenes created (template for ~280 total)
 - **Culture:** Colombian/Latin American, family home in Bogotá
 - **Daily Routine:** University classes, public transit (TransMilenio), family dynamics
 - **POC Config:** ❌ Not yet created (will follow Matt's template once approach is validated)
+- **Images Path:** catalina_lf_21_yo/images/{poc,full}/
 - **Key Differences:**
   - Gender (female vs male)
   - Age group (student vs professional)
@@ -131,8 +135,11 @@
 
 **Scalability:**
 - ✅ Template structure supports unlimited characters
+- ✅ Each character gets their own directory: {name}_{gender}_{age}_yo/
 - ✅ Each character gets their own scenes markdown file
 - ✅ Each character gets their own config files (character_profile.json, scenes_poc.json, locations.json)
+- ✅ Each character gets their own assets directory (location_refs, character_refs, lora_weights)
+- ✅ Each character gets their own images directory (images/{poc,full})
 - ✅ Each character gets their own LoRA model for consistency
 - ✅ Same automation pipeline works for all characters
 - ✅ Can generate different cultures, ages, genders, professions, living situations
@@ -147,26 +154,25 @@
 
 ## File Inventory
 
-### Scene Description Files
+### Character Files
 
+**Matt (matt_wm_25_yo/):**
 | File | Created | Last Updated | Status |
 |------|---------|--------------|--------|
-| matt_daily_life_scenes.md | ✅ Yes | 2026-01-17 | **Original scenes - ~308 total** |
-| catalina_daily_life_scenes.md | ✅ Yes | 2026-01-17 | **Created - ~103 detailed scenes (template for ~280)** |
+| matt_daily_life_scenes.md | ✅ Yes | 2026-01-17 | **~308 scenes** |
+| config/scenes_poc.json | ✅ Yes | 2026-01-17 | **15 POC scenes** |
+| config/character_profile.json | ✅ Yes | 2026-01-17 | **Matt's profile** |
+| config/locations.json | ✅ Yes | 2026-01-17 | **3 POC locations** |
+| config/scenes_full.json | ❌ No | N/A | Future work (308 scenes) |
 
-### Configuration Files
-
+**Catalina (catalina_lf_21_yo/):**
 | File | Created | Last Updated | Status |
 |------|---------|--------------|--------|
-| config/scenes_poc.json | ✅ Yes | 2026-01-17 | **Created - 15 Matt scenes** |
-| config/character_profile.json | ✅ Yes | 2026-01-17 | **Created - Matt's profile** |
-| config/locations.json | ✅ Yes | 2026-01-17 | **Created - 3 POC locations (Matt)** |
-| config/scenes_full.json | ❌ No | N/A | Future work (308 Matt scenes) |
-| config/catalina_scenes_poc.json | ❌ No | N/A | Future work (15 Catalina POC scenes) |
-| config/catalina_character_profile.json | ❌ No | N/A | Future work (Catalina's profile) |
-| config/catalina_locations.json | ❌ No | N/A | Future work (Catalina's locations) |
-| config/lighting_presets.json | ❌ No | N/A | Optional, may not need |
-| config/comfyui_workflow.json | ❌ No | N/A | To be created after workflow testing |
+| catalina_daily_life_scenes.md | ✅ Yes | 2026-01-17 | **~103 detailed scenes (template for ~280)** |
+| config/scenes_poc.json | ❌ No | N/A | Future work (15 POC scenes) |
+| config/character_profile.json | ❌ No | N/A | Future work |
+| config/locations.json | ❌ No | N/A | Future work |
+| config/scenes_full.json | ❌ No | N/A | Future work (~280 scenes) |
 
 ### Scripts
 
@@ -181,18 +187,33 @@
 
 ### Assets
 
+**Matt (matt_wm_25_yo/assets/):**
 | Asset Type | Count | Path | Status |
 |------------|-------|------|--------|
-| Location references | 0/9 | assets/location_refs/ | Not generated |
-| Character references | 0 | assets/character_refs/ | Not needed (using existing LoRA) |
-| LoRA weights | 0 | assets/lora_weights/ | Not downloaded |
+| Location references | 0/9 | location_refs/ | Not generated |
+| Character references | 0 | character_refs/ | Not needed (using existing LoRA) |
+| LoRA weights | 0 | lora_weights/ | Not downloaded |
+
+**Catalina (catalina_lf_21_yo/assets/):**
+| Asset Type | Count | Path | Status |
+|------------|-------|------|--------|
+| Location references | 0 | location_refs/ | Not generated |
+| Character references | 0 | character_refs/ | Not generated |
+| LoRA weights | 0 | lora_weights/ | Not downloaded |
 
 ### Generated Images
 
+**Matt (matt_wm_25_yo/images/):**
 | Type | Count | Path | Status |
 |------|-------|------|--------|
-| POC images | 0/15 | output/poc/ | Not generated |
-| Full project images | 0/308 | output/full/ | Future work |
+| POC images | 0/15 | poc/ | Not generated |
+| Full project images | 0/308 | full/ | Future work |
+
+**Catalina (catalina_lf_21_yo/images/):**
+| Type | Count | Path | Status |
+|------|-------|------|--------|
+| POC images | 0/15 | poc/ | Not generated |
+| Full project images | 0/~280 | full/ | Future work |
 
 ---
 
@@ -360,10 +381,27 @@
 - Template includes different daily routine (student vs working professional), different culture (Latin American vs American), different gender (female vs male), different living situation (family home vs solo apartment)
 - **Project now supports multiple characters** - Ready to scale to many people's daily lives
 
+**2026-01-17 - Directory Structure Reorganization**
+- ✅ **Reorganized project with character-specific subdirectories**
+- Created `matt_wm_25_yo/` directory for Matt (white male, 25 years old)
+- Created `catalina_lf_21_yo/` directory for Catalina (latina female, 21 years old)
+- Each character now has their own:
+  - Scenes markdown file: `{character}/{character}_daily_life_scenes.md`
+  - Config directory: `{character}/config/` with scenes_poc.json, character_profile.json, locations.json
+  - Assets directory: `{character}/assets/` with location_refs/, character_refs/, lora_weights/
+  - Images directory: `{character}/images/` with poc/ and full/ subdirectories
+- Moved Matt's files to matt_wm_25_yo/
+- Updated all config files to use new paths
+- Updated .gitignore to reflect new character-specific structure
+- Updated all documentation (README.md, STATUS.md, CLAUDE.md) with new structure
+- Removed deprecated output/ and assets/ directories
+- **Directory naming convention:** `{name}_{gender}_{age}_yo/` for clear organization
+
 **Next Session:**
 - Get RunPod API key and test connection
 - Create remaining automation scripts (remote_generate.py, generate_location_refs.py)
-- Generate location references for Matt's POC
+- Update automation scripts to work with character-specific directories
+- Generate location references for Matt's POC (matt_wm_25_yo/assets/location_refs/)
 - Download character LoRA from CivitAI
 - Begin ComfyUI workflow testing
 - Decide whether to create POC configs for Catalina or focus on Matt first

@@ -34,7 +34,7 @@
           "Side view showing window and dresser",
           "View toward closet area"
         ],
-        "path_template": "assets/location_refs/bedroom_{number}.png",
+        "path_template": "matt_wm_25_yo/assets/location_refs/bedroom_{number}.png",
         "status": "not_generated"
       },
       "prompt_template": "photorealistic modern bedroom, queen bed with navy blue comforter, wooden nightstand with lamp, white horizontal blinds on window, light gray walls, beige carpet, white dresser with mirror, mirrored sliding closet, clean organized space, American suburban apartment, {lighting}, professional interior photography, 8k, high quality",
@@ -88,7 +88,7 @@
           "View focusing on sink and mirror area",
           "Shower area view"
         ],
-        "path_template": "assets/location_refs/bathroom_{number}.png",
+        "path_template": "matt_wm_25_yo/assets/location_refs/bathroom_{number}.png",
         "status": "not_generated"
       },
       "prompt_template": "photorealistic modern bathroom, white porcelain sink with chrome faucet, large mirror with three round frosted vanity lights, white subway tile walls, white tile floor, glass shower enclosure with rainfall showerhead, chrome fixtures, beige towels, clean organized counter with toiletries, American apartment bathroom, {lighting}, professional interior photography, 8k, high quality",
@@ -144,7 +144,7 @@
           "View focusing on counter with appliances",
           "View toward breakfast bar"
         ],
-        "path_template": "assets/location_refs/kitchen_{number}.png",
+        "path_template": "matt_wm_25_yo/assets/location_refs/kitchen_{number}.png",
         "status": "not_generated"
       },
       "prompt_template": "photorealistic modern galley kitchen, white cabinets, gray countertops, stainless steel refrigerator, black coffee maker, chrome toaster, stainless steel sink with chrome faucet, microwave above stove, small window, breakfast bar with stools, clean organized space, American suburban apartment, {lighting}, professional interior photography, 8k, high quality",
@@ -188,7 +188,7 @@
   "usage_instructions": {
     "step_1": "Generate location reference images using prompt_template for each location",
     "step_2": "Review and select best 3 images per location",
-    "step_3": "Save to assets/location_refs/ with naming convention: {location_id}_{number}.png",
+    "step_3": "Save to matt_wm_25_yo/assets/location_refs/ with naming convention: {location_id}_{number}.png",
     "step_4": "Use these references with IP-Adapter during scene generation",
     "step_5": "IP-Adapter will maintain location consistency across all scenes in that location"
   },

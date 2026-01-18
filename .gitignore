@@ -34,25 +34,45 @@ ENV/
 *~
 
 # Generated Images (large files, don't commit)
-output/poc/*.png
-output/poc/*.jpg
-output/full/*.png
-output/full/*.jpg
+# Matt's images
+matt_wm_25_yo/images/poc/*.png
+matt_wm_25_yo/images/poc/*.jpg
+matt_wm_25_yo/images/full/*.png
+matt_wm_25_yo/images/full/*.jpg
+
+# Catalina's images
+catalina_lf_21_yo/images/poc/*.png
+catalina_lf_21_yo/images/poc/*.jpg
+catalina_lf_21_yo/images/full/*.png
+catalina_lf_21_yo/images/full/*.jpg
+
+# Old output directory (deprecated)
+output/
 
 # Model files (large files, download separately)
-assets/lora_weights/*.safetensors
-assets/lora_weights/*.ckpt
-assets/lora_weights/*.pt
+matt_wm_25_yo/assets/lora_weights/*.safetensors
+matt_wm_25_yo/assets/lora_weights/*.ckpt
+matt_wm_25_yo/assets/lora_weights/*.pt
+catalina_lf_21_yo/assets/lora_weights/*.safetensors
+catalina_lf_21_yo/assets/lora_weights/*.ckpt
+catalina_lf_21_yo/assets/lora_weights/*.pt
 models/
 *.safetensors
 *.ckpt
 *.pth
 
 # Location and character reference images (generated, can be recreated)
-assets/location_refs/*.png
-assets/location_refs/*.jpg
-assets/character_refs/*.png
-assets/character_refs/*.jpg
+matt_wm_25_yo/assets/location_refs/*.png
+matt_wm_25_yo/assets/location_refs/*.jpg
+matt_wm_25_yo/assets/character_refs/*.png
+matt_wm_25_yo/assets/character_refs/*.jpg
+catalina_lf_21_yo/assets/location_refs/*.png
+catalina_lf_21_yo/assets/location_refs/*.jpg
+catalina_lf_21_yo/assets/character_refs/*.png
+catalina_lf_21_yo/assets/character_refs/*.jpg
+
+# Old assets directory (deprecated)
+assets/
 
 # Logs and temp files
 *.log
@@ -74,8 +94,13 @@ training_checkpoints/
 kohya_output/
 
 # Keep directory structure with .gitkeep files
-!output/poc/.gitkeep
-!output/full/.gitkeep
-!assets/location_refs/.gitkeep
-!assets/character_refs/.gitkeep
-!assets/lora_weights/.gitkeep
+!matt_wm_25_yo/images/poc/.gitkeep
+!matt_wm_25_yo/images/full/.gitkeep
+!matt_wm_25_yo/assets/location_refs/.gitkeep
+!matt_wm_25_yo/assets/character_refs/.gitkeep
+!matt_wm_25_yo/assets/lora_weights/.gitkeep
+!catalina_lf_21_yo/images/poc/.gitkeep
+!catalina_lf_21_yo/images/full/.gitkeep
+!catalina_lf_21_yo/assets/location_refs/.gitkeep
+!catalina_lf_21_yo/assets/character_refs/.gitkeep
+!catalina_lf_21_yo/assets/lora_weights/.gitkeep

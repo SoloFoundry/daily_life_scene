@@ -32,19 +32,33 @@ daily_life/
 ├── STATUS.md                    # Real-time progress tracking
 ├── README.md                    # This file
 ├── requirements.txt             # Python dependencies
-├── config/                      # Configuration files
-│   ├── scenes_poc.json          # 15 POC scenes
-│   ├── character_profile.json   # Matt's appearance
-│   └── locations.json           # 3 POC locations
 ├── scripts/                     # Automation scripts
 │   └── runpod_manager.py        # RunPod API wrapper
-├── assets/                      # Generated assets
-│   ├── location_refs/           # Location references
-│   ├── character_refs/          # Character references
-│   └── lora_weights/            # LoRA model weights
-└── output/                      # Generated images
-    ├── poc/                     # POC images (15)
-    └── full/                    # Full project (308)
+│
+├── matt_wm_25_yo/               # Matt's character directory
+│   ├── matt_daily_life_scenes.md   # Matt's ~308 scene descriptions
+│   ├── config/                  # Matt's config files
+│   │   ├── scenes_poc.json      # 15 POC scenes
+│   │   ├── character_profile.json # Matt's appearance
+│   │   └── locations.json       # 3 POC locations
+│   ├── assets/                  # Matt's generated assets
+│   │   ├── location_refs/       # Location references
+│   │   ├── character_refs/      # Character references
+│   │   └── lora_weights/        # LoRA model weights
+│   └── images/                  # Matt's generated images
+│       ├── poc/                 # POC images (15)
+│       └── full/                # Full project (308)
+│
+└── catalina_lf_21_yo/           # Catalina's character directory
+    ├── catalina_daily_life_scenes.md # Catalina's ~280 scene descriptions
+    ├── config/                  # Catalina's config files (to be created)
+    ├── assets/                  # Catalina's generated assets
+    │   ├── location_refs/       # Location references
+    │   ├── character_refs/      # Character references
+    │   └── lora_weights/        # LoRA model weights
+    └── images/                  # Catalina's generated images
+        ├── poc/                 # POC images (15)
+        └── full/                # Full project (~280)
 ```
 
 ## POC Goals
@@ -67,8 +81,8 @@ Generate 15 high-quality photorealistic images to validate:
 
 - **[CLAUDE.md](CLAUDE.md)** - Complete project context for Claude Code sessions
 - **[STATUS.md](STATUS.md)** - Current progress and tracking
-- **[matt_daily_life_scenes.md](matt_daily_life_scenes.md)** - Matt's 308 scene descriptions (American professional)
-- **[catalina_daily_life_scenes.md](catalina_daily_life_scenes.md)** - Catalina's ~280 scene descriptions (Colombian student)
+- **[matt_wm_25_yo/matt_daily_life_scenes.md](matt_wm_25_yo/matt_daily_life_scenes.md)** - Matt's 308 scene descriptions (American professional)
+- **[catalina_lf_21_yo/catalina_daily_life_scenes.md](catalina_lf_21_yo/catalina_daily_life_scenes.md)** - Catalina's ~280 scene descriptions (Colombian student)
 - **[image_generation_pipeline.md](image_generation_pipeline.md)** - Technical pipeline details
 
 ## Current Status

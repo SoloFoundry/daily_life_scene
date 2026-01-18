@@ -248,23 +248,31 @@ This represents ~10-15 scenes total and covers the highest-value vocabulary.
 
 ## Current Phase & Status
 
-**Phase:** POC Setup & Initial Generation
+**Phase:** POC Configuration Complete - Ready for Generation
 
 See [STATUS.md](STATUS.md) for real-time progress tracking.
 
-### Immediate Next Steps
+### Completed Steps
 
 1. ✅ Create project structure
-2. ✅ Initialize git repository
-3. ✅ Create documentation (CLAUDE.md, STATUS.md)
-4. ⏳ Select 10-15 POC scenes
-5. ⏳ Create config files (scenes_poc.json, character_profile.json, locations.json)
-6. ⏳ Write RunPod API automation scripts
-7. ⏳ Generate location reference images
-8. ⏳ Download/test character LoRA
-9. ⏳ Set up ComfyUI workflow on RunPod
-10. ⏳ Generate POC images
-11. ⏳ Evaluate results
+2. ✅ Initialize git repository and make first commit
+3. ✅ Create documentation (CLAUDE.md, STATUS.md, README.md)
+4. ✅ Select 15 POC scenes (5 bedroom, 5 bathroom, 5 kitchen)
+5. ✅ Create config files:
+   - scenes_poc.json (15 scenes with detailed prompts)
+   - character_profile.json (Matt's appearance and settings)
+   - locations.json (3 POC locations with generation params)
+6. ✅ Write RunPod API wrapper (scripts/runpod_manager.py)
+
+### Immediate Next Steps
+
+7. ⏳ Get RunPod API key and test connection
+8. ⏳ Write additional automation scripts (remote_generate.py, generate_location_refs.py)
+9. ⏳ Generate 9 location reference images (3 per location)
+10. ⏳ Download/test character LoRA from CivitAI
+11. ⏳ Set up ComfyUI workflow on RunPod
+12. ⏳ Generate 15 POC images
+13. ⏳ Evaluate results and decide on full implementation
 
 ### Success Criteria for POC
 

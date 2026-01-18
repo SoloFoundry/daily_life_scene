@@ -12,33 +12,44 @@
 
 **What's Completed:**
 - ✅ Project directory structure created
-- ✅ Git repository initialized
-- ✅ Core documentation created (CLAUDE.md, STATUS.md)
+- ✅ Git repository initialized and first commit made
+- ✅ Core documentation created (CLAUDE.md, STATUS.md, README.md)
 - ✅ Requirements.txt created
 - ✅ .gitignore configured
+- ✅ **15 POC scenes selected** from bedroom, bathroom, kitchen
+- ✅ **config/scenes_poc.json created** with 15 detailed scenes
+- ✅ **config/character_profile.json created** with Matt's appearance and prompts
+- ✅ **config/locations.json created** for 3 POC locations (bedroom, bathroom, kitchen)
+- ✅ **scripts/runpod_manager.py created** - RunPod API wrapper for pod management
 
 **What's In Progress:**
-- ⏳ Selecting POC scenes from source document
-- ⏳ Creating configuration files
+- ⏳ Additional automation scripts needed (remote_generate.py, etc.)
 
 **What's Next:**
-- Select 10-15 scenes from bedroom, bathroom, kitchen
-- Create config/scenes_poc.json
-- Create config/character_profile.json
-- Create config/locations.json
-- Write RunPod API automation scripts
+1. Get RunPod API key and test connection
+2. Write scripts/remote_generate.py for automated image generation
+3. Write scripts/generate_location_refs.py for location reference generation
+4. Generate 9 location reference images (3 per location)
+5. Find and download character LoRA from CivitAI
+6. Set up ComfyUI workflow on RunPod
+7. Generate 15 POC images
 
 **Blockers:**
-- None currently
+- Need RunPod API key to proceed with automation
+- Need to decide on character LoRA from CivitAI
 
 ---
 
 ## POC Tracking (10-15 Images)
 
 ### Scene Selection
-- **Status:** Not started
+- **Status:** ✅ **Completed**
 - **Target:** 10-15 scenes from 3 locations
-- **Selected scenes:** None yet
+- **Selected scenes:** 15 scenes total
+  - **Bedroom (5 scenes):** The Alarm, Sitting Up in Bed, Opening Blinds, Picking Out Clothes, Clothes Laid on Bed
+  - **Bathroom (5 scenes):** Looking in Mirror, Brushing Teeth, Under Showerhead, Wiping Mirror, Applying Deodorant
+  - **Kitchen (5 scenes):** Entering Kitchen, Scooping Coffee Grounds, Placing Bread in Toaster, Spreading Butter on Toast, Pouring Coffee into Mug
+- **File:** config/scenes_poc.json ✅ Created
 
 ### Location References
 **Bedroom:**
@@ -89,23 +100,23 @@
 
 | File | Created | Last Updated | Status |
 |------|---------|--------------|--------|
-| config/scenes_poc.json | ❌ No | N/A | Not created |
-| config/scenes_full.json | ❌ No | N/A | Future work |
-| config/character_profile.json | ❌ No | N/A | Not created |
-| config/locations.json | ❌ No | N/A | Not created |
-| config/lighting_presets.json | ❌ No | N/A | Not created |
-| config/comfyui_workflow.json | ❌ No | N/A | Not created |
+| config/scenes_poc.json | ✅ Yes | 2026-01-17 | **Created - 15 scenes** |
+| config/character_profile.json | ✅ Yes | 2026-01-17 | **Created - Matt's profile** |
+| config/locations.json | ✅ Yes | 2026-01-17 | **Created - 3 POC locations** |
+| config/scenes_full.json | ❌ No | N/A | Future work (308 scenes) |
+| config/lighting_presets.json | ❌ No | N/A | Optional, may not need |
+| config/comfyui_workflow.json | ❌ No | N/A | To be created after workflow testing |
 
 ### Scripts
 
 | File | Created | Tested | Status |
 |------|---------|--------|--------|
-| scripts/runpod_manager.py | ❌ No | ❌ No | Not created |
-| scripts/remote_generate.py | ❌ No | ❌ No | Not created |
-| scripts/remote_train_lora.py | ❌ No | ❌ No | Not created |
-| scripts/generate_location_refs.py | ❌ No | ❌ No | Not created |
-| scripts/prepare_lora_dataset.py | ❌ No | ❌ No | Not created |
+| scripts/runpod_manager.py | ✅ Yes | ❌ No | **Created - needs API key to test** |
+| scripts/remote_generate.py | ❌ No | ❌ No | Not created - next priority |
+| scripts/generate_location_refs.py | ❌ No | ❌ No | Not created - next priority |
 | scripts/check_consistency.py | ❌ No | ❌ No | Not created |
+| scripts/remote_train_lora.py | ❌ No | ❌ No | Optional (if custom LoRA needed) |
+| scripts/prepare_lora_dataset.py | ❌ No | ❌ No | Optional (if custom LoRA needed) |
 
 ### Assets
 
@@ -222,8 +233,8 @@
 | Milestone | Target Date | Actual Date | Status |
 |-----------|-------------|-------------|--------|
 | Project setup complete | 2026-01-17 | 2026-01-17 | ✅ Done |
-| Config files created | 2026-01-17 | TBD | ⏳ In progress |
-| RunPod scripts written | 2026-01-17 | TBD | ⏳ Pending |
+| Config files created | 2026-01-17 | 2026-01-17 | ✅ Done |
+| RunPod scripts written | 2026-01-17 | 2026-01-17 | 🔶 Partial (runpod_manager.py done) |
 | Location refs generated | 2026-01-18 | TBD | ⏳ Pending |
 | ComfyUI workflow setup | 2026-01-18 | TBD | ⏳ Pending |
 | POC images generated | 2026-01-18 | TBD | ⏳ Pending |
@@ -267,12 +278,25 @@
 
 ### Session Notes
 
-**2026-01-17 - Initial Setup**
-- Created project structure
-- Initialized git repository
-- Created comprehensive documentation (CLAUDE.md, STATUS.md)
-- Created requirements.txt and .gitignore
-- Ready to begin POC scene selection and config creation
+**2026-01-17 - Initial Setup & Configuration Complete**
+- ✅ Created full project directory structure
+- ✅ Initialized git repository with first commit
+- ✅ Created comprehensive documentation (CLAUDE.md, STATUS.md, README.md)
+- ✅ Created requirements.txt and .gitignore
+- ✅ **Selected 15 POC scenes** from matt_daily_life_scenes.md (bedroom, bathroom, kitchen)
+- ✅ **Created config/scenes_poc.json** with detailed prompts and metadata for all 15 scenes
+- ✅ **Created config/character_profile.json** with Matt's appearance, prompt templates, LoRA settings
+- ✅ **Created config/locations.json** with 3 POC locations and generation parameters
+- ✅ **Created scripts/runpod_manager.py** - RunPod API wrapper for pod management
+
+**Progress:** All configuration complete. Ready for RunPod API testing and image generation once API key is provided.
+
+**Next Session:**
+- Get RunPod API key and test connection
+- Create remaining automation scripts (remote_generate.py, generate_location_refs.py)
+- Generate location references
+- Download character LoRA from CivitAI
+- Begin ComfyUI workflow testing
 
 ### Learnings
 

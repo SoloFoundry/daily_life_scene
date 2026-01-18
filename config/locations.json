@@ -1,0 +1,201 @@
+{
+  "metadata": {
+    "project": "Daily Life Visual Vocabulary Generator",
+    "phase": "POC",
+    "total_locations": 3,
+    "location_type": "AI-generated references (not Blender 3D)",
+    "created": "2026-01-17"
+  },
+  "locations": [
+    {
+      "location_id": "bedroom",
+      "name": "Matt's Bedroom",
+      "description": "A modest one-bedroom apartment bedroom with modern, minimalist furniture. Clean and organized. Suburban American style.",
+      "key_features": [
+        "Queen-size bed with wooden frame and simple headboard",
+        "Navy blue comforter and white sheets",
+        "Wooden nightstand with lamp, phone, alarm clock",
+        "White horizontal blinds on window",
+        "Light gray walls",
+        "Beige carpet flooring",
+        "Six-drawer white dresser with mirror",
+        "Mirrored sliding closet doors",
+        "Laundry basket in corner"
+      ],
+      "lighting_conditions": {
+        "early_morning": "Dim blue pre-dawn light through blinds",
+        "morning": "Bright warm sunlight streaming through open blinds",
+        "evening": "Soft lamplight, blinds closed"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": [
+          "Full room view from foot of bed",
+          "Side view showing window and dresser",
+          "View toward closet area"
+        ],
+        "path_template": "assets/location_refs/bedroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "photorealistic modern bedroom, queen bed with navy blue comforter, wooden nightstand with lamp, white horizontal blinds on window, light gray walls, beige carpet, white dresser with mirror, mirrored sliding closet, clean organized space, American suburban apartment, {lighting}, professional interior photography, 8k, high quality",
+      "negative_prompt": "messy, cluttered, cartoon, anime, illustration, unrealistic, distorted, low quality, people, dark, poor lighting",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Adjust based on how closely generated images should match reference. Higher = more similar to reference."
+      },
+      "vocabulary_items": [
+        "bed",
+        "nightstand",
+        "lamp",
+        "alarm clock",
+        "dresser",
+        "mirror",
+        "closet",
+        "window",
+        "blinds",
+        "carpet",
+        "pillow",
+        "comforter",
+        "sheets"
+      ]
+    },
+    {
+      "location_id": "bathroom",
+      "name": "Matt's Bathroom",
+      "description": "A small but clean modern bathroom with white tiles and chrome fixtures. Typical American apartment bathroom.",
+      "key_features": [
+        "White porcelain sink with chrome faucet",
+        "Large mirror above sink",
+        "Three round frosted vanity lights above mirror",
+        "White subway tile walls",
+        "White tile floor",
+        "Glass-enclosed shower stall with rainfall showerhead",
+        "White toilet",
+        "Chrome towel bars with beige towels",
+        "Small bathroom counter with toiletries"
+      ],
+      "lighting_conditions": {
+        "bright": "Bright fluorescent/LED vanity lighting",
+        "steamy": "Bright lighting with steam from shower",
+        "dim": "Natural light from small window (rarely used)"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": [
+          "Full bathroom view from doorway",
+          "View focusing on sink and mirror area",
+          "Shower area view"
+        ],
+        "path_template": "assets/location_refs/bathroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "photorealistic modern bathroom, white porcelain sink with chrome faucet, large mirror with three round frosted vanity lights, white subway tile walls, white tile floor, glass shower enclosure with rainfall showerhead, chrome fixtures, beige towels, clean organized counter with toiletries, American apartment bathroom, {lighting}, professional interior photography, 8k, high quality",
+      "negative_prompt": "messy, dirty, cluttered, cartoon, anime, illustration, unrealistic, distorted, low quality, people, old, outdated",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Bathroom should be consistent but small variations in exact layout are acceptable."
+      },
+      "vocabulary_items": [
+        "bathroom",
+        "sink",
+        "faucet",
+        "mirror",
+        "toilet",
+        "shower",
+        "showerhead",
+        "tiles",
+        "towel",
+        "toothbrush",
+        "toothpaste",
+        "soap",
+        "shampoo",
+        "counter"
+      ]
+    },
+    {
+      "location_id": "kitchen",
+      "name": "Matt's Kitchen",
+      "description": "A modest galley-style kitchen with modern appliances. Clean, functional, typical American apartment kitchen.",
+      "key_features": [
+        "White cabinets (upper and lower)",
+        "Gray countertops",
+        "Stainless steel refrigerator",
+        "Black coffee maker on counter",
+        "Chrome two-slice toaster",
+        "Stainless steel sink with chrome faucet",
+        "White/stainless microwave above stove",
+        "Small window above sink",
+        "Breakfast bar with two stools (visible from living room)",
+        "Minimal decor - fruit bowl, knife block"
+      ],
+      "lighting_conditions": {
+        "morning": "Bright natural sunlight from adjacent living room windows",
+        "bright": "Overhead LED lighting plus natural light",
+        "evening": "Warm overhead lighting"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": [
+          "Full kitchen view from living room",
+          "View focusing on counter with appliances",
+          "View toward breakfast bar"
+        ],
+        "path_template": "assets/location_refs/kitchen_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "photorealistic modern galley kitchen, white cabinets, gray countertops, stainless steel refrigerator, black coffee maker, chrome toaster, stainless steel sink with chrome faucet, microwave above stove, small window, breakfast bar with stools, clean organized space, American suburban apartment, {lighting}, professional interior photography, 8k, high quality",
+      "negative_prompt": "messy, cluttered, dirty dishes, cartoon, anime, illustration, unrealistic, distorted, low quality, people, old appliances, outdated",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Kitchen layout should be consistent but exact appliance positions can vary slightly."
+      },
+      "vocabulary_items": [
+        "kitchen",
+        "cabinet",
+        "countertop",
+        "refrigerator",
+        "coffee maker",
+        "toaster",
+        "sink",
+        "faucet",
+        "microwave",
+        "stove",
+        "counter",
+        "breakfast bar",
+        "stool",
+        "plate",
+        "mug",
+        "knife"
+      ]
+    }
+  ],
+  "generation_settings": {
+    "model": "RealVisXL V5.0 (or equivalent photorealistic SDXL model)",
+    "resolution": "1024x768 (landscape) or 768x1024 (portrait)",
+    "steps": 30,
+    "cfg_scale": 7,
+    "sampler": "DPM++ 2M Karras or Euler a",
+    "seed": "random (but save seeds for reproducibility)",
+    "batch_size": 1,
+    "notes": "Generate 3 variations per location with different camera angles. Save best 3 as references."
+  },
+  "usage_instructions": {
+    "step_1": "Generate location reference images using prompt_template for each location",
+    "step_2": "Review and select best 3 images per location",
+    "step_3": "Save to assets/location_refs/ with naming convention: {location_id}_{number}.png",
+    "step_4": "Use these references with IP-Adapter during scene generation",
+    "step_5": "IP-Adapter will maintain location consistency across all scenes in that location"
+  },
+  "notes": {
+    "approach": "AI-generated location references instead of Blender 3D",
+    "rationale": "Saves 20-40 hours of 3D modeling time while achieving similar consistency",
+    "flexibility": "Can regenerate references if not satisfied, much faster than Blender iteration",
+    "scalability": "Same approach works for all 19 locations in full project"
+  }
+}

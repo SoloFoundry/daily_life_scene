@@ -1,0 +1,142 @@
+{
+  "character": {
+    "name": "Matt",
+    "age": 25,
+    "gender": "male",
+    "ethnicity": "Caucasian",
+    "appearance": {
+      "hair": "short brown hair",
+      "build": "average, athletic",
+      "facial_hair": "clean-shaven (morning stubble in early scenes)",
+      "height": "average",
+      "distinguishing_features": "none"
+    },
+    "occupation": "Junior marketing coordinator",
+    "living_situation": "One-bedroom apartment in suburban apartment complex",
+    "car": "Silver Honda Civic sedan, 2019 model",
+    "style": {
+      "work": "Business casual (button-down shirts, chinos, leather shoes)",
+      "home_casual": "T-shirts, sweatpants, slippers",
+      "sleep": "Gray t-shirt, navy pajama pants"
+    }
+  },
+  "prompt_templates": {
+    "base_character": "25-year-old white man, short brown hair, average build, clean-shaven, realistic, photorealistic",
+    "morning_appearance": "25-year-old white man, short brown hair, slight morning stubble, tired eyes, realistic",
+    "work_attire": "25-year-old white man, short brown hair, wearing light blue button-down shirt, khaki chinos, brown leather belt, brown dress shoes, professional",
+    "casual_attire": "25-year-old white man, short brown hair, wearing gray t-shirt, navy pajama pants, relaxed",
+    "groomed_appearance": "25-year-old white man, short brown hair neatly styled, clean-shaven, alert, professional"
+  },
+  "positive_prompts": {
+    "general": [
+      "photorealistic",
+      "high quality",
+      "detailed",
+      "natural lighting",
+      "realistic skin texture",
+      "professional photography",
+      "8k",
+      "sharp focus"
+    ],
+    "character_specific": [
+      "average build",
+      "short brown hair",
+      "natural expression",
+      "realistic proportions",
+      "clean shaven",
+      "professional appearance"
+    ]
+  },
+  "negative_prompts": {
+    "general": [
+      "cartoon",
+      "anime",
+      "illustration",
+      "painting",
+      "sketch",
+      "drawing",
+      "unrealistic",
+      "low quality",
+      "blurry",
+      "distorted",
+      "deformed",
+      "disfigured",
+      "bad anatomy",
+      "bad proportions",
+      "watermark",
+      "text",
+      "signature",
+      "username"
+    ],
+    "character_specific": [
+      "multiple people",
+      "crowd",
+      "woman",
+      "child",
+      "elderly",
+      "long hair",
+      "beard",
+      "mustache",
+      "tattoos",
+      "jewelry",
+      "accessories"
+    ],
+    "quality_issues": [
+      "bad hands",
+      "deformed hands",
+      "extra fingers",
+      "missing fingers",
+      "bad face",
+      "deformed face",
+      "extra limbs",
+      "missing limbs",
+      "floating limbs"
+    ]
+  },
+  "lora_settings": {
+    "recommended_strength": 0.8,
+    "min_strength": 0.6,
+    "max_strength": 1.0,
+    "notes": "Start with 0.8 and adjust based on consistency results. Lower if character features are too exaggerated, higher if not consistent enough."
+  },
+  "reference_images": {
+    "strategy": "Use existing character LoRA from CivitAI for POC",
+    "alternative_1": "Generate 3-5 consistent images and use with IP-Adapter",
+    "alternative_2": "Train custom LoRA with 15-20 reference images",
+    "current_approach": "existing_lora",
+    "civitai_search_terms": [
+      "realistic male character",
+      "young professional",
+      "average male",
+      "business casual male",
+      "25-year-old male"
+    ]
+  },
+  "consistency_guidelines": {
+    "critical_features": [
+      "short brown hair",
+      "clean-shaven face",
+      "average build",
+      "age approximately 25",
+      "white/caucasian"
+    ],
+    "flexible_features": [
+      "exact hair style (as long as short and brown)",
+      "clothing details (as specified per scene)",
+      "facial expression (neutral to slight smile)",
+      "body position (as specified per scene)"
+    ],
+    "avoid_variations": [
+      "Different hair colors",
+      "Facial hair (except morning stubble in early scenes)",
+      "Different ethnicities",
+      "Significant age differences",
+      "Body type variations"
+    ]
+  },
+  "notes": {
+    "educational_context": "This character represents an everyday American professional. The goal is consistency across all images so learners can follow the same person through their day.",
+    "cultural_context": "American suburban lifestyle, mid-sized city, typical office worker routine",
+    "pedagogical_goal": "Help ESL students and children learn vocabulary by seeing the same relatable character interact with objects in context"
+  }
+}

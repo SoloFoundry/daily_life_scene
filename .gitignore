@@ -1,0 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.pyc
+.env
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Generated Images (large files, don't commit)
+output/poc/*.png
+output/poc/*.jpg
+output/full/*.png
+output/full/*.jpg
+
+# Model files (large files, download separately)
+assets/lora_weights/*.safetensors
+assets/lora_weights/*.ckpt
+assets/lora_weights/*.pt
+models/
+*.safetensors
+*.ckpt
+*.pth
+
+# Location and character reference images (generated, can be recreated)
+assets/location_refs/*.png
+assets/location_refs/*.jpg
+assets/character_refs/*.png
+assets/character_refs/*.jpg
+
+# Logs and temp files
+*.log
+logs/
+temp/
+tmp/
+.DS_Store
+
+# RunPod credentials (NEVER commit!)
+.runpod_api_key
+runpod_credentials.json
+
+# ComfyUI temporary files
+comfyui_temp/
+comfy_outputs/
+
+# Training checkpoints (large files)
+training_checkpoints/
+kohya_output/
+
+# Keep directory structure with .gitkeep files
+!output/poc/.gitkeep
+!output/full/.gitkeep
+!assets/location_refs/.gitkeep
+!assets/character_refs/.gitkeep
+!assets/lora_weights/.gitkeep

@@ -94,16 +94,77 @@
 
 ---
 
+## Multi-Character Expansion
+
+### Character Templates Created
+
+**Matt (Primary Character):**
+- **File:** matt_daily_life_scenes.md
+- **Profile:** 30-year-old American white male, office professional
+- **Scenes:** ~308 total (15 selected for POC)
+- **Culture:** American suburban, solo apartment living
+- **Daily Routine:** Office work, commute by car
+- **POC Config:** ✅ Complete (config/scenes_poc.json, config/character_profile.json, config/locations.json)
+
+**Catalina (Second Character):**
+- **File:** catalina_daily_life_scenes.md
+- **Profile:** 21-year-old Colombian female university student
+- **Scenes:** ~103 detailed scenes created (template for ~280 total)
+- **Culture:** Colombian/Latin American, family home in Bogotá
+- **Daily Routine:** University classes, public transit (TransMilenio), family dynamics
+- **POC Config:** ❌ Not yet created (will follow Matt's template once approach is validated)
+- **Key Differences:**
+  - Gender (female vs male)
+  - Age group (student vs professional)
+  - Cultural context (Colombian vs American)
+  - Living situation (family home vs solo apartment)
+  - Transportation (public transit vs car)
+  - Bilingual vocabulary (Spanish-English)
+
+### Multi-Character Strategy
+
+**Approach:**
+1. Validate image generation approach with Matt's POC (15 images)
+2. If successful, create Catalina's POC config (15 images from her scenes)
+3. Generate both character sets (308 Matt + ~280 Catalina = ~588 total images)
+4. Can expand to additional characters using same template approach
+
+**Scalability:**
+- ✅ Template structure supports unlimited characters
+- ✅ Each character gets their own scenes markdown file
+- ✅ Each character gets their own config files (character_profile.json, scenes_poc.json, locations.json)
+- ✅ Each character gets their own LoRA model for consistency
+- ✅ Same automation pipeline works for all characters
+- ✅ Can generate different cultures, ages, genders, professions, living situations
+
+**Benefits:**
+- Diverse representation in educational materials
+- Multiple cultural contexts for ESL learners
+- Different vocabulary sets based on character lifestyle
+- Bilingual/multilingual vocabulary support
+
+---
+
 ## File Inventory
+
+### Scene Description Files
+
+| File | Created | Last Updated | Status |
+|------|---------|--------------|--------|
+| matt_daily_life_scenes.md | ✅ Yes | 2026-01-17 | **Original scenes - ~308 total** |
+| catalina_daily_life_scenes.md | ✅ Yes | 2026-01-17 | **Created - ~103 detailed scenes (template for ~280)** |
 
 ### Configuration Files
 
 | File | Created | Last Updated | Status |
 |------|---------|--------------|--------|
-| config/scenes_poc.json | ✅ Yes | 2026-01-17 | **Created - 15 scenes** |
+| config/scenes_poc.json | ✅ Yes | 2026-01-17 | **Created - 15 Matt scenes** |
 | config/character_profile.json | ✅ Yes | 2026-01-17 | **Created - Matt's profile** |
-| config/locations.json | ✅ Yes | 2026-01-17 | **Created - 3 POC locations** |
-| config/scenes_full.json | ❌ No | N/A | Future work (308 scenes) |
+| config/locations.json | ✅ Yes | 2026-01-17 | **Created - 3 POC locations (Matt)** |
+| config/scenes_full.json | ❌ No | N/A | Future work (308 Matt scenes) |
+| config/catalina_scenes_poc.json | ❌ No | N/A | Future work (15 Catalina POC scenes) |
+| config/catalina_character_profile.json | ❌ No | N/A | Future work (Catalina's profile) |
+| config/catalina_locations.json | ❌ No | N/A | Future work (Catalina's locations) |
 | config/lighting_presets.json | ❌ No | N/A | Optional, may not need |
 | config/comfyui_workflow.json | ❌ No | N/A | To be created after workflow testing |
 
@@ -291,12 +352,21 @@
 
 **Progress:** All configuration complete. Ready for RunPod API testing and image generation once API key is provided.
 
+**2026-01-17 - Multi-Character Expansion**
+- ✅ **Created catalina_daily_life_scenes.md** - Template for second character (Colombian university student)
+- ✅ **Demonstrated scalability** - Template can be adapted for different characters, cultures, demographics
+- Character profile: 21-year-old Colombian female university student living in Bogotá
+- ~103 detailed scenes created showing cultural adaptation (Spanish language, Colombian products, family home, TransMilenio transit, Universidad Nacional)
+- Template includes different daily routine (student vs working professional), different culture (Latin American vs American), different gender (female vs male), different living situation (family home vs solo apartment)
+- **Project now supports multiple characters** - Ready to scale to many people's daily lives
+
 **Next Session:**
 - Get RunPod API key and test connection
 - Create remaining automation scripts (remote_generate.py, generate_location_refs.py)
-- Generate location references
+- Generate location references for Matt's POC
 - Download character LoRA from CivitAI
 - Begin ComfyUI workflow testing
+- Decide whether to create POC configs for Catalina or focus on Matt first
 
 ### Learnings
 

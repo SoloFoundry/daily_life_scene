@@ -246,6 +246,120 @@ This represents ~10-15 scenes total and covers the highest-value vocabulary.
 
 ---
 
+## Multi-Character Expansion
+
+### Overview
+
+The project now supports **multiple characters** with diverse backgrounds, cultures, and demographics. Each character gets their own complete daily life narrative with culturally-appropriate scenes, vocabulary, and contexts.
+
+### Character Templates Created
+
+**1. Matt (Primary Character) - American Professional**
+- **Age:** ~30 years old
+- **Gender:** Male
+- **Ethnicity:** Caucasian
+- **Profession:** Office worker/professional
+- **Living Situation:** Solo apartment
+- **Culture:** American suburban
+- **Transportation:** Personal car
+- **Total Scenes:** ~308
+- **File:** [matt_daily_life_scenes.md](matt_daily_life_scenes.md)
+- **POC Status:** ✅ Complete (config files ready)
+
+**2. Catalina - Colombian University Student**
+- **Age:** 21 years old
+- **Gender:** Female
+- **Ethnicity:** Colombian/Latina
+- **Profession:** University student (Communications)
+- **Living Situation:** Family home with parents and younger brother
+- **Culture:** Colombian/Latin American (Bogotá)
+- **Transportation:** Public transit (TransMilenio)
+- **Total Scenes:** ~280 (103 detailed scenes created)
+- **File:** [catalina_daily_life_scenes.md](catalina_daily_life_scenes.md)
+- **POC Status:** ⏳ Not yet created (will follow Matt's validation)
+- **Language:** Bilingual vocabulary (Spanish-English)
+
+### Multi-Character Strategy
+
+**Phase 1: Validate with Matt**
+1. Generate Matt's POC (15 images)
+2. Evaluate character consistency, quality, cost
+3. If successful → proceed to full Matt set (308 images)
+
+**Phase 2: Expand to Catalina**
+1. Create Catalina's POC config (15 images from her scenes)
+2. Generate Catalina's POC images
+3. If successful → generate full Catalina set (~280 images)
+
+**Phase 3: Scale to Additional Characters**
+- Same template can be adapted for unlimited characters
+- Examples: Japanese salaryman, Indian family, Nigerian teacher, etc.
+- Each character provides different cultural context and vocabulary
+
+### Technical Implications
+
+**Character-Specific Requirements:**
+- Each character needs their own LoRA model for visual consistency
+- Each character has their own config files:
+  - `config/{name}_character_profile.json`
+  - `config/{name}_scenes_poc.json`
+  - `config/{name}_locations.json`
+- Each character has their own output directory:
+  - `output/{name}_poc/`
+  - `output/{name}_full/`
+
+**Shared Infrastructure:**
+- Same RunPod automation scripts work for all characters
+- Same ComfyUI workflow with different parameters
+- Same base Stable Diffusion model
+
+**Total Project Scope (If All Characters Generated):**
+- Matt: 308 images (~$7.50-$10 GPU cost)
+- Catalina: ~280 images (~$7-$9 GPU cost)
+- **Total: ~588 images, ~$14.50-$19 GPU cost**
+
+### Educational Benefits
+
+**Diverse Representation:**
+- Multiple genders, ages, ethnicities, cultures
+- Different socioeconomic contexts
+- Various professions and living situations
+
+**Cultural Context:**
+- Western vs Latin American vs Asian vs African contexts
+- Different daily routines and cultural norms
+- Bilingual/multilingual vocabulary support
+
+**Vocabulary Variety:**
+- Student vs professional vocabulary
+- Public transit vs car vocabulary
+- Family vs solo living vocabulary
+- Cultural-specific objects and customs
+
+### Scalability Approach
+
+**Template Adaptation Guide:**
+
+To create a new character, adapt the template with:
+1. **Demographics:** Age, gender, ethnicity, profession
+2. **Living Situation:** Solo, family, roommates, dormitory
+3. **Culture:** Country, city, cultural norms
+4. **Daily Routine:** Student, professional, retiree, parent, etc.
+5. **Transportation:** Car, public transit, bike, walking
+6. **Language:** Monolingual, bilingual, regional vocabulary
+7. **Locations:** Adapt to cultural context (e.g., TransMilenio vs subway vs car)
+8. **Objects:** Cultural-specific items (e.g., Colombian products, Japanese appliances)
+
+**Example Variations:**
+- **Yuki (Japanese Salaryman):** Tokyo apartment, train commute, office life, Japanese culture
+- **Amara (Nigerian Teacher):** Lagos home, school environment, African context
+- **Raj (Indian Family Man):** Delhi joint family, scooter commute, Indian cultural norms
+- **Emma (American Student):** College dormitory, campus life, cafeteria, library
+
+Each character provides hundreds of unique vocabulary items in authentic cultural contexts.
+
+---
+
 ## Current Phase & Status
 
 **Phase:** POC Configuration Complete - Ready for Generation
@@ -257,22 +371,27 @@ See [STATUS.md](STATUS.md) for real-time progress tracking.
 1. ✅ Create project structure
 2. ✅ Initialize git repository and make first commit
 3. ✅ Create documentation (CLAUDE.md, STATUS.md, README.md)
-4. ✅ Select 15 POC scenes (5 bedroom, 5 bathroom, 5 kitchen)
-5. ✅ Create config files:
+4. ✅ Select 15 POC scenes for Matt (5 bedroom, 5 bathroom, 5 kitchen)
+5. ✅ Create config files for Matt:
    - scenes_poc.json (15 scenes with detailed prompts)
    - character_profile.json (Matt's appearance and settings)
    - locations.json (3 POC locations with generation params)
 6. ✅ Write RunPod API wrapper (scripts/runpod_manager.py)
+7. ✅ Create multi-character template (catalina_daily_life_scenes.md)
+   - ~103 detailed scenes for Colombian university student
+   - Demonstrates cultural adaptation (Spanish language, Colombian products, Bogotá setting)
+   - Shows gender, age, profession, culture, living situation variations
 
 ### Immediate Next Steps
 
-7. ⏳ Get RunPod API key and test connection
-8. ⏳ Write additional automation scripts (remote_generate.py, generate_location_refs.py)
-9. ⏳ Generate 9 location reference images (3 per location)
-10. ⏳ Download/test character LoRA from CivitAI
-11. ⏳ Set up ComfyUI workflow on RunPod
-12. ⏳ Generate 15 POC images
-13. ⏳ Evaluate results and decide on full implementation
+8. ⏳ Get RunPod API key and test connection
+9. ⏳ Write additional automation scripts (remote_generate.py, generate_location_refs.py)
+10. ⏳ Generate 9 location reference images for Matt (3 per location)
+11. ⏳ Download/test character LoRA from CivitAI for Matt
+12. ⏳ Set up ComfyUI workflow on RunPod
+13. ⏳ Generate 15 POC images for Matt
+14. ⏳ Evaluate results and decide on full implementation
+15. ⏳ If successful, create Catalina POC configs and repeat process
 
 ### Success Criteria for POC
 
@@ -564,11 +683,13 @@ CUDA out of memory
 1. **Check STATUS.md first** - It has the most current state
 2. **This project uses RunPod API automation** - Don't suggest manual GPU work
 3. **POC before full implementation** - Always validate with 10-15 images first
-4. **Character consistency is critical** - Matt must look the same across all images
+4. **Character consistency is critical** - Each character must look the same across all their images
 5. **Target audience is children/ESL** - Keep explanations simple, images clear
-6. **Cost awareness** - Keep GPU costs low ($1.50-$3.50 for POC, $7.50-$10 for full)
+6. **Cost awareness** - Keep GPU costs low ($1.50-$3.50 per POC, $7.50-$10 per full character set)
 7. **No Blender** - User decided against it due to time investment
 8. **Existing app** - These images will be integrated into a flashcard app already built
+9. **Multi-character project** - Currently 2 characters (Matt, Catalina), can expand to more
+10. **Cultural diversity** - Each character represents different culture, age, gender, profession
 
 **Current blockers/questions:**
 - See STATUS.md "Blockers" section

@@ -19,8 +19,8 @@
       "description": "A 25-year-old white man with short brown hair lies in bed under a navy blue comforter, eyes closed, face peaceful in sleep. On the wooden nightstand beside him, a smartphone screen glows brightly, displaying 6:45 AM with an alarm interface. A simple black digital alarm clock sits behind the phone showing the same time. A glass of water is half-full next to the phone. A small brass lamp with a white shade is switched off. The window behind the bed has white horizontal blinds, slightly open, allowing thin strips of pale blue early morning light to fall across the bed. Walls are painted light gray.",
       "objects": ["bed", "navy comforter", "nightstand", "smartphone", "alarm clock", "water glass", "brass lamp", "white blinds", "window"],
       "actions": ["sleeping"],
-      "prompt": "photorealistic image, 25-year-old white man, short brown hair, sleeping in bed, navy blue comforter, wooden nightstand, glowing smartphone showing 6:45 AM alarm, digital alarm clock, water glass, brass lamp, white horizontal blinds, blue pre-dawn light, light gray walls, peaceful bedroom scene, morning, natural lighting",
-      "negative_prompt": "cartoon, anime, illustration, painting, sketch, unrealistic, distorted, bad anatomy, deformed hands, multiple people, text, watermark, signature",
+      "prompt": "anime illustration, masterpiece, best quality, 25-year-old white man, short brown hair, sleeping in bed, navy blue comforter, wooden nightstand, glowing smartphone showing 6:45 AM alarm, digital alarm clock, water glass, brass lamp, white horizontal blinds, blue pre-dawn light, light gray walls, peaceful bedroom scene, morning, natural lighting",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, distorted, bad anatomy, deformed hands, multiple people, text, watermark, signature",
       "vocabulary_focus": ["alarm clock", "bed", "nightstand", "smartphone", "lamp", "blinds", "window"]
     },
     {
@@ -33,8 +33,8 @@
       "description": "Matt sits on the edge of the bed, feet touching the beige carpet floor, wearing a gray cotton t-shirt and navy pajama pants. He hunches slightly forward, rubbing his eyes with one hand. The navy comforter is pushed aside, revealing white sheets. A wooden bed frame with a simple headboard is visible. On the floor beside the bed are gray fabric slippers. The nightstand with phone, water glass, and lamp is beside him. A dresser with a mirror stands against the far wall, reflecting the dim room.",
       "objects": ["bed", "beige carpet", "gray t-shirt", "navy pajama pants", "comforter", "white sheets", "bed frame", "headboard", "gray slippers", "nightstand", "dresser", "mirror"],
       "actions": ["sitting", "rubbing eyes", "waking up"],
-      "prompt": "photorealistic image, 25-year-old white man with short brown hair sitting on bed edge, gray t-shirt, navy pajama pants, rubbing eyes, beige carpet, navy comforter pushed aside, white sheets, wooden bed frame, gray slippers on floor, nightstand, dresser with mirror, dim morning light, bedroom, side view, waking up, natural pose",
-      "negative_prompt": "cartoon, anime, illustration, unrealistic, distorted face, bad anatomy, deformed hands, multiple people, text",
+      "prompt": "anime illustration, masterpiece, best quality, 25-year-old white man with short brown hair sitting on bed edge, gray t-shirt, navy pajama pants, rubbing eyes, beige carpet, navy comforter pushed aside, white sheets, wooden bed frame, gray slippers on floor, nightstand, dresser with mirror, dim morning light, bedroom, side view, waking up, natural pose",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, distorted face, bad anatomy, deformed hands, multiple people, text",
       "vocabulary_focus": ["bed", "pajamas", "slippers", "carpet", "dresser", "mirror", "t-shirt"]
     },
     {
@@ -47,8 +47,8 @@
       "description": "Matt's hand pulls the cord of white horizontal blinds, twisting them open. Bright morning sunlight streams through, casting horizontal striped shadows across the room. Through the window, a suburban view is visible: a parking lot with several cars, green grass, and another apartment building across the way. Matt's face is lit by the warm morning sun, eyes slightly squinted against the brightness. The room is transformed from dim blue to warm golden light.",
       "objects": ["white blinds", "blind cord", "window", "parking lot", "cars", "grass", "apartment building"],
       "actions": ["pulling cord", "opening blinds", "squinting"],
-      "prompt": "photorealistic image, man's hand pulling white horizontal blind cord, bright morning sunlight streaming through window, horizontal striped shadows, suburban view through window with parking lot and cars, green grass, apartment building, warm golden light, face lit by sun, squinting eyes, bedroom, morning scene, natural lighting",
-      "negative_prompt": "cartoon, anime, illustration, unrealistic, bad anatomy, deformed hands, multiple people, dark, night, text",
+      "prompt": "anime illustration, masterpiece, best quality, man's hand pulling white horizontal blind cord, bright morning sunlight streaming through window, horizontal striped shadows, suburban view through window with parking lot and cars, green grass, apartment building, warm golden light, face lit by sun, squinting eyes, bedroom, morning scene, natural lighting",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, bad anatomy, deformed hands, multiple people, dark, night, text",
       "vocabulary_focus": ["blinds", "window", "sunlight", "parking lot", "apartment building"]
     },
     {
@@ -61,8 +61,8 @@
       "description": "Matt stands before an open sliding closet door with mirrored panels. Inside the closet, button-down shirts hang on wooden hangers — light blue, white, pale pink, striped patterns. Below them, several pairs of chinos and dress pants hang. On the closet floor are three pairs of shoes: brown leather dress shoes, white sneakers, and black loafers. A shelf above holds folded sweaters and a few boxes. Matt's hand reaches toward a light blue oxford shirt. The room is reflected in the closet mirror.",
       "objects": ["closet", "sliding door", "mirrored panels", "button-down shirts", "wooden hangers", "chinos", "dress pants", "brown dress shoes", "white sneakers", "black loafers", "sweaters", "boxes"],
       "actions": ["reaching", "selecting clothes"],
-      "prompt": "photorealistic image, 25-year-old white man standing at open mirrored closet, hand reaching for light blue oxford shirt, wooden hangers with button-down shirts (blue, white, pink, striped), chinos and dress pants hanging below, closet floor with brown leather shoes, white sneakers, black loafers, shelf with folded sweaters, bright morning light, bedroom reflection in mirror",
-      "negative_prompt": "cartoon, anime, illustration, messy closet, unrealistic, bad anatomy, deformed hands, multiple people, text",
+      "prompt": "anime illustration, masterpiece, best quality, 25-year-old white man standing at open mirrored closet, hand reaching for light blue oxford shirt, wooden hangers with button-down shirts (blue, white, pink, striped), chinos and dress pants hanging below, closet floor with brown leather shoes, white sneakers, black loafers, shelf with folded sweaters, bright morning light, bedroom reflection in mirror",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, messy closet, bad anatomy, deformed hands, multiple people, text",
       "vocabulary_focus": ["closet", "shirts", "hangers", "pants", "shoes", "sneakers", "mirror"]
     },
     {
@@ -75,8 +75,8 @@
       "description": "On top of the made bed with navy comforter, a work outfit is laid out neatly: a light blue button-down oxford shirt, khaki chinos, a brown leather belt, and navy blue socks. A pair of brown leather dress shoes sits on the carpet beside the bed. The morning sun casts warm light across the fabric. Matt is not visible in the frame — just the prepared outfit waiting on the bed.",
       "objects": ["bed", "navy comforter", "light blue shirt", "khaki chinos", "brown belt", "navy socks", "brown dress shoes", "carpet"],
       "actions": ["none - still life"],
-      "prompt": "photorealistic image, work outfit laid out on bed with navy blue comforter, light blue oxford shirt, khaki chinos, brown leather belt, navy blue socks arranged neatly, brown leather dress shoes on beige carpet beside bed, warm morning sunlight, no people, still life, bedroom, clean and organized",
-      "negative_prompt": "cartoon, anime, illustration, people, messy, wrinkled clothes, unrealistic, text",
+      "prompt": "anime illustration, masterpiece, best quality, work outfit laid out on bed with navy blue comforter, light blue oxford shirt, khaki chinos, brown leather belt, navy blue socks arranged neatly, brown leather dress shoes on beige carpet beside bed, warm morning sunlight, no people, still life, bedroom, clean and organized",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, people, messy, wrinkled clothes, text",
       "vocabulary_focus": ["shirt", "pants", "belt", "socks", "shoes", "outfit", "bed"]
     },
     {
@@ -89,8 +89,8 @@
       "description": "Matt stands before the bathroom mirror, examining his face. His reflection shows slightly messy brown hair, a bit of stubble, tired eyes. Both hands rest on the white porcelain sink edge. The chrome faucet gleams under the bright vanity lights above the mirror — three round bulbs in frosted glass. A toothbrush holder with a blue toothbrush and white toothpaste tube sits to the right. A soap dispenser and small succulent plant in a white pot are on the left side of the sink.",
       "objects": ["bathroom mirror", "white sink", "chrome faucet", "vanity lights", "toothbrush holder", "blue toothbrush", "toothpaste tube", "soap dispenser", "succulent plant", "white pot"],
       "actions": ["examining face", "looking in mirror"],
-      "prompt": "photorealistic image, 25-year-old white man with messy short brown hair and stubble standing at bathroom sink, hands on porcelain sink edge, looking at reflection in mirror, chrome faucet, three round frosted vanity lights above, blue toothbrush in holder, white toothpaste tube, soap dispenser, small succulent plant in white pot, bright bathroom lighting, morning grooming",
-      "negative_prompt": "cartoon, anime, illustration, clean shaven, styled hair, bad anatomy, deformed, multiple people, text",
+      "prompt": "anime illustration, masterpiece, best quality, 25-year-old white man with messy short brown hair and stubble standing at bathroom sink, hands on porcelain sink edge, looking at reflection in mirror, chrome faucet, three round frosted vanity lights above, blue toothbrush in holder, white toothpaste tube, soap dispenser, small succulent plant in white pot, bright bathroom lighting, morning grooming",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, styled hair, bad anatomy, deformed, multiple people, text",
       "vocabulary_focus": ["mirror", "sink", "faucet", "toothbrush", "toothpaste", "soap dispenser", "bathroom"]
     },
     {
@@ -103,8 +103,8 @@
       "description": "Matt brushes his teeth, the blue toothbrush in his right hand, moving it across his teeth. His mouth is slightly open, foamy white toothpaste visible. His reflection in the mirror shows the brushing motion. His left hand rests on the counter. The toothpaste tube lies on its side near the sink. His expression is neutral, eyes looking at his own reflection.",
       "objects": ["blue toothbrush", "toothpaste foam", "mirror", "bathroom counter", "toothpaste tube", "sink"],
       "actions": ["brushing teeth"],
-      "prompt": "photorealistic image, 25-year-old white man brushing teeth with blue toothbrush, mouth slightly open with white toothpaste foam, looking at reflection in bathroom mirror, left hand on white counter, toothpaste tube lying on counter near sink, bright bathroom lighting, morning routine, neutral expression",
-      "negative_prompt": "cartoon, anime, illustration, unrealistic, bad anatomy, deformed hands, multiple people, text, closed mouth",
+      "prompt": "anime illustration, masterpiece, best quality, 25-year-old white man brushing teeth with blue toothbrush, mouth slightly open with white toothpaste foam, looking at reflection in bathroom mirror, left hand on white counter, toothpaste tube lying on counter near sink, bright bathroom lighting, morning routine, neutral expression",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, bad anatomy, deformed hands, multiple people, text, closed mouth",
       "vocabulary_focus": ["toothbrush", "toothpaste", "brushing teeth", "mirror", "sink", "bathroom"]
     },
     {
@@ -117,8 +117,8 @@
       "description": "Matt stands directly under the rainfall showerhead, eyes closed, face tilted up toward the water. Water streams down over his hair, face, and shoulders. His short brown hair is wet and slicked back. Water droplets cover his skin. Steam fills the space. The white subway tile walls glisten with moisture. The chrome shower fixtures gleam.",
       "objects": ["rainfall showerhead", "water", "white subway tiles", "chrome fixtures", "steam"],
       "actions": ["showering", "standing under water", "eyes closed"],
-      "prompt": "photorealistic image, 25-year-old white man standing under rainfall showerhead in shower, eyes closed, face tilted up, water streaming down over wet slicked-back brown hair and shoulders, water droplets on skin, steam filling space, white subway tile walls glistening with moisture, gleaming chrome fixtures, morning shower scene, from shoulders up",
-      "negative_prompt": "cartoon, anime, illustration, dry hair, eyes open, unrealistic, bad anatomy, deformed, multiple people, text",
+      "prompt": "anime illustration, masterpiece, best quality, 25-year-old white man standing under rainfall showerhead in shower, eyes closed, face tilted up, water streaming down over wet slicked-back brown hair and shoulders, water droplets on skin, steam filling space, white subway tile walls glistening with moisture, gleaming chrome fixtures, morning shower scene, from shoulders up",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, dry hair, eyes open, bad anatomy, deformed, multiple people, text",
       "vocabulary_focus": ["shower", "showerhead", "water", "tiles", "steam"]
     },
     {
@@ -131,8 +131,8 @@
       "description": "Matt's hand wipes a clear streak across the fogged bathroom mirror with a small towel. His partial reflection becomes visible through the cleared section — wet face, damp hair. Condensation drips down the glass around the cleared area. The vanity lights glow above. His towel is wrapped around his waist.",
       "objects": ["fogged mirror", "hand towel", "condensation", "vanity lights", "towel around waist"],
       "actions": ["wiping mirror", "clearing fog"],
-      "prompt": "photorealistic image, man's hand wiping fogged bathroom mirror with small towel, clear streak revealing partial reflection with wet face and damp hair, condensation dripping on glass around cleared area, vanity lights glowing above, towel wrapped around waist visible in reflection, steam clearing, bathroom after shower",
-      "negative_prompt": "cartoon, anime, illustration, clear mirror, dry mirror, unrealistic, bad anatomy, deformed hands, multiple people, text",
+      "prompt": "anime illustration, masterpiece, best quality, man's hand wiping fogged bathroom mirror with small towel, clear streak revealing partial reflection with wet face and damp hair, condensation dripping on glass around cleared area, vanity lights glowing above, towel wrapped around waist visible in reflection, steam clearing, bathroom after shower",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, clear mirror, dry mirror, bad anatomy, deformed hands, multiple people, text",
       "vocabulary_focus": ["mirror", "fog", "towel", "condensation", "bathroom", "vanity lights"]
     },
     {
@@ -145,8 +145,8 @@
       "description": "Matt holds a stick of deodorant (white container with blue cap) in one hand, applying it under his raised arm. His face is reflected in the mirror, focused on the task. The towel remains around his waist. Other toiletries are visible on the counter. His arm pit is exposed as he applies the product.",
       "objects": ["deodorant stick", "white container", "blue cap", "mirror", "towel", "bathroom counter", "toiletries"],
       "actions": ["applying deodorant", "arm raised"],
-      "prompt": "photorealistic image, 25-year-old white man applying deodorant stick (white container, blue cap) under raised arm, face reflected in bathroom mirror focused on task, towel wrapped around waist, toiletries on counter in background, bright bathroom lighting, morning grooming routine, side view",
-      "negative_prompt": "cartoon, anime, illustration, unrealistic, bad anatomy, deformed, multiple people, text, fully clothed",
+      "prompt": "anime illustration, masterpiece, best quality, 25-year-old white man applying deodorant stick (white container, blue cap) under raised arm, face reflected in bathroom mirror focused on task, towel wrapped around waist, toiletries on counter in background, bright bathroom lighting, morning grooming routine, side view",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, bad anatomy, deformed, multiple people, text, fully clothed",
       "vocabulary_focus": ["deodorant", "mirror", "towel", "bathroom", "grooming"]
     },
     {
@@ -159,8 +159,8 @@
       "description": "Matt enters the kitchen area, a modest galley-style kitchen with white cabinets, gray countertops, and stainless steel appliances. A coffee maker sits on the counter near the sink. A toaster is next to it. The refrigerator is stainless steel with a few magnets and a calendar. A microwave is mounted above the stove. Sunlight streams in from the adjacent living room windows.",
       "objects": ["white cabinets", "gray countertops", "stainless steel appliances", "coffee maker", "toaster", "refrigerator", "magnets", "calendar", "microwave", "stove"],
       "actions": ["entering kitchen"],
-      "prompt": "photorealistic image, 25-year-old white man in business casual (light blue shirt, khaki pants) entering modern galley kitchen, white cabinets, gray countertops, stainless steel refrigerator with magnets and calendar, black coffee maker and chrome toaster on counter near sink, microwave above stove, bright morning sunlight from adjacent windows, clean organized kitchen",
-      "negative_prompt": "cartoon, anime, illustration, messy kitchen, unrealistic, bad anatomy, multiple people, text",
+      "prompt": "anime illustration, masterpiece, best quality, 25-year-old white man in business casual (light blue shirt, khaki pants) entering modern galley kitchen, white cabinets, gray countertops, stainless steel refrigerator with magnets and calendar, black coffee maker and chrome toaster on counter near sink, microwave above stove, bright morning sunlight from adjacent windows, clean organized kitchen",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, messy kitchen, bad anatomy, multiple people, text",
       "vocabulary_focus": ["kitchen", "cabinets", "countertop", "refrigerator", "coffee maker", "toaster", "stove", "microwave"]
     },
     {
@@ -173,8 +173,8 @@
       "description": "Matt uses a plastic measuring scoop to take coffee grounds from the bag, transferring them to the coffee maker's filter basket. The scoop is filled with dark brown grounds. The filter basket is pulled out from the machine. His other hand holds the bag. Some grounds scatter slightly on the counter.",
       "objects": ["plastic scoop", "coffee grounds", "coffee bag", "filter basket", "coffee maker", "gray counter"],
       "actions": ["scooping", "transferring coffee grounds"],
-      "prompt": "photorealistic image, hands using plastic measuring scoop to transfer dark brown coffee grounds from bag to coffee maker filter basket, scoop filled with grounds, filter basket pulled out from black coffee maker, scattered grounds on gray counter, bright kitchen lighting, morning coffee preparation, close-up",
-      "negative_prompt": "cartoon, anime, illustration, unrealistic, bad anatomy, deformed hands, multiple people, text",
+      "prompt": "anime illustration, masterpiece, best quality, hands using plastic measuring scoop to transfer dark brown coffee grounds from bag to coffee maker filter basket, scoop filled with grounds, filter basket pulled out from black coffee maker, scattered grounds on gray counter, bright kitchen lighting, morning coffee preparation, close-up",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, bad anatomy, deformed hands, multiple people, text",
       "vocabulary_focus": ["coffee", "scoop", "coffee maker", "filter", "counter"]
     },
     {
@@ -187,8 +187,8 @@
       "description": "Matt drops two slices of white bread into the slots of a silver two-slice toaster. His fingers release the bread into the wide slots. The toaster is chrome with a black base and a dial for darkness settings. The lever on the side is in the up position. The counter behind shows the coffee maker steadily brewing.",
       "objects": ["white bread slices", "chrome toaster", "black base", "darkness dial", "lever", "coffee maker"],
       "actions": ["dropping bread", "loading toaster"],
-      "prompt": "photorealistic image, hands dropping two white bread slices into chrome two-slice toaster, fingers releasing bread into wide slots, toaster with black base and darkness dial, lever in up position, coffee maker brewing in background on gray counter, bright kitchen lighting, morning breakfast preparation",
-      "negative_prompt": "cartoon, anime, illustration, unrealistic, bad anatomy, deformed hands, multiple people, text, bread already toasted",
+      "prompt": "anime illustration, masterpiece, best quality, hands dropping two white bread slices into chrome two-slice toaster, fingers releasing bread into wide slots, toaster with black base and darkness dial, lever in up position, coffee maker brewing in background on gray counter, bright kitchen lighting, morning breakfast preparation",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, bad anatomy, deformed hands, multiple people, text, bread already toasted",
       "vocabulary_focus": ["bread", "toaster", "counter", "coffee maker", "kitchen"]
     },
     {
@@ -201,8 +201,8 @@
       "description": "Close-up of Matt's hand using the butter knife to spread butter on a slice of toast. The knife drags across the golden surface, leaving a trail of melting yellow butter. A curl of butter sits on the knife blade. The butter dish is beside the plate. The butter melts into the warm bread, darkening slightly where absorbed.",
       "objects": ["butter knife", "toast", "butter", "butter dish", "white plate", "gray counter"],
       "actions": ["spreading butter"],
-      "prompt": "photorealistic close-up image, hand spreading yellow butter on golden-brown toast with butter knife, knife dragging across surface leaving melting butter trail, curl of butter on knife blade, white butter dish beside white ceramic plate on gray counter, butter melting into warm bread, bright kitchen lighting, breakfast preparation",
-      "negative_prompt": "cartoon, anime, illustration, unrealistic, bad anatomy, deformed hands, cold butter, unmelted, multiple people, text",
+      "prompt": "anime illustration close-up, masterpiece, best quality, hand spreading yellow butter on golden-brown toast with butter knife, knife dragging across surface leaving melting butter trail, curl of butter on knife blade, white butter dish beside white ceramic plate on gray counter, butter melting into warm bread, bright kitchen lighting, breakfast preparation",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, bad anatomy, deformed hands, cold butter, unmelted, multiple people, text",
       "vocabulary_focus": ["butter", "knife", "toast", "plate", "spreading"]
     },
     {
@@ -215,8 +215,8 @@
       "description": "Matt lifts the glass carafe from the coffee maker and pours hot black coffee into the white ceramic mug. The dark liquid streams from the carafe spout. Steam rises from the mug. His other hand steadies the mug on the counter. The coffee level rises in the mug, nearly filling it.",
       "objects": ["glass carafe", "coffee maker", "white ceramic mug", "black coffee", "steam", "gray counter"],
       "actions": ["pouring coffee", "lifting carafe", "steadying mug"],
-      "prompt": "photorealistic image, hands pouring hot black coffee from glass carafe into white ceramic mug, dark liquid streaming from spout, steam rising from mug, one hand steadying mug on gray counter, coffee maker with warming plate, coffee level rising in mug, bright kitchen lighting, morning coffee preparation",
-      "negative_prompt": "cartoon, anime, illustration, unrealistic, bad anatomy, deformed hands, spilling, multiple people, text, cold coffee",
+      "prompt": "anime illustration, masterpiece, best quality, hands pouring hot black coffee from glass carafe into white ceramic mug, dark liquid streaming from spout, steam rising from mug, one hand steadying mug on gray counter, coffee maker with warming plate, coffee level rising in mug, bright kitchen lighting, morning coffee preparation",
+      "negative_prompt": "photorealistic, photo, realistic, 3d render, low quality, worst quality, bad anatomy, deformed hands, spilling, multiple people, text, cold coffee",
       "vocabulary_focus": ["coffee", "carafe", "mug", "pouring", "coffee maker"]
     }
   ]

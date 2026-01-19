@@ -229,7 +229,7 @@
 - **Installed on RunPod:** ❌ No
 - **Version:** TBD
 - **Models downloaded:**
-  - RealVisXL V5.0: ❌ No
+  - Animagine XL 3.1 (anime SDXL): ❌ No
   - IP-Adapter Plus: ❌ No
   - ControlNet Depth: ❌ No (optional)
 

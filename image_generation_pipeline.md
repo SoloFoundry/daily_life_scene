@@ -51,7 +51,7 @@ Location assets can be reused across many character variants.
 
 | Decision | Choice | Rationale |
 |----------|--------|-----------|
-| Image style | **Photorealistic** | Maximum clarity for object identification |
+| Image style | **High-quality anime** | Child-friendly, faster development, clear object identification |
 | Perspective | **Third-person POV** | Character visible interacting with objects |
 | Geographic setting | **American suburban** | Starting point; will diversify later |
 | Scene granularity | **Extremely detailed** | Every small action gets its own image |
@@ -319,10 +319,16 @@ A fully free, fully automated pipeline for generating thousands of consistent ed
 
 | Model | Type | Source |
 |-------|------|--------|
-| **RealVisXL V5.0** or **Realistic Vision V6.0** | Base model | CivitAI |
-| **IP-Adapter FaceID Plus V2** | Face consistency | Hugging Face |
+| **Animagine XL 3.1** or **CounterfeitXL** | Base anime model | CivitAI |
 | **IP-Adapter Plus SDXL** | Style/location consistency | Hugging Face |
 | **ControlNet Depth SDXL** | Spatial consistency | Hugging Face |
+
+**Why Anime Style?**
+- Faster development time (less demanding consistency requirements)
+- Child-friendly aesthetic that appeals to target audience
+- Clean lines make vocabulary objects clearly identifiable
+- Large community of free anime models and LoRAs
+- More forgiving of minor character inconsistencies
 
 ---
 

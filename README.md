@@ -1,6 +1,6 @@
 # Daily Life Visual Vocabulary Generator
 
-Automated pipeline to generate photorealistic images for visual vocabulary learning using Stable Diffusion on RunPod GPU.
+Automated pipeline to generate high-quality anime illustrations for visual vocabulary learning using Stable Diffusion on RunPod GPU.
 
 ## Quick Start
 
@@ -63,7 +63,7 @@ daily_life/
 
 ## POC Goals
 
-Generate 15 high-quality photorealistic images to validate:
+Generate 15 high-quality anime illustrations to validate:
 - Character consistency (Matt recognizable across images)
 - Location consistency (bedroom, bathroom, kitchen)
 - Educational value (objects clearly identifiable)
@@ -72,8 +72,9 @@ Generate 15 high-quality photorealistic images to validate:
 ## Technologies
 
 - **GPU**: RunPod (RTX 4090 or RTX 3090)
-- **Model**: Stable Diffusion (RealVisXL V5.0)
-- **Character**: Existing LoRA from CivitAI
+- **Model**: Stable Diffusion (Animagine XL 3.1 - anime SDXL)
+- **Style**: High-quality anime illustrations
+- **Character**: Existing anime LoRA from CivitAI
 - **Locations**: AI-generated references + IP-Adapter
 - **Automation**: Python + RunPod API
 

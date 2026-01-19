@@ -21,41 +21,39 @@
     }
   },
   "prompt_templates": {
-    "base_character": "25-year-old white man, short brown hair, average build, clean-shaven, realistic, photorealistic",
-    "morning_appearance": "25-year-old white man, short brown hair, slight morning stubble, tired eyes, realistic",
-    "work_attire": "25-year-old white man, short brown hair, wearing light blue button-down shirt, khaki chinos, brown leather belt, brown dress shoes, professional",
-    "casual_attire": "25-year-old white man, short brown hair, wearing gray t-shirt, navy pajama pants, relaxed",
-    "groomed_appearance": "25-year-old white man, short brown hair neatly styled, clean-shaven, alert, professional"
+    "base_character": "1boy, young adult man, short brown hair, average build, clean-shaven, anime style, detailed",
+    "morning_appearance": "1boy, young adult man, short brown hair, slight stubble, tired eyes, anime style, sleepy expression",
+    "work_attire": "1boy, young adult man, short brown hair, wearing light blue button-down shirt, khaki chinos, brown leather belt, brown dress shoes, office worker, anime style",
+    "casual_attire": "1boy, young adult man, short brown hair, wearing gray t-shirt, navy pajama pants, relaxed, anime style",
+    "groomed_appearance": "1boy, young adult man, short brown hair neatly styled, clean-shaven, alert expression, professional, anime style"
   },
   "positive_prompts": {
     "general": [
-      "photorealistic",
+      "anime style",
       "high quality",
       "detailed",
-      "natural lighting",
-      "realistic skin texture",
-      "professional photography",
-      "8k",
+      "masterpiece",
+      "best quality",
+      "vibrant colors",
+      "clean lines",
       "sharp focus"
     ],
     "character_specific": [
-      "average build",
+      "1boy",
+      "young adult",
       "short brown hair",
-      "natural expression",
-      "realistic proportions",
+      "brown eyes",
+      "average build",
       "clean shaven",
-      "professional appearance"
+      "expressive"
     ]
   },
   "negative_prompts": {
     "general": [
-      "cartoon",
-      "anime",
-      "illustration",
-      "painting",
-      "sketch",
-      "drawing",
-      "unrealistic",
+      "photorealistic",
+      "photo",
+      "realistic",
+      "3d render",
       "low quality",
       "blurry",
       "distorted",
@@ -66,20 +64,22 @@
       "watermark",
       "text",
       "signature",
-      "username"
+      "username",
+      "worst quality"
     ],
     "character_specific": [
+      "multiple boys",
       "multiple people",
       "crowd",
-      "woman",
+      "1girl",
+      "female",
       "child",
       "elderly",
+      "old man",
       "long hair",
       "beard",
       "mustache",
-      "tattoos",
-      "jewelry",
-      "accessories"
+      "tattoos"
     ],
     "quality_issues": [
       "bad hands",
@@ -100,16 +100,16 @@
     "notes": "Start with 0.8 and adjust based on consistency results. Lower if character features are too exaggerated, higher if not consistent enough."
   },
   "reference_images": {
-    "strategy": "Use existing character LoRA from CivitAI for POC",
-    "alternative_1": "Generate 3-5 consistent images and use with IP-Adapter",
-    "alternative_2": "Train custom LoRA with 15-20 reference images",
+    "strategy": "Use existing anime character LoRA from CivitAI for POC",
+    "alternative_1": "Generate 3-5 consistent anime images and use with IP-Adapter",
+    "alternative_2": "Train custom anime LoRA with 15-20 reference images",
     "current_approach": "existing_lora",
     "civitai_search_terms": [
-      "realistic male character",
-      "young professional",
-      "average male",
-      "business casual male",
-      "25-year-old male"
+      "anime male character",
+      "young adult male anime",
+      "brown hair male anime",
+      "office worker anime",
+      "slice of life male"
     ]
   },
   "consistency_guidelines": {

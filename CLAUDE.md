@@ -24,7 +24,7 @@
 
 ### What is this project?
 
-An automated pipeline to generate **308 photorealistic images** depicting a character named "Matt" going through a typical workday. These images will be used as **visual vocabulary flashcards** for children and ESL students learning English.
+An automated pipeline to generate **308 high-quality anime illustrations** depicting a character named "Matt" going through a typical workday. These images will be used as **visual vocabulary flashcards** for children and ESL students learning English.
 
 ### Why does this exist?
 
@@ -106,7 +106,7 @@ This reinforces learning while showing different uses and states.
 ### Image Generation Stack
 
 ```
-Stable Diffusion (RealVisXL V5.0)
+Stable Diffusion (Animagine XL 3.1 - high-quality anime SDXL model)
     ↓
 Character LoRA (for Matt's consistency)
     ↓
@@ -116,6 +116,14 @@ Optional: ControlNet Depth (for spatial control)
     ↓
 Final Image
 ```
+
+**Why Anime Style?**
+- **Faster development** - Less demanding consistency requirements than photorealism
+- **Child-friendly aesthetic** - Appeals strongly to target audience (ages 5-12)
+- **Highly expressive characters** - Actions and emotions clearly conveyed
+- **Objects remain identifiable** - Clean lines make vocabulary items clear
+- **Large community support** - Many free anime models and LoRAs available on CivitAI
+- **Reduced uncanny valley** - Stylized characters are more forgiving of minor inconsistencies
 
 ### Character Consistency Strategy
 
@@ -447,7 +455,7 @@ If POC fails:
 **Image Specifications:**
 - Resolution: 1024x1024 or 1024x768 (landscape/portrait as needed)
 - Format: PNG (high quality)
-- Style: Photorealistic, natural lighting
+- Style: High-quality anime illustration, clean lines, vibrant colors
 
 **Vocabulary Prioritization:**
 - POC focuses on bedroom, bathroom, kitchen (highest value)

@@ -37,8 +37,8 @@
         "path_template": "matt_wm_25_yo/assets/location_refs/bedroom_{number}.png",
         "status": "not_generated"
       },
-      "prompt_template": "photorealistic modern bedroom, queen bed with navy blue comforter, wooden nightstand with lamp, white horizontal blinds on window, light gray walls, beige carpet, white dresser with mirror, mirrored sliding closet, clean organized space, American suburban apartment, {lighting}, professional interior photography, 8k, high quality",
-      "negative_prompt": "messy, cluttered, cartoon, anime, illustration, unrealistic, distorted, low quality, people, dark, poor lighting",
+      "prompt_template": "anime style modern bedroom, masterpiece, best quality, queen bed with navy blue comforter, wooden nightstand with lamp, white horizontal blinds on window, light gray walls, beige carpet, white dresser with mirror, mirrored sliding closet, clean organized space, detailed background, {lighting}, vibrant colors, high quality",
+      "negative_prompt": "messy, cluttered, photorealistic, photo, realistic, 3d render, low quality, worst quality, people, dark, poor lighting",
       "ip_adapter_strength": {
         "recommended": 0.6,
         "min": 0.4,
@@ -91,8 +91,8 @@
         "path_template": "matt_wm_25_yo/assets/location_refs/bathroom_{number}.png",
         "status": "not_generated"
       },
-      "prompt_template": "photorealistic modern bathroom, white porcelain sink with chrome faucet, large mirror with three round frosted vanity lights, white subway tile walls, white tile floor, glass shower enclosure with rainfall showerhead, chrome fixtures, beige towels, clean organized counter with toiletries, American apartment bathroom, {lighting}, professional interior photography, 8k, high quality",
-      "negative_prompt": "messy, dirty, cluttered, cartoon, anime, illustration, unrealistic, distorted, low quality, people, old, outdated",
+      "prompt_template": "anime style modern bathroom, masterpiece, best quality, white porcelain sink with chrome faucet, large mirror with three round frosted vanity lights, white subway tile walls, white tile floor, glass shower enclosure with rainfall showerhead, chrome fixtures, beige towels, clean organized counter with toiletries, detailed background, {lighting}, vibrant colors, high quality",
+      "negative_prompt": "messy, dirty, cluttered, photorealistic, photo, realistic, 3d render, low quality, worst quality, people, old, outdated",
       "ip_adapter_strength": {
         "recommended": 0.6,
         "min": 0.4,
@@ -147,8 +147,8 @@
         "path_template": "matt_wm_25_yo/assets/location_refs/kitchen_{number}.png",
         "status": "not_generated"
       },
-      "prompt_template": "photorealistic modern galley kitchen, white cabinets, gray countertops, stainless steel refrigerator, black coffee maker, chrome toaster, stainless steel sink with chrome faucet, microwave above stove, small window, breakfast bar with stools, clean organized space, American suburban apartment, {lighting}, professional interior photography, 8k, high quality",
-      "negative_prompt": "messy, cluttered, dirty dishes, cartoon, anime, illustration, unrealistic, distorted, low quality, people, old appliances, outdated",
+      "prompt_template": "anime style modern galley kitchen, masterpiece, best quality, white cabinets, gray countertops, stainless steel refrigerator, black coffee maker, chrome toaster, stainless steel sink with chrome faucet, microwave above stove, small window, breakfast bar with stools, clean organized space, detailed background, {lighting}, vibrant colors, high quality",
+      "negative_prompt": "messy, cluttered, dirty dishes, photorealistic, photo, realistic, 3d render, low quality, worst quality, people, old appliances, outdated",
       "ip_adapter_strength": {
         "recommended": 0.6,
         "min": 0.4,
@@ -176,7 +176,7 @@
     }
   ],
   "generation_settings": {
-    "model": "RealVisXL V5.0 (or equivalent photorealistic SDXL model)",
+    "model": "Animagine XL 3.1 (or equivalent anime SDXL model)",
     "resolution": "1024x768 (landscape) or 768x1024 (portrait)",
     "steps": 30,
     "cfg_scale": 7,

@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "project": "Daily Life Visual Vocabulary Generator",
+    "character": "Emily",
+    "phase": "POC",
+    "total_locations": 3,
+    "location_type": "AI-generated references",
+    "created": "2026-01-19"
+  },
+  "locations": [
+    {
+      "location_id": "bedroom",
+      "name": "Emily's Bedroom",
+      "description": "Modern San Francisco apartment bedroom with minimalist aesthetic. Queen-size bed with gray duvet and white sheets. IKEA-style furniture in light wood tones. Several small potted plants (succulents, pothos). Desk with monitor in corner for work-from-home setup. Full-length mirror. Hardwood floors with cozy area rug. Blackout curtains on window.",
+      "key_features": [
+        "queen-size bed with gray duvet",
+        "light wood IKEA-style furniture",
+        "small potted plants (succulents)",
+        "desk with monitor (WFH setup)",
+        "full-length mirror",
+        "hardwood floors",
+        "cozy area rug",
+        "blackout curtains"
+      ],
+      "lighting_conditions": {
+        "early_morning": "dim with phone light, blackout curtains blocking most light",
+        "morning": "soft natural light filtering through curtains",
+        "daytime": "bright natural light through window",
+        "evening": "warm lamp light, cozy atmosphere"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["wide shot showing bed and desk", "angle toward closet and mirror", "desk and window area"],
+        "path_template": "emily_af_28_yo/assets/location_refs/bedroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, modern minimalist apartment bedroom, queen-size bed, gray duvet, white sheets, IKEA furniture, light wood, small potted plants, succulents, desk with monitor, full-length mirror, hardwood floors, area rug, blackout curtains, San Francisco apartment, young professional aesthetic, detailed interior",
+      "negative_prompt": "photorealistic, photo, low quality, cluttered, messy, old furniture, dark room, small room, child's room",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain modern minimalist apartment aesthetic"
+      },
+      "vocabulary_items": ["bed", "duvet", "pillow", "sheets", "nightstand", "lamp", "desk", "monitor", "chair", "closet", "mirror", "plants", "succulents", "rug", "curtains", "hardwood floor", "alarm", "phone charger"]
+    },
+    {
+      "location_id": "bathroom",
+      "name": "Emily's Apartment Bathroom",
+      "description": "Shared apartment bathroom, clean and organized. White tile floor and walls. Single vanity with mirror and good lighting. Glass-enclosed shower. Organized toiletry caddy on counter. Skincare products neatly arranged. Towels on rack. Small window or vent. Modern but not luxury apartment style.",
+      "key_features": [
+        "white tile floor and walls",
+        "single vanity with mirror",
+        "good vanity lighting",
+        "glass-enclosed shower",
+        "toiletry caddy",
+        "skincare products arranged",
+        "towel rack with towels",
+        "small window or vent"
+      ],
+      "lighting_conditions": {
+        "morning": "bright vanity lights, clean illumination",
+        "evening": "softer vanity light, warm tones"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["facing mirror and vanity", "shower area", "wider angle showing layout"],
+        "path_template": "emily_af_28_yo/assets/location_refs/bathroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, modern apartment bathroom, white tile floor, white tile walls, single vanity, mirror with lighting, glass shower enclosure, organized toiletries, skincare products, towel rack, clean minimalist style, San Francisco apartment bathroom, detailed interior",
+      "negative_prompt": "photorealistic, photo, low quality, dirty, old, luxury bathroom, bathtub, double vanity, large bathroom",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain clean modern apartment bathroom feel"
+      },
+      "vocabulary_items": ["sink", "vanity", "mirror", "faucet", "shower", "glass door", "tile", "towel", "towel rack", "toiletries", "skincare products", "moisturizer", "toner", "face wash", "toothbrush", "electric toothbrush", "toothpaste", "hairbrush"]
+    },
+    {
+      "location_id": "kitchen",
+      "name": "Emily's Apartment Kitchen",
+      "description": "Open-concept apartment kitchen connected to living area. Modern white cabinets with simple hardware. Gas stove and standard appliances. Small breakfast bar with two stools. Drip coffee maker on counter. Good natural light from window. Some plants on windowsill. Shared cooking space with roommate's items visible.",
+      "key_features": [
+        "white cabinets with simple hardware",
+        "gas stove",
+        "standard stainless steel appliances",
+        "breakfast bar with two stools",
+        "drip coffee maker",
+        "window with natural light",
+        "plants on windowsill",
+        "open to living area"
+      ],
+      "lighting_conditions": {
+        "morning": "bright natural light through window, overhead light on",
+        "evening": "overhead lights, warm kitchen atmosphere"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["view toward stove and counter", "breakfast bar and stools", "sink and window area"],
+        "path_template": "emily_af_28_yo/assets/location_refs/kitchen_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, modern apartment kitchen, open concept, white cabinets, gas stove, stainless steel appliances, breakfast bar, two stools, drip coffee maker, window with plants, natural light, San Francisco apartment kitchen, young professional home, detailed interior",
+      "negative_prompt": "photorealistic, photo, low quality, old kitchen, cramped, dark, dirty, luxury kitchen, large kitchen, island",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain modern urban apartment kitchen feel"
+      },
+      "vocabulary_items": ["refrigerator", "stove", "oven", "gas burner", "range hood", "cabinet", "counter", "breakfast bar", "stool", "sink", "faucet", "coffee maker", "wok", "pan", "spatula", "cutting board", "knife", "bowl", "plate", "mug", "glass", "groceries", "vegetables"]
+    }
+  ],
+  "generation_settings": {
+    "model": "Animagine XL 3.1 or equivalent anime SDXL model",
+    "resolution": "1024x768 (landscape) or 768x1024 (portrait)",
+    "steps": 30,
+    "cfg_scale": 7,
+    "sampler": "DPM++ 2M Karras",
+    "seed": "random",
+    "batch_size": 1,
+    "notes": "Generate 3 reference images per location with slight angle variations"
+  },
+  "usage_instructions": {
+    "step_1": "Generate location reference images using prompts above",
+    "step_2": "Review and select best images for each location",
+    "step_3": "Save with naming convention: {location}_{number}.png",
+    "step_4": "Use selected references with IP-Adapter during scene generation",
+    "step_5": "Maintain consistency by using same references for all scenes in that location"
+  },
+  "notes": {
+    "approach": "AI-generated references instead of 3D modeling",
+    "rationale": "Faster iteration, focus on San Francisco apartment aesthetic for young tech professional",
+    "cultural_elements": "Modern minimalist style, plants, shared living space, urban apartment life",
+    "character_home_style": "Young professional renter, IKEA-style furniture, organized but lived-in"
+  }
+}

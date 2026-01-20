@@ -1,0 +1,165 @@
+{
+  "character": {
+    "name": "Emily",
+    "full_name": "Emily Chen",
+    "age": 28,
+    "gender": "female",
+    "ethnicity": "Asian American (Chinese American)",
+    "appearance": {
+      "skin": "light tan/olive complexion",
+      "hair": "long straight black hair, usually in ponytail or bun",
+      "build": "slim, petite (5'4\")",
+      "eyes": "dark brown eyes",
+      "glasses": "blue light blocking glasses with rectangular frames",
+      "distinguishing_features": "often wears Stanford or tech company sweatshirt"
+    },
+    "occupation": "Software Engineer at a Series B tech startup in SoMa, San Francisco",
+    "living_situation": "Two-bedroom apartment in Mission District shared with roommate Sarah",
+    "transportation": "Bicycle (teal single-speed with basket), BART on rainy days",
+    "style": {
+      "work": "Casual tech - jeans, blouse or company hoodie, sneakers",
+      "home_casual": "Yoga pants, oversized sweatshirt, fuzzy socks",
+      "sleep": "Soft sleep pants and sleep shirt",
+      "exercise": "Running clothes or yoga attire"
+    },
+    "background": {
+      "education": "Stanford University, Computer Science",
+      "parents": "Live in Sunnyvale, visits on weekends",
+      "hobbies": "Yoga, hiking, cooking Asian fusion, reading",
+      "languages": "English, Mandarin (conversational)"
+    }
+  },
+  "prompt_templates": {
+    "base_character": "1girl, young Asian woman, 28 years old, light tan skin, long straight black hair, dark brown eyes, glasses with rectangular frames, slim petite build, anime style, detailed",
+    "morning_appearance": "1girl, young Asian woman, long black hair messy, dark brown eyes, sleepy expression, wearing sleep shirt, anime style",
+    "work_appearance": "1girl, young Asian woman, long black hair in ponytail, glasses, wearing casual blouse and jeans, professional but casual, anime style",
+    "casual_attire": "1girl, young Asian woman, long black hair in ponytail, glasses, wearing oversized sweatshirt and yoga pants, relaxed, anime style",
+    "exercise_attire": "1girl, young Asian woman, long black hair in high ponytail, glasses, wearing running clothes or yoga attire, athletic, anime style",
+    "evening_appearance": "1girl, young Asian woman, long black hair loose, no glasses, wearing pajamas, relaxed expression, anime style"
+  },
+  "positive_prompts": {
+    "general": [
+      "anime style",
+      "high quality",
+      "detailed",
+      "masterpiece",
+      "best quality",
+      "vibrant colors",
+      "clean lines",
+      "sharp focus"
+    ],
+    "character_specific": [
+      "1girl",
+      "young woman",
+      "Asian",
+      "Chinese American",
+      "light tan skin",
+      "long black hair",
+      "straight hair",
+      "dark brown eyes",
+      "glasses",
+      "rectangular frames",
+      "slim",
+      "petite",
+      "ponytail",
+      "professional"
+    ]
+  },
+  "negative_prompts": {
+    "general": [
+      "photorealistic",
+      "photo",
+      "realistic",
+      "3d render",
+      "low quality",
+      "blurry",
+      "distorted",
+      "deformed",
+      "disfigured",
+      "bad anatomy",
+      "bad proportions",
+      "watermark",
+      "text",
+      "signature",
+      "username",
+      "worst quality"
+    ],
+    "character_specific": [
+      "multiple girls",
+      "multiple people",
+      "crowd",
+      "1boy",
+      "male",
+      "child",
+      "elderly",
+      "white skin",
+      "pale skin",
+      "dark skin",
+      "short hair",
+      "blonde hair",
+      "curly hair",
+      "wavy hair",
+      "overweight",
+      "muscular"
+    ],
+    "quality_issues": [
+      "bad hands",
+      "deformed hands",
+      "extra fingers",
+      "missing fingers",
+      "bad face",
+      "deformed face",
+      "extra limbs",
+      "missing limbs",
+      "floating limbs"
+    ]
+  },
+  "lora_settings": {
+    "recommended_strength": 0.8,
+    "min_strength": 0.6,
+    "max_strength": 1.0,
+    "notes": "May need Asian female character LoRA. Search CivitAI for appropriate options. Adjust strength based on consistency results."
+  },
+  "reference_images": {
+    "strategy": "Use existing anime character LoRA from CivitAI for POC",
+    "alternative_1": "Generate 3-5 consistent anime images and use with IP-Adapter",
+    "alternative_2": "Train custom anime LoRA with 15-20 reference images",
+    "current_approach": "existing_lora",
+    "civitai_search_terms": [
+      "anime asian female character",
+      "Chinese American anime",
+      "glasses anime girl",
+      "office worker anime female",
+      "tech professional anime"
+    ]
+  },
+  "consistency_guidelines": {
+    "critical_features": [
+      "light tan/olive skin",
+      "long straight black hair",
+      "dark brown eyes",
+      "glasses with rectangular frames",
+      "slim petite build",
+      "age approximately 28"
+    ],
+    "flexible_features": [
+      "exact hair style (ponytail, bun, loose - as specified per scene)",
+      "clothing details (as specified per scene)",
+      "facial expression (focused, relaxed, happy)",
+      "body position (as specified per scene)"
+    ],
+    "avoid_variations": [
+      "Different skin tones (too pale or too dark)",
+      "Short or curly hair",
+      "Different eye colors",
+      "Older or younger appearance",
+      "Overweight or muscular build",
+      "No glasses (except sleeping scenes)"
+    ]
+  },
+  "notes": {
+    "educational_context": "This character represents a young Asian American professional in the tech industry. Shows apartment living, bicycle commuting, tech workplace culture, and maintaining cultural connections.",
+    "cultural_context": "San Francisco Bay Area lifestyle, Chinese American heritage, tech industry culture, urban apartment living, health-conscious lifestyle",
+    "pedagogical_goal": "Help learners see diverse representation while learning vocabulary through a relatable young professional's daily activities including tech work, cooking, fitness, and social life"
+  }
+}

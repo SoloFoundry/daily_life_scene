@@ -1,0 +1,139 @@
+{
+  "metadata": {
+    "project": "Daily Life Visual Vocabulary Generator",
+    "character": "Andrés",
+    "phase": "POC",
+    "total_locations": 3,
+    "location_type": "AI-generated references",
+    "created": "2026-01-19"
+  },
+  "locations": [
+    {
+      "location_id": "bedroom",
+      "name": "Andrés's Bedroom",
+      "description": "Simple apartment bedroom above the tienda. Double bed shared with wife. Basic furniture - wooden dresser, small closet. Ceiling fan for Medellín's climate. Small religious picture above bed. Tile floor. Curtains on window. Modest but comfortable family bedroom.",
+      "key_features": [
+        "double bed with simple bedding",
+        "ceiling fan",
+        "wooden dresser",
+        "small closet",
+        "religious picture above bed",
+        "tile floor",
+        "curtains",
+        "nightstand with phone/alarm"
+      ],
+      "lighting_conditions": {
+        "early_morning": "dark, only phone glow, wife sleeping",
+        "morning": "natural light through curtains",
+        "evening": "overhead light or lamp"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["wide shot showing bed and dresser", "angle with ceiling fan visible", "closet and window view"],
+        "path_template": "andres_lm_42_yo/assets/location_refs/bedroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, simple apartment bedroom, double bed, basic wooden furniture, ceiling fan, small religious picture above bed, tile floor, curtains, Colombian family home above store, modest but comfortable, detailed interior",
+      "negative_prompt": "photorealistic, photo, low quality, luxury bedroom, large room, modern minimalist, carpet floor, no religious items",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain simple Colombian apartment aesthetic"
+      },
+      "vocabulary_items": ["bed", "pillow", "blanket", "sheets", "dresser", "closet", "ceiling fan", "nightstand", "alarm", "phone", "religious picture", "tile floor", "curtains"]
+    },
+    {
+      "location_id": "bathroom",
+      "name": "Andrés's Bathroom",
+      "description": "Practical family bathroom in the apartment. Single sink with basic vanity and mirror. Shower (no tub). White tile walls and floor. Basic toiletries. Medicine cabinet. Clean and functional, nothing fancy.",
+      "key_features": [
+        "single sink with basic vanity",
+        "mirror",
+        "shower stall (no tub)",
+        "white tiles",
+        "medicine cabinet",
+        "basic toiletries",
+        "toilet",
+        "towel bar"
+      ],
+      "lighting_conditions": {
+        "morning": "overhead light for morning routine",
+        "evening": "same overhead light"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["facing mirror and sink", "shower area", "wider angle"],
+        "path_template": "andres_lm_42_yo/assets/location_refs/bathroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, practical family bathroom, single sink, basic vanity, mirror, shower stall, white tiles, medicine cabinet, towel bar, simple Colombian apartment bathroom, clean functional, detailed interior",
+      "negative_prompt": "photorealistic, photo, low quality, luxury bathroom, bathtub, fancy fixtures, dirty, old run down",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain simple practical bathroom feel"
+      },
+      "vocabulary_items": ["sink", "mirror", "faucet", "shower", "towel", "towel bar", "toilet", "tile", "medicine cabinet", "toothbrush", "razor", "shaving cream", "soap", "shampoo"]
+    },
+    {
+      "location_id": "kitchen",
+      "name": "Andrés's Kitchen",
+      "description": "Small apartment kitchen with colorful Colombian tiles. Gas stove for cooking. Basic refrigerator. Open shelving with pots and dishes. Small dining table nearby or connected. Window for ventilation. Traditional Colombian cooking setup with cloth coffee strainer visible.",
+      "key_features": [
+        "colorful Colombian tile backsplash",
+        "gas stove",
+        "basic refrigerator",
+        "open shelving with pots/dishes",
+        "small dining table",
+        "window",
+        "cloth coffee strainer (manga)",
+        "compact but functional"
+      ],
+      "lighting_conditions": {
+        "early_morning": "overhead light, dark outside",
+        "daytime": "natural light through window",
+        "evening": "overhead light"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["view toward stove and tiles", "dining table area", "coffee preparation corner"],
+        "path_template": "andres_lm_42_yo/assets/location_refs/kitchen_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, small Colombian apartment kitchen, colorful tile backsplash, gas stove, basic refrigerator, open shelving, pots and dishes, small dining table, window, cloth coffee strainer, compact functional kitchen, Medellín family home, detailed interior",
+      "negative_prompt": "photorealistic, photo, low quality, large modern kitchen, stainless steel appliances, island, luxury kitchen, restaurant",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain traditional Colombian apartment kitchen feel"
+      },
+      "vocabulary_items": ["stove", "gas burner", "refrigerator", "pot", "pan", "dishes", "plates", "cups", "shelf", "table", "chair", "coffee", "tinto", "arepa", "rice", "beans", "eggs", "knife", "cutting board"]
+    }
+  ],
+  "generation_settings": {
+    "model": "Animagine XL 3.1 or equivalent anime SDXL model",
+    "resolution": "1024x768 (landscape) or 768x1024 (portrait)",
+    "steps": 30,
+    "cfg_scale": 7,
+    "sampler": "DPM++ 2M Karras",
+    "seed": "random",
+    "batch_size": 1,
+    "notes": "Generate 3 reference images per location with slight angle variations"
+  },
+  "usage_instructions": {
+    "step_1": "Generate location reference images using prompts above",
+    "step_2": "Review and select best images for each location",
+    "step_3": "Save with naming convention: {location}_{number}.png",
+    "step_4": "Use selected references with IP-Adapter during scene generation",
+    "step_5": "Maintain consistency by using same references for all scenes in that location"
+  },
+  "notes": {
+    "approach": "AI-generated references instead of 3D modeling",
+    "rationale": "Faster iteration, focus on typical Colombian apartment-above-store aesthetic",
+    "cultural_elements": "Colorful tiles, ceiling fans, religious items, traditional coffee preparation, modest family living",
+    "character_home_style": "Tienda owner family, apartment connected to store, practical comfortable, Colombian working-class aesthetic"
+  }
+}

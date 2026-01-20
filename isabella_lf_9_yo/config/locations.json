@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "project": "Daily Life Visual Vocabulary Generator",
+    "character": "Isabella",
+    "phase": "POC",
+    "total_locations": 3,
+    "location_type": "AI-generated references",
+    "created": "2026-01-19"
+  },
+  "locations": [
+    {
+      "location_id": "bedroom",
+      "name": "Isabella's Bedroom",
+      "description": "A 9-year-old girl's bedroom in Cartagena, Colombia. Pink and purple walls, small bed with pink butterfly comforter, stuffed animals (teddy bear, unicorn), cartoon character posters, small desk with school supplies, bookshelf with children's books, small vanity with mirror and hair accessories, tile floor with colorful rug. Cheerful, child-appropriate space.",
+      "key_features": [
+        "small bed with pink butterfly comforter",
+        "stuffed animals (teddy bear, unicorn)",
+        "pink and purple walls",
+        "cartoon character posters",
+        "small desk with school supplies",
+        "bookshelf with children's books",
+        "small vanity with mirror",
+        "basket of hair ribbons and accessories",
+        "tile floor with colorful rug",
+        "window with floral curtains",
+        "night light"
+      ],
+      "lighting_conditions": {
+        "morning": "soft morning light through floral curtains",
+        "afternoon": "bright natural light",
+        "evening": "warm lamp light, night light glow"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["wide shot showing bed and desk", "vanity and bookshelf area", "bed with stuffed animals"],
+        "path_template": "isabella_lf_9_yo/assets/location_refs/bedroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, 9-year-old girl's bedroom, small bed with pink butterfly comforter, stuffed animals on bed (teddy bear, unicorn), pink and purple walls, cartoon posters, small desk with school supplies, bookshelf with children's books, small vanity with mirror, colorful rug on tile floor, cheerful child's room, Cartagena Colombia style",
+      "negative_prompt": "photorealistic, photo, low quality, adult bedroom, teenager room, messy, dark colors, scary, inappropriate content",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain cheerful, child-appropriate bedroom atmosphere"
+      },
+      "vocabulary_items": ["bed", "comforter", "pillow", "stuffed animal", "teddy bear", "unicorn", "poster", "desk", "bookshelf", "vanity", "mirror", "ribbon", "rug", "curtain", "lamp"]
+    },
+    {
+      "location_id": "bathroom",
+      "name": "Family Bathroom",
+      "description": "Family bathroom used by Isabella. White tile, single sink, toilet, bathtub with shower curtain. Child-friendly elements: plastic step stool for reaching sink, colorful towel with cartoon characters, children's toothbrush, kid-friendly toiletries. Bright and clean.",
+      "key_features": [
+        "white tile floor and walls",
+        "single sink with cabinet",
+        "mirror above sink",
+        "toilet",
+        "bathtub with colorful shower curtain",
+        "pink plastic step stool",
+        "colorful towel with cartoon characters",
+        "children's toothbrush (pink)",
+        "kid's toothpaste",
+        "bath toys (rubber duck)"
+      ],
+      "lighting_conditions": {
+        "morning": "bright fluorescent bathroom light",
+        "evening": "same bright light for bath time"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["facing mirror and sink with step stool", "bathtub area with toys", "wide shot of bathroom"],
+        "path_template": "isabella_lf_9_yo/assets/location_refs/bathroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, family bathroom, white tile, single sink, pink plastic step stool for child to reach, mirror, colorful cartoon character towel, children's toothbrush in cup, bathtub with colorful shower curtain, bath toys visible, clean and bright, kid-friendly bathroom",
+      "negative_prompt": "photorealistic, photo, low quality, dirty bathroom, luxury bathroom, adult-only items, dark, scary",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain family bathroom with child-friendly elements"
+      },
+      "vocabulary_items": ["sink", "faucet", "mirror", "toilet", "bathtub", "shower curtain", "towel", "step stool", "toothbrush", "toothpaste", "soap", "bath toys", "rubber duck"]
+    },
+    {
+      "location_id": "kitchen",
+      "name": "Family Kitchen",
+      "description": "Family kitchen in Cartagena home. Yellow walls (typical Caribbean Colombia colorful style), wooden cabinets, gas stove, refrigerator, kitchen table with chairs for family meals. Warm, welcoming family space. Traditional Colombian kitchen elements.",
+      "key_features": [
+        "yellow walls (Cartagena colorful style)",
+        "wooden cabinets",
+        "gas stove",
+        "refrigerator",
+        "round kitchen table with chairs (seats 4-5)",
+        "tile floor",
+        "window with view",
+        "colorful dishes",
+        "fruit bowl",
+        "step stool for Isabella to help"
+      ],
+      "lighting_conditions": {
+        "morning": "bright natural light through window",
+        "afternoon": "warm afternoon light",
+        "evening": "overhead kitchen light, warm glow"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["view toward stove and refrigerator", "kitchen table area", "sink and window view"],
+        "path_template": "isabella_lf_9_yo/assets/location_refs/kitchen_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, Colombian family kitchen, bright yellow walls, wooden cabinets, gas stove, refrigerator, round kitchen table with chairs, tile floor, window with bright light, colorful dishes, fruit bowl, warm welcoming family kitchen, Cartagena Colombia Caribbean style, cheerful atmosphere",
+      "negative_prompt": "photorealistic, photo, low quality, dark kitchen, old dirty kitchen, American style, gray walls, industrial",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain warm, colorful Colombian Caribbean kitchen style"
+      },
+      "vocabulary_items": ["stove", "refrigerator", "table", "chair", "cabinet", "sink", "faucet", "window", "plate", "cup", "fork", "spoon", "knife", "bowl", "fruit"]
+    }
+  ],
+  "generation_settings": {
+    "model": "Animagine XL 3.1 or equivalent anime SDXL model",
+    "resolution": "1024x768 (landscape) or 768x1024 (portrait)",
+    "steps": 30,
+    "cfg_scale": 7,
+    "sampler": "DPM++ 2M Karras",
+    "seed": "random",
+    "batch_size": 1,
+    "notes": "Generate 3 reference images per location. Ensure all locations are cheerful, child-appropriate, and reflect Colombian Caribbean colorful style."
+  },
+  "usage_instructions": {
+    "step_1": "Generate location reference images using prompts above",
+    "step_2": "Review and select best images for each location",
+    "step_3": "Save with naming convention: {location}_{number}.png",
+    "step_4": "Use selected references with IP-Adapter during scene generation",
+    "step_5": "Maintain consistency by using same references for all scenes in that location"
+  },
+  "notes": {
+    "approach": "AI-generated references instead of 3D modeling",
+    "rationale": "Capture Colombian Caribbean home style with child-friendly elements",
+    "cultural_elements": "Colorful walls typical of Cartagena, tile floors, warm family atmosphere",
+    "character_home_style": "Middle-class, colorful, child-friendly, multigenerational household"
+  }
+}

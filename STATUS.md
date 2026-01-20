@@ -1,7 +1,7 @@
 # Project Status - Daily Life Visual Vocabulary Generator
 
-**Last Updated:** 2026-01-17
-**Phase:** POC Setup
+**Last Updated:** 2026-01-19
+**Phase:** POC Setup - Multi-Character Expansion Complete
 **Started:** 2026-01-17
 
 ---
@@ -98,57 +98,124 @@
 
 ### Character Templates Created
 
-**Matt (Primary Character):**
+**Total Characters: 10** (2 original + 8 new)
+
+#### United States Characters (5)
+
+**Matt (Original Primary Character):**
 - **Directory:** matt_wm_25_yo/
-- **File:** matt_wm_25_yo/matt_daily_life_scenes.md
 - **Profile:** 30-year-old American white male, office professional
+- **Location:** American suburban
 - **Scenes:** ~308 total (15 selected for POC)
-- **Culture:** American suburban, solo apartment living
-- **Daily Routine:** Office work, commute by car
-- **POC Config:** ✅ Complete (matt_wm_25_yo/config/scenes_poc.json, character_profile.json, locations.json)
+- **POC Config:** ✅ Complete
 - **Images Path:** matt_wm_25_yo/images/{poc,full}/
 
-**Catalina (Second Character):**
+**Marcus (Firefighter):**
+- **Directory:** marcus_am_45_yo/
+- **Profile:** 45-year-old African American male, Chicago firefighter
+- **Location:** Chicago suburb (Oak Park area)
+- **Scenes:** ~218 total (15 selected for POC)
+- **POC Config:** ✅ Complete
+- **Key Features:** Firefighter profession, family with teens, suburban family home
+
+**Tyler (High School Student):**
+- **Directory:** tyler_wm_16_yo/
+- **Profile:** 16-year-old white male, high school student
+- **Location:** Small town, Ohio
+- **Scenes:** ~151 total (15 selected for POC)
+- **POC Config:** ✅ Complete
+- **Key Features:** Teen life, school bus, homework, sports
+
+**Emily (Software Engineer):**
+- **Directory:** emily_af_28_yo/
+- **Profile:** 28-year-old Asian American female, software engineer
+- **Location:** San Francisco, CA (Mission District)
+- **Scenes:** ~94 total (15 selected for POC)
+- **POC Config:** ✅ Complete
+- **Key Features:** Tech startup, bike commute, apartment with roommate, Asian cooking
+
+**Rosa (Hospital Nurse):**
+- **Directory:** rosa_hf_55_yo/
+- **Profile:** 55-year-old Mexican American female, registered nurse
+- **Location:** Houston, TX (Pasadena suburb)
+- **Scenes:** ~55 total (15 selected for POC)
+- **POC Config:** ✅ Complete
+- **Key Features:** 12-hour shifts, multigenerational home, Catholic faith, Mexican American culture
+
+#### Colombia Characters (5)
+
+**Catalina (Original Second Character):**
 - **Directory:** catalina_lf_21_yo/
-- **File:** catalina_lf_21_yo/catalina_daily_life_scenes.md
 - **Profile:** 21-year-old Colombian female university student
-- **Scenes:** ~103 detailed scenes created (template for ~280 total)
-- **Culture:** Colombian/Latin American, family home in Bogotá
-- **Daily Routine:** University classes, public transit (TransMilenio), family dynamics
-- **POC Config:** ❌ Not yet created (will follow Matt's template once approach is validated)
-- **Images Path:** catalina_lf_21_yo/images/{poc,full}/
-- **Key Differences:**
-  - Gender (female vs male)
-  - Age group (student vs professional)
-  - Cultural context (Colombian vs American)
-  - Living situation (family home vs solo apartment)
-  - Transportation (public transit vs car)
-  - Bilingual vocabulary (Spanish-English)
+- **Location:** Bogotá, Colombia
+- **Scenes:** ~103 detailed scenes
+- **POC Config:** ❌ Not yet created
+- **Key Features:** University life, TransMilenio transit, family home
+
+**Jorge (Coffee Farmer):**
+- **Directory:** jorge_lm_67_yo/
+- **Profile:** 67-year-old Colombian male, coffee farmer
+- **Location:** Rural Quindío (coffee region)
+- **Scenes:** ~97 total (15 selected for POC)
+- **POC Config:** ✅ Complete
+- **Key Features:** Coffee cultivation, traditional finca, rural Colombian life
+
+**Isabella (Elementary Student):**
+- **Directory:** isabella_lf_9_yo/
+- **Profile:** 9-year-old Colombian female, elementary student
+- **Location:** Cartagena, Colombia
+- **Scenes:** ~94 total (15 selected for POC)
+- **POC Config:** ✅ Complete
+- **Key Features:** School uniform, Caribbean coastal culture, family life
+
+**Valentina (Doctor):**
+- **Directory:** valentina_lf_34_yo/
+- **Profile:** 34-year-old Colombian female, general practitioner
+- **Location:** Cali, Colombia
+- **Scenes:** ~62 total (15 selected for POC)
+- **POC Config:** ✅ Complete
+- **Key Features:** Hospital and private clinic, morning running, salsa dancing
+
+**Andrés (Tienda Owner):**
+- **Directory:** andres_lm_42_yo/
+- **Profile:** 42-year-old Colombian male, neighborhood tienda owner
+- **Location:** Medellín, Colombia (Laureles)
+- **Scenes:** ~44 total (15 selected for POC)
+- **POC Config:** ✅ Complete
+- **Key Features:** Small business, apartment above store, community pillar
 
 ### Multi-Character Strategy
 
 **Approach:**
 1. Validate image generation approach with Matt's POC (15 images)
-2. If successful, create Catalina's POC config (15 images from her scenes)
-3. Generate both character sets (308 Matt + ~280 Catalina = ~588 total images)
-4. Can expand to additional characters using same template approach
+2. If successful, expand to other characters
+3. All 10 characters now have POC configs ready (except Catalina)
+4. Total potential images: ~1,500+ across all characters
+
+**Character Demographics Summary:**
+- **Age range:** 9 to 67 years old
+- **Genders:** 5 male, 5 female
+- **Ethnicities:** White American, African American, Asian American, Mexican American, Colombian
+- **Professions:** Office worker, firefighter, student (high school, elementary, university), software engineer, nurse, doctor, coffee farmer, tienda owner
+- **Countries:** 5 USA, 5 Colombia
 
 **Scalability:**
 - ✅ Template structure supports unlimited characters
-- ✅ Each character gets their own directory: {name}_{gender}_{age}_yo/
+- ✅ Each character gets their own directory: {name}_{ethnicity_gender}_{age}_yo/
 - ✅ Each character gets their own scenes markdown file
 - ✅ Each character gets their own config files (character_profile.json, scenes_poc.json, locations.json)
 - ✅ Each character gets their own assets directory (location_refs, character_refs, lora_weights)
 - ✅ Each character gets their own images directory (images/{poc,full})
 - ✅ Each character gets their own LoRA model for consistency
 - ✅ Same automation pipeline works for all characters
-- ✅ Can generate different cultures, ages, genders, professions, living situations
+- ✅ 8 new characters created with complete POC configs (2026-01-19)
 
 **Benefits:**
 - Diverse representation in educational materials
 - Multiple cultural contexts for ESL learners
 - Different vocabulary sets based on character lifestyle
-- Bilingual/multilingual vocabulary support
+- Age-appropriate content for different learner groups
+- Professional, student, and everyday life vocabulary
 
 ---
 
@@ -156,23 +223,27 @@
 
 ### Character Files
 
-**Matt (matt_wm_25_yo/):**
-| File | Created | Last Updated | Status |
-|------|---------|--------------|--------|
-| matt_daily_life_scenes.md | ✅ Yes | 2026-01-17 | **~308 scenes** |
-| config/scenes_poc.json | ✅ Yes | 2026-01-17 | **15 POC scenes** |
-| config/character_profile.json | ✅ Yes | 2026-01-17 | **Matt's profile** |
-| config/locations.json | ✅ Yes | 2026-01-17 | **3 POC locations** |
-| config/scenes_full.json | ❌ No | N/A | Future work (308 scenes) |
+**US Characters (5):**
 
-**Catalina (catalina_lf_21_yo/):**
-| File | Created | Last Updated | Status |
-|------|---------|--------------|--------|
-| catalina_daily_life_scenes.md | ✅ Yes | 2026-01-17 | **~103 detailed scenes (template for ~280)** |
-| config/scenes_poc.json | ❌ No | N/A | Future work (15 POC scenes) |
-| config/character_profile.json | ❌ No | N/A | Future work |
-| config/locations.json | ❌ No | N/A | Future work |
-| config/scenes_full.json | ❌ No | N/A | Future work (~280 scenes) |
+| Character | Directory | Scenes MD | scenes_poc.json | character_profile.json | locations.json |
+|-----------|-----------|-----------|-----------------|----------------------|----------------|
+| Matt | matt_wm_25_yo/ | ✅ ~308 | ✅ 15 | ✅ | ✅ |
+| Marcus | marcus_am_45_yo/ | ✅ ~218 | ✅ 15 | ✅ | ✅ |
+| Tyler | tyler_wm_16_yo/ | ✅ ~151 | ✅ 15 | ✅ | ✅ |
+| Emily | emily_af_28_yo/ | ✅ ~94 | ✅ 15 | ✅ | ✅ |
+| Rosa | rosa_hf_55_yo/ | ✅ ~55 | ✅ 15 | ✅ | ✅ |
+
+**Colombia Characters (5):**
+
+| Character | Directory | Scenes MD | scenes_poc.json | character_profile.json | locations.json |
+|-----------|-----------|-----------|-----------------|----------------------|----------------|
+| Catalina | catalina_lf_21_yo/ | ✅ ~103 | ❌ | ❌ | ❌ |
+| Jorge | jorge_lm_67_yo/ | ✅ ~97 | ✅ 15 | ✅ | ✅ |
+| Isabella | isabella_lf_9_yo/ | ✅ ~94 | ✅ 15 | ✅ | ✅ |
+| Valentina | valentina_lf_34_yo/ | ✅ ~62 | ✅ 15 | ✅ | ✅ |
+| Andrés | andres_lm_42_yo/ | ✅ ~44 | ✅ 15 | ✅ | ✅ |
+
+**Total:** 9/10 characters have complete POC configs
 
 ### Scripts
 
@@ -404,11 +475,37 @@
 - Generate location references for Matt's POC (matt_wm_25_yo/assets/location_refs/)
 - Download character LoRA from CivitAI
 - Begin ComfyUI workflow testing
-- Decide whether to create POC configs for Catalina or focus on Matt first
+
+**2026-01-19 - Multi-Character Expansion Complete**
+- ✅ Created 8 new character directories with full structure
+- ✅ **Marcus (marcus_am_45_yo/):** African American firefighter, 45, Chicago - 218 scenes, complete POC config
+- ✅ **Tyler (tyler_wm_16_yo/):** White male high school student, 16, Ohio - 151 scenes, complete POC config
+- ✅ **Emily (emily_af_28_yo/):** Asian American software engineer, 28, San Francisco - 94 scenes, complete POC config
+- ✅ **Rosa (rosa_hf_55_yo/):** Mexican American nurse, 55, Houston - 55 scenes, complete POC config
+- ✅ **Jorge (jorge_lm_67_yo/):** Colombian coffee farmer, 67, Quindío - 97 scenes, complete POC config
+- ✅ **Isabella (isabella_lf_9_yo/):** Colombian elementary student, 9, Cartagena - 94 scenes, complete POC config
+- ✅ **Valentina (valentina_lf_34_yo/):** Colombian doctor, 34, Cali - 62 scenes, complete POC config
+- ✅ **Andrés (andres_lm_42_yo/):** Colombian tienda owner, 42, Medellín - 44 scenes, complete POC config
+
+**Character creation summary:**
+- All 8 new characters have daily_life_scenes.md with detailed scene descriptions
+- All 8 new characters have config/character_profile.json with appearance and prompts
+- All 8 new characters have config/locations.json with 3 POC locations each
+- All 8 new characters have config/scenes_poc.json with 15 POC scenes each
+- Project now has 10 total characters (5 USA, 5 Colombia)
+- Total estimated scenes: ~1,300+ across all characters
+- Total POC scenes ready for generation: 135 (9 characters × 15 scenes)
+
+**Next steps:**
+- Generate Matt's POC images first to validate workflow
+- If successful, can generate POC for any of the 9 ready characters
+- Create Catalina's POC configs (only remaining character without POC config)
 
 ### Learnings
 
-- TBD (will be filled as we progress)
+- Character diversity requires careful cultural research and authentic representation
+- Each character benefits from unique vocabulary tied to their profession/lifestyle
+- Age-appropriate scenes are important (Isabella's child-friendly content, Tyler's teen life)
 
 ### Improvements for Next Time
 
@@ -416,4 +513,4 @@
 
 ---
 
-**End of STATUS.md** - Updated 2026-01-17
+**End of STATUS.md** - Updated 2026-01-19

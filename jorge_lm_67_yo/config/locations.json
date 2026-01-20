@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "project": "Daily Life Visual Vocabulary Generator",
+    "character": "Jorge",
+    "phase": "POC",
+    "total_locations": 3,
+    "location_type": "AI-generated references",
+    "created": "2026-01-19"
+  },
+  "locations": [
+    {
+      "location_id": "bedroom",
+      "name": "Jorge's Bedroom",
+      "description": "Simple bedroom in a traditional Colombian finca. Wooden bed frame with white sheets and colorful hand-woven blanket (cobija). White-washed walls with religious images (Virgin Mary). Wooden wardrobe, chair with clothes, small mirror. Tile floor. Small window with view of mountains. Rustic but clean and dignified.",
+      "key_features": [
+        "simple wooden bed",
+        "white sheets",
+        "colorful woven blanket (cobija)",
+        "white-washed walls",
+        "religious images (Virgin Mary, cross)",
+        "wooden wardrobe",
+        "chair",
+        "small mirror",
+        "tile floor",
+        "small home altar",
+        "window with mountain view"
+      ],
+      "lighting_conditions": {
+        "pre_dawn": "dark, first hint of dawn through window",
+        "morning": "soft morning light through window",
+        "evening": "warm lamp light, dim"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["wide shot showing bed and altar", "bed and window view", "wardrobe and altar area"],
+        "path_template": "jorge_lm_67_yo/assets/location_refs/bedroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, simple rural Colombian bedroom, wooden bed frame, white sheets, colorful woven blanket, white-washed walls, religious images on wall (Virgin Mary), wooden wardrobe, small altar with candle and statue, tile floor, rustic farmhouse bedroom, traditional finca interior, Quindio Colombia",
+      "negative_prompt": "photorealistic, photo, low quality, modern bedroom, luxury, urban apartment, carpet, large room",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain traditional rural Colombian farmhouse feel"
+      },
+      "vocabulary_items": ["bed", "blanket", "cobija", "pillow", "wardrobe", "mirror", "altar", "candle", "Virgin Mary", "cross", "tile floor", "window"]
+    },
+    {
+      "location_id": "kitchen",
+      "name": "Jorge's Farmhouse Kitchen",
+      "description": "Traditional Colombian farmhouse kitchen. Wood-burning stove (fogón de leña), simple wooden counter and table. Pots and pans hanging on walls. Small modern refrigerator. Shelves with dishes. Window overlooking coffee plantation and mountains in distance. Warm, functional, traditional.",
+      "key_features": [
+        "wood-burning stove (fogón de leña)",
+        "wooden counter",
+        "wooden table with chairs",
+        "pots and pans on walls",
+        "small refrigerator",
+        "shelves with dishes",
+        "window with plantation view",
+        "colador (cloth coffee filter)",
+        "metal coffee pot",
+        "firewood stacked"
+      ],
+      "lighting_conditions": {
+        "early_morning": "dim, glow from stove coals, dawn light through window",
+        "morning": "bright natural light through window",
+        "evening": "single bulb light, warm glow from stove"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["view toward stove and window", "table and cooking area", "close-up stove and traditional items"],
+        "path_template": "jorge_lm_67_yo/assets/location_refs/kitchen_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, traditional Colombian farmhouse kitchen, wood-burning stove (fogón de leña), wooden counter and table, pots and pans hanging on walls, small refrigerator, dishes on shelves, window showing coffee plantation and mountains, firewood stacked, cloth coffee filter, rural finca kitchen, Quindio Colombia, warm atmosphere",
+      "negative_prompt": "photorealistic, photo, low quality, modern kitchen, stainless steel, granite counters, large kitchen, urban, American style",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain traditional Colombian rural kitchen with wood stove as focal point"
+      },
+      "vocabulary_items": ["stove", "fogón", "wood", "fire", "pot", "pan", "table", "chair", "counter", "refrigerator", "dishes", "window", "coffee filter", "colador"]
+    },
+    {
+      "location_id": "porch",
+      "name": "Farmhouse Porch (Corredor)",
+      "description": "Covered porch (corredor) of traditional Colombian finca. Wooden beams supporting tile roof overhang. Rocking chairs, hammock in corner. Potted flowers (geraniums, begonias). View of coffee plantation terraces, banana trees, and Andes mountains in misty distance. Classic Quindío coffee country scene.",
+      "key_features": [
+        "covered porch with wooden columns",
+        "tile roof overhang",
+        "wooden rocking chairs",
+        "hammock",
+        "potted flowers (geraniums, begonias)",
+        "view of coffee plantation",
+        "terraced hillsides",
+        "banana trees",
+        "mountains in distance",
+        "mist in morning/evening"
+      ],
+      "lighting_conditions": {
+        "early_morning": "soft dawn light, mist in valley, golden hour beginning",
+        "afternoon": "bright sun, clear view",
+        "evening": "golden sunset light on mountains, long shadows"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["wide shot showing porch and view", "close-up rocking chairs and hammock", "view focusing on plantation and mountains"],
+        "path_template": "jorge_lm_67_yo/assets/location_refs/porch_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, traditional Colombian farmhouse porch (corredor), covered porch with wooden columns, tile roof, wooden rocking chairs, hammock, potted colorful flowers, view of coffee plantation terraces, banana trees, Andes mountains in misty distance, classic Quindio coffee country, Eje Cafetero Colombia, beautiful landscape",
+      "negative_prompt": "photorealistic, photo, low quality, urban, modern architecture, flat land, no mountains, American style porch",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain iconic Colombian coffee region landscape view with mountains and terraces"
+      },
+      "vocabulary_items": ["porch", "corredor", "rocking chair", "hammock", "flowers", "pot", "column", "roof", "view", "mountains", "coffee plantation", "banana tree", "mist"]
+    }
+  ],
+  "generation_settings": {
+    "model": "Animagine XL 3.1 or equivalent anime SDXL model",
+    "resolution": "1024x768 (landscape) or 768x1024 (portrait)",
+    "steps": 30,
+    "cfg_scale": 7,
+    "sampler": "DPM++ 2M Karras",
+    "seed": "random",
+    "batch_size": 1,
+    "notes": "Generate 3 reference images per location with slight angle variations. Focus on capturing traditional Colombian coffee region aesthetic."
+  },
+  "usage_instructions": {
+    "step_1": "Generate location reference images using prompts above",
+    "step_2": "Review and select best images for each location",
+    "step_3": "Save with naming convention: {location}_{number}.png",
+    "step_4": "Use selected references with IP-Adapter during scene generation",
+    "step_5": "Maintain consistency by using same references for all scenes in that location"
+  },
+  "notes": {
+    "approach": "AI-generated references instead of 3D modeling",
+    "rationale": "Capture authentic Colombian coffee region aesthetic",
+    "cultural_elements": "Traditional finca architecture, Catholic imagery, colorful textiles, mountain landscape",
+    "character_home_style": "Rural, traditional, humble but dignified, working farm"
+  }
+}

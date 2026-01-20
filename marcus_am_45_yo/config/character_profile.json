@@ -1,0 +1,157 @@
+{
+  "character": {
+    "name": "Marcus",
+    "age": 45,
+    "gender": "male",
+    "ethnicity": "African American",
+    "appearance": {
+      "skin": "dark brown skin",
+      "hair": "short black hair with gray at temples",
+      "build": "athletic, muscular (firefighter fit)",
+      "facial_hair": "short well-groomed beard with gray specks",
+      "height": "tall (6'2\")",
+      "eyes": "warm brown eyes",
+      "distinguishing_features": "small scar on left shoulder (old work injury)"
+    },
+    "occupation": "Firefighter, Chicago Fire Department Station 51, 18 years of service",
+    "living_situation": "Two-story brick house in Chicago suburb (Oak Park area) with wife and two teenage children",
+    "car": "Black Ford F-150 pickup truck, 2021 model",
+    "style": {
+      "work": "CFD uniform (navy blue pants, department t-shirt or polo)",
+      "home_casual": "Jeans, t-shirts, hoodies, sneakers",
+      "sleep": "White t-shirt, gray sweatpants"
+    },
+    "family": {
+      "wife": "Denise (nurse, African American, long braids)",
+      "son": "Jaylen (17, high school student, basketball player)",
+      "daughter": "Kayla (14, middle school student, natural curly hair)"
+    }
+  },
+  "prompt_templates": {
+    "base_character": "1boy, middle-aged African American man, dark brown skin, short black hair with gray temples, short beard with gray, athletic muscular build, warm brown eyes, anime style, detailed",
+    "morning_appearance": "1boy, middle-aged African American man, dark brown skin, short black hair with gray, short beard, tired warm eyes, anime style, sleepy expression, wearing white t-shirt and gray sweatpants",
+    "casual_attire": "1boy, middle-aged African American man, dark brown skin, short black hair with gray temples, short groomed beard, athletic build, wearing navy blue hoodie and jeans, anime style",
+    "work_attire": "1boy, middle-aged African American man, dark brown skin, short black hair with gray, short beard, muscular build, wearing CFD firefighter uniform, navy blue pants, department shirt, anime style",
+    "evening_appearance": "1boy, middle-aged African American man, dark brown skin, short black hair with gray, short beard, relaxed expression, wearing gray t-shirt and sweatpants, anime style"
+  },
+  "positive_prompts": {
+    "general": [
+      "anime style",
+      "high quality",
+      "detailed",
+      "masterpiece",
+      "best quality",
+      "vibrant colors",
+      "clean lines",
+      "sharp focus"
+    ],
+    "character_specific": [
+      "1boy",
+      "middle-aged man",
+      "African American",
+      "dark brown skin",
+      "short black hair",
+      "gray temples",
+      "short beard",
+      "athletic build",
+      "muscular",
+      "warm expression",
+      "brown eyes"
+    ]
+  },
+  "negative_prompts": {
+    "general": [
+      "photorealistic",
+      "photo",
+      "realistic",
+      "3d render",
+      "low quality",
+      "blurry",
+      "distorted",
+      "deformed",
+      "disfigured",
+      "bad anatomy",
+      "bad proportions",
+      "watermark",
+      "text",
+      "signature",
+      "username",
+      "worst quality"
+    ],
+    "character_specific": [
+      "multiple boys",
+      "multiple people",
+      "crowd",
+      "1girl",
+      "female",
+      "child",
+      "young man",
+      "elderly",
+      "white skin",
+      "pale skin",
+      "light skin",
+      "long hair",
+      "bald",
+      "clean shaven",
+      "no beard"
+    ],
+    "quality_issues": [
+      "bad hands",
+      "deformed hands",
+      "extra fingers",
+      "missing fingers",
+      "bad face",
+      "deformed face",
+      "extra limbs",
+      "missing limbs",
+      "floating limbs"
+    ]
+  },
+  "lora_settings": {
+    "recommended_strength": 0.8,
+    "min_strength": 0.6,
+    "max_strength": 1.0,
+    "notes": "May need African American male character LoRA. Search CivitAI for appropriate options. Adjust strength based on consistency results."
+  },
+  "reference_images": {
+    "strategy": "Use existing anime character LoRA from CivitAI for POC",
+    "alternative_1": "Generate 3-5 consistent anime images and use with IP-Adapter",
+    "alternative_2": "Train custom anime LoRA with 15-20 reference images",
+    "current_approach": "existing_lora",
+    "civitai_search_terms": [
+      "anime black male character",
+      "African American anime",
+      "dark skin male anime",
+      "middle aged male anime",
+      "firefighter anime"
+    ]
+  },
+  "consistency_guidelines": {
+    "critical_features": [
+      "dark brown skin",
+      "short black hair with gray at temples",
+      "short well-groomed beard with gray specks",
+      "athletic/muscular build",
+      "age approximately 45",
+      "warm brown eyes"
+    ],
+    "flexible_features": [
+      "exact beard length (as long as short and groomed)",
+      "clothing details (as specified per scene)",
+      "facial expression (warm, kind, content)",
+      "body position (as specified per scene)"
+    ],
+    "avoid_variations": [
+      "Different skin tones",
+      "No beard or long beard",
+      "Different hair colors",
+      "Young appearance",
+      "Slim or overweight build"
+    ]
+  },
+  "notes": {
+    "educational_context": "This character represents an African American father and firefighter. Shows family life, first responder profession, and middle-aged male perspective.",
+    "cultural_context": "Chicago suburban lifestyle, African American family, firefighter community",
+    "pedagogical_goal": "Help learners see diverse representation while learning vocabulary through a relatable father figure's daily activities"
+  }
+}

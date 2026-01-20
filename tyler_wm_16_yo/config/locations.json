@@ -1,0 +1,144 @@
+{
+  "metadata": {
+    "project": "Daily Life Visual Vocabulary Generator",
+    "character": "Tyler",
+    "phase": "POC",
+    "total_locations": 3,
+    "location_type": "AI-generated references",
+    "created": "2026-01-19"
+  },
+  "locations": [
+    {
+      "location_id": "bedroom",
+      "name": "Tyler's Bedroom",
+      "description": "Typical American teenage boy's bedroom. Twin bed with navy blue comforter, walls covered with posters (sports teams, video games, bands). Desk with laptop, scattered homework, gaming headset. Messy but not filthy—clothes on floor, overflowing laundry basket. Basketball in corner. Tan carpet, window with blinds.",
+      "key_features": [
+        "twin bed with navy blue comforter",
+        "walls with posters (Ohio State Buckeyes, video games, bands)",
+        "desk with laptop and homework papers",
+        "gaming headset",
+        "messy floor with clothes",
+        "overflowing laundry basket",
+        "basketball in corner",
+        "tan carpet",
+        "window with blinds",
+        "backpack on floor"
+      ],
+      "lighting_conditions": {
+        "early_morning": "dark room, only phone screen glowing",
+        "morning": "bright light through opened blinds",
+        "evening": "desk lamp illumination, window showing dark sky"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["wide shot showing whole room", "desk area focus", "bed and window view"],
+        "path_template": "tyler_wm_16_yo/assets/location_refs/bedroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, teenage boy's bedroom, twin bed with navy blue comforter, walls covered with sports and video game posters, desk with laptop, messy floor with clothes, laundry basket, basketball in corner, tan carpet, typical American teen room, detailed interior",
+      "negative_prompt": "photorealistic, photo, low quality, clean organized room, adult bedroom, childish room, japanese style bedroom",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain typical teen room messy-but-livable atmosphere"
+      },
+      "vocabulary_items": ["bed", "comforter", "pillow", "desk", "laptop", "poster", "backpack", "clothes", "laundry basket", "basketball", "carpet", "window", "blinds", "lamp", "headset", "charger"]
+    },
+    {
+      "location_id": "bathroom",
+      "name": "Family Bathroom",
+      "description": "Standard American family bathroom shared by siblings. White tile floor, single vanity with sink, large mirror, toilet, bathtub with striped shower curtain. Two toothbrush holders (Tyler's blue, Emma's pink). Towels on bar. Clean but used. Typical suburban house bathroom.",
+      "key_features": [
+        "white tile floor",
+        "single vanity with sink",
+        "large mirror above sink",
+        "toilet",
+        "bathtub with striped shower curtain",
+        "two toothbrush holders (blue and pink)",
+        "towels on chrome bar",
+        "face wash bottle (Neutrogena)",
+        "toothpaste",
+        "deodorant"
+      ],
+      "lighting_conditions": {
+        "morning": "bright fluorescent bathroom light",
+        "evening": "same bright light for nighttime routine"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["facing mirror and sink", "showing bathtub area", "wide shot of full bathroom"],
+        "path_template": "tyler_wm_16_yo/assets/location_refs/bathroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, family bathroom, white tile floor, single vanity sink, large mirror, toilet, bathtub with striped shower curtain, two toothbrushes in holders (blue and pink), towels on bar, typical American suburban bathroom, bright lighting, detailed interior",
+      "negative_prompt": "photorealistic, photo, low quality, dirty bathroom, luxury bathroom, double vanity, modern minimalist",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain typical family bathroom feel, shared by siblings"
+      },
+      "vocabulary_items": ["sink", "faucet", "mirror", "toilet", "bathtub", "shower curtain", "towel", "towel bar", "toothbrush", "toothpaste", "face wash", "deodorant", "tile", "soap"]
+    },
+    {
+      "location_id": "kitchen",
+      "name": "Family Kitchen",
+      "description": "Modest American family kitchen with dining area. White cabinets, laminate counters, window over sink showing backyard. Round kitchen table with four chairs. Standard appliances: refrigerator, stove, microwave, coffee maker. Functional and clean but not fancy. Small-town family home kitchen.",
+      "key_features": [
+        "white cabinets",
+        "laminate countertops",
+        "window over sink (backyard view)",
+        "round kitchen table with four chairs",
+        "refrigerator",
+        "stove",
+        "microwave",
+        "coffee maker",
+        "fake flower centerpiece",
+        "family message board or calendar on wall"
+      ],
+      "lighting_conditions": {
+        "morning": "bright natural light through window, overhead light on",
+        "evening": "overhead kitchen light, darker outside window"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["view toward table and refrigerator", "stove and counter area", "sink and window view"],
+        "path_template": "tyler_wm_16_yo/assets/location_refs/kitchen_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, modest American family kitchen, white cabinets, laminate counters, window over sink, round kitchen table with four chairs, refrigerator, stove, microwave, coffee maker, fake flower centerpiece, typical suburban home kitchen, warm family atmosphere, detailed interior",
+      "negative_prompt": "photorealistic, photo, low quality, luxury kitchen, modern designer kitchen, granite counters, stainless steel everything, restaurant kitchen",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain modest family kitchen feel, not fancy but comfortable"
+      },
+      "vocabulary_items": ["refrigerator", "stove", "oven", "microwave", "coffee maker", "cabinet", "counter", "sink", "faucet", "table", "chair", "plate", "bowl", "cup", "glass", "fork", "knife", "spoon"]
+    }
+  ],
+  "generation_settings": {
+    "model": "Animagine XL 3.1 or equivalent anime SDXL model",
+    "resolution": "1024x768 (landscape) or 768x1024 (portrait)",
+    "steps": 30,
+    "cfg_scale": 7,
+    "sampler": "DPM++ 2M Karras",
+    "seed": "random",
+    "batch_size": 1,
+    "notes": "Generate 3 reference images per location with slight angle variations"
+  },
+  "usage_instructions": {
+    "step_1": "Generate location reference images using prompts above",
+    "step_2": "Review and select best images for each location",
+    "step_3": "Save with naming convention: {location}_{number}.png",
+    "step_4": "Use selected references with IP-Adapter during scene generation",
+    "step_5": "Maintain consistency by using same references for all scenes in that location"
+  },
+  "notes": {
+    "approach": "AI-generated references instead of 3D modeling",
+    "rationale": "Faster iteration, focus on typical American teen home aesthetic",
+    "cultural_elements": "Small-town Ohio, modest middle-class home, family-oriented",
+    "character_home_style": "Middle-class suburban, functional, comfortable but not luxurious"
+  }
+}

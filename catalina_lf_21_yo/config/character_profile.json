@@ -1,0 +1,157 @@
+{
+  "character": {
+    "name": "Catalina",
+    "full_name": "Catalina (goes by 'Cata' with friends)",
+    "age": 21,
+    "gender": "female",
+    "ethnicity": "Colombian / Latina",
+    "appearance": {
+      "skin": "medium brown, olive-brown complexion",
+      "hair": "long dark brown hair, usually in ponytail or bun during day, loose/messy when sleeping",
+      "build": "average height, athletic build",
+      "eyes": "dark brown eyes",
+      "nails": "painted light pink",
+      "distinguishing_features": "Colombian university student aesthetic, natural beauty, always carries black canvas mochila (backpack) with university pins and Colombian flag keychain"
+    },
+    "occupation": "Third-year Psychology student at Universidad Nacional de Colombia, Bogotá",
+    "living_situation": "Multi-bedroom family home in residential neighborhood in Bogotá with parents and younger brother Daniel (16)",
+    "transportation": "Public transit (TransMilenio rapid transit + local buses), walking",
+    "style": {
+      "sleep": "Pink cotton t-shirt and gray pajama shorts, white slip-on sandals (chanclas)",
+      "university_casual": "White cotton t-shirt, dark blue skinny jeans, light gray hoodie, white ankle socks, white canvas sneakers (tenis), black canvas mochila (backpack)",
+      "post_shower": "Blue towel wrapped around body, smaller towel turban on hair"
+    },
+    "background": {
+      "education": "Universidad Nacional de Colombia, Psychology major, third year",
+      "family": "Lives with mamá (~45), papá (~48), and younger brother Daniel (16, high school student in uniform)",
+      "hobbies": "University studies, spending time with friends (Laura and classmates), family time",
+      "languages": "Spanish (primary), learning English at university"
+    }
+  },
+  "prompt_templates": {
+    "base_character": "1girl, young Latina woman, 21 years old, medium brown skin, long dark brown hair, dark brown eyes, athletic build, anime style, detailed",
+    "morning_appearance": "1girl, young Latina woman, long dark brown hair messy, wearing pink t-shirt gray shorts, sleepy expression, anime style",
+    "university_appearance": "1girl, young Latina woman, long dark brown hair in ponytail, wearing white t-shirt, dark jeans, gray hoodie, white sneakers, black mochila backpack, university student, anime style",
+    "bathroom_appearance": "1girl, young Latina woman, dark brown hair in messy bun, at bathroom mirror, anime style",
+    "post_shower_appearance": "1girl, young Latina woman, wet dark hair, blue towel wrapped, hair towel turban, anime style",
+    "evening_appearance": "1girl, young Latina woman, long dark brown hair loose, wearing casual clothes, relaxed expression, anime style"
+  },
+  "positive_prompts": {
+    "general": [
+      "anime style",
+      "high quality",
+      "detailed",
+      "masterpiece",
+      "best quality",
+      "vibrant colors",
+      "clean lines",
+      "sharp focus"
+    ],
+    "character_specific": [
+      "1girl",
+      "young woman",
+      "Latina",
+      "Colombian",
+      "medium brown skin",
+      "long dark brown hair",
+      "dark brown eyes",
+      "athletic build",
+      "university student"
+    ]
+  },
+  "negative_prompts": {
+    "general": [
+      "photorealistic",
+      "photo",
+      "realistic",
+      "3d render",
+      "low quality",
+      "blurry",
+      "distorted",
+      "deformed",
+      "disfigured",
+      "bad anatomy",
+      "bad proportions",
+      "watermark",
+      "text",
+      "signature",
+      "username",
+      "worst quality"
+    ],
+    "character_specific": [
+      "multiple girls",
+      "multiple people",
+      "crowd",
+      "1boy",
+      "male",
+      "child",
+      "elderly",
+      "blonde hair",
+      "short hair",
+      "light skin",
+      "pale skin",
+      "curly hair",
+      "overweight",
+      "muscular"
+    ],
+    "quality_issues": [
+      "bad hands",
+      "deformed hands",
+      "extra fingers",
+      "missing fingers",
+      "bad face",
+      "deformed face",
+      "extra limbs",
+      "missing limbs",
+      "floating limbs"
+    ]
+  },
+  "lora_settings": {
+    "recommended_strength": 0.8,
+    "min_strength": 0.6,
+    "max_strength": 1.0,
+    "notes": "Search CivitAI for anime Latina female character LoRA. Adjust strength based on consistency results."
+  },
+  "reference_images": {
+    "strategy": "Use existing anime character LoRA from CivitAI for POC",
+    "alternative_1": "Generate 3-5 consistent anime images and use with IP-Adapter",
+    "alternative_2": "Train custom anime LoRA with 15-20 reference images",
+    "current_approach": "existing_lora",
+    "civitai_search_terms": [
+      "anime Latina character",
+      "Colombian anime girl",
+      "Latin American anime female",
+      "university student anime",
+      "ponytail anime girl"
+    ]
+  },
+  "consistency_guidelines": {
+    "critical_features": [
+      "long dark brown hair",
+      "medium brown / olive-brown skin",
+      "dark brown eyes",
+      "athletic build",
+      "age approximately 21",
+      "light pink painted nails"
+    ],
+    "flexible_features": [
+      "exact hair style (messy, bun, ponytail, loose - as specified per scene)",
+      "clothing details (as specified per scene)",
+      "facial expression (sleepy, focused, happy, laughing)",
+      "body position (as specified per scene)"
+    ],
+    "avoid_variations": [
+      "Different skin tones (too pale or too dark)",
+      "Short or curly hair",
+      "Different eye colors",
+      "Older or younger appearance",
+      "Overweight or muscular build",
+      "Blonde or light hair"
+    ]
+  },
+  "notes": {
+    "educational_context": "This character represents a young Colombian university student. Shows family living, public transportation, university life, and Colombian cultural context.",
+    "cultural_context": "Bogotá, Colombia lifestyle. Latin American family dynamics (shared meals, cheek kisses for greetings). Public transit culture (TransMilenio). Colombian food (arepas, café con leche, huevos revueltos). Spanish-language environment (signs, products, conversations). Universidad Nacional de Colombia campus.",
+    "pedagogical_goal": "Help learners see diverse representation and learn vocabulary through a Colombian university student's daily activities including family time, commuting via public transit, studying, and social interactions. Supports bilingual Spanish-English learning."
+  }
+}

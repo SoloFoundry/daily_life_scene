@@ -1,30 +1,5 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-*.pyc
-.env
-venv/
-env/
-ENV/
+# OS
+.DS_Store
 
 # IDE
 .vscode/
@@ -33,74 +8,28 @@ ENV/
 *.swo
 *~
 
-# Generated Images (large files, don't commit)
-# Matt's images
-matt_wm_25_yo/images/poc/*.png
-matt_wm_25_yo/images/poc/*.jpg
-matt_wm_25_yo/images/full/*.png
-matt_wm_25_yo/images/full/*.jpg
+# Generated images and assets (if any end up here)
+*/images/poc/*.png
+*/images/poc/*.jpg
+*/images/full/*.png
+*/images/full/*.jpg
+*/assets/location_refs/*.png
+*/assets/location_refs/*.jpg
+*/assets/character_refs/*.png
+*/assets/character_refs/*.jpg
+*/assets/lora_weights/*.safetensors
+*/assets/lora_weights/*.ckpt
+*/assets/lora_weights/*.pt
 
-# Catalina's images
-catalina_lf_21_yo/images/poc/*.png
-catalina_lf_21_yo/images/poc/*.jpg
-catalina_lf_21_yo/images/full/*.png
-catalina_lf_21_yo/images/full/*.jpg
-
-# Old output directory (deprecated)
-output/
-
-# Model files (large files, download separately)
-matt_wm_25_yo/assets/lora_weights/*.safetensors
-matt_wm_25_yo/assets/lora_weights/*.ckpt
-matt_wm_25_yo/assets/lora_weights/*.pt
-catalina_lf_21_yo/assets/lora_weights/*.safetensors
-catalina_lf_21_yo/assets/lora_weights/*.ckpt
-catalina_lf_21_yo/assets/lora_weights/*.pt
-models/
+# Model files
 *.safetensors
 *.ckpt
 *.pth
 
-# Location and character reference images (generated, can be recreated)
-matt_wm_25_yo/assets/location_refs/*.png
-matt_wm_25_yo/assets/location_refs/*.jpg
-matt_wm_25_yo/assets/character_refs/*.png
-matt_wm_25_yo/assets/character_refs/*.jpg
-catalina_lf_21_yo/assets/location_refs/*.png
-catalina_lf_21_yo/assets/location_refs/*.jpg
-catalina_lf_21_yo/assets/character_refs/*.png
-catalina_lf_21_yo/assets/character_refs/*.jpg
-
-# Old assets directory (deprecated)
-assets/
-
-# Logs and temp files
+# Logs and temp
 *.log
-logs/
 temp/
 tmp/
-.DS_Store
 
-# RunPod credentials (NEVER commit!)
-.runpod_api_key
-runpod_credentials.json
-
-# ComfyUI temporary files
-comfyui_temp/
-comfy_outputs/
-
-# Training checkpoints (large files)
-training_checkpoints/
-kohya_output/
-
-# Keep directory structure with .gitkeep files
-!matt_wm_25_yo/images/poc/.gitkeep
-!matt_wm_25_yo/images/full/.gitkeep
-!matt_wm_25_yo/assets/location_refs/.gitkeep
-!matt_wm_25_yo/assets/character_refs/.gitkeep
-!matt_wm_25_yo/assets/lora_weights/.gitkeep
-!catalina_lf_21_yo/images/poc/.gitkeep
-!catalina_lf_21_yo/images/full/.gitkeep
-!catalina_lf_21_yo/assets/location_refs/.gitkeep
-!catalina_lf_21_yo/assets/character_refs/.gitkeep
-!catalina_lf_21_yo/assets/lora_weights/.gitkeep
+# Keep directory structure
+!*/.gitkeep

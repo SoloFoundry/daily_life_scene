@@ -4,20 +4,20 @@ Content authoring project for educational anime illustrations. Creates detailed 
 
 ## What's Here
 
-Scene narratives and character profiles for **10 characters** (5 USA, 5 Colombia) spanning ages 9-67, covering ~1,234 daily life scenes total.
+Scene narratives and character profiles for **10 characters** (5 USA, 5 Colombia) spanning ages 9-67, covering **2,016 daily life scenes** total. All scenes use micro-action format (one action per scene with detailed visual descriptions).
 
 | Character | Age | Role | Location | Scenes |
 |-----------|-----|------|----------|--------|
-| Matt | 25 | Office worker | USA | ~310 |
-| Marcus | 45 | Firefighter | Chicago | ~218 |
-| Tyler | 16 | HS student | Ohio | ~151 |
-| Catalina | 21 | Univ. student | Bogota | ~105 |
-| Jorge | 67 | Coffee farmer | Quindio | ~97 |
-| Emily | 28 | Software eng. | San Francisco | ~95 |
-| Isabella | 9 | Elementary student | Cartagena | ~94 |
-| Valentina | 34 | Doctor | Cali | ~63 |
-| Rosa | 55 | Nurse | Houston | ~56 |
-| Andres | 42 | Tienda owner | Medellin | ~45 |
+| Matt | 25 | Office worker | USA | 308 |
+| Catalina | 21 | Univ. student | Bogota | 281 |
+| Marcus | 45 | Firefighter | Chicago | 218 |
+| Emily | 28 | Software eng. | San Francisco | 195 |
+| Tyler | 16 | HS student | Ohio | 183 |
+| Jorge | 67 | Coffee farmer | Quindio | 182 |
+| Isabella | 9 | Elementary student | Cartagena | 171 |
+| Valentina | 34 | Doctor | Cali | 166 |
+| Rosa | 55 | Nurse | Houston | 165 |
+| Andres | 42 | Tienda owner | Medellin | 147 |
 
 ## Project Structure
 

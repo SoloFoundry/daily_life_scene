@@ -4,20 +4,37 @@ Content authoring project for educational anime illustrations. Creates detailed 
 
 ## What's Here
 
-Scene narratives and character profiles for **10 characters** (5 USA, 5 Colombia) spanning ages 9-67, covering **2,016 daily life scenes** total. All scenes use micro-action format (one action per scene with detailed visual descriptions).
+Scene narratives and character profiles for **20 characters** (10 USA, 10 Colombia) spanning ages 5-75, covering **4,058 daily life scenes** total. All scenes use micro-action format (one action per scene with detailed visual descriptions).
+
+### United States Characters (10)
 
 | Character | Age | Role | Location | Scenes |
 |-----------|-----|------|----------|--------|
 | Matt | 25 | Office worker | USA | 308 |
-| Catalina | 21 | Univ. student | Bogota | 281 |
+| Aisha | 40 | Restaurant owner | Minneapolis | 260 |
+| James | 22 | Culinary student | New Orleans | 232 |
 | Marcus | 45 | Firefighter | Chicago | 218 |
+| David | 35 | Construction foreman | Albuquerque | 206 |
+| Rosa | 55 | Nurse | Houston | 197 |
+| Tyler | 16 | HS student | Ohio | 196 |
 | Emily | 28 | Software eng. | San Francisco | 195 |
-| Tyler | 16 | HS student | Ohio | 183 |
-| Jorge | 67 | Coffee farmer | Quindio | 182 |
-| Isabella | 9 | Elementary student | Cartagena | 171 |
-| Valentina | 34 | Doctor | Cali | 166 |
-| Rosa | 55 | Nurse | Houston | 165 |
-| Andres | 42 | Tienda owner | Medellin | 147 |
+| Raj | 72 | Retired engineer | Edison NJ | 165 |
+| Sophie | 5 | Kindergartener | Portland | 155 |
+
+### Colombia Characters (10)
+
+| Character | Age | Role | Location | Scenes |
+|-----------|-----|------|----------|--------|
+| Catalina | 21 | Univ. student | Bogotá | 281 |
+| Santiago | 19 | Delivery rider / DJ | Bogotá | 220 |
+| Lucía | 28 | Elementary teacher | Bucaramanga | 215 |
+| Camilo | 14 | Soccer student | Barranquilla | 195 |
+| Marina | 45 | Fisherwoman | Tumaco | 186 |
+| Jorge | 67 | Coffee farmer | Quindío | 182 |
+| Valentina | 34 | Doctor | Cali | 172 |
+| Isabella | 9 | Elementary student | Cartagena | 168 |
+| Carmen | 75 | Artisan / grandmother | Villa de Leyva | 160 |
+| Andres | 42 | Tienda owner | Medellín | 147 |
 
 ## Project Structure
 

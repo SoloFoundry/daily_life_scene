@@ -1,6 +1,6 @@
 # Daily Life Visual Vocabulary Generator - Content Project
 
-**Last Updated:** 2026-02-07
+**Last Updated:** 2026-02-10
 
 ---
 
@@ -8,7 +8,7 @@
 
 ### What is this project?
 
-A **content authoring project** that creates detailed scene descriptions for 10 diverse characters going through their daily lives. These scene narratives serve as the source material for generating anime-style educational illustrations used as visual vocabulary flashcards.
+A **content authoring project** that creates detailed scene descriptions for 20 diverse characters going through their daily lives. These scene narratives serve as the source material for generating anime-style educational illustrations used as visual vocabulary flashcards.
 
 ### How it fits in the pipeline
 
@@ -51,7 +51,7 @@ Following characters through their day creates a narrative arc that:
 
 ### Diverse Representation
 
-10 characters spanning different ages, genders, ethnicities, professions, and cultures provide:
+20 characters spanning different ages, genders, ethnicities, professions, and cultures provide:
 - Multiple cultural contexts for ESL learners
 - Different vocabulary sets based on character lifestyle
 - Age-appropriate content for different learner groups
@@ -61,33 +61,43 @@ Following characters through their day creates a narrative arc that:
 
 ## Character Roster
 
-**10 characters** (5 USA, 5 Colombia) with ~1,234 total scenes:
+**20 characters** (10 USA, 10 Colombia) with ~4,058 total scenes:
 
-### United States Characters
-
-| Character | Directory | Age | Profession | Scenes |
-|-----------|-----------|-----|-----------|--------|
-| Matt | matt_wm_25_yo/ | 25 | Office worker | ~310 |
-| Marcus | marcus_am_45_yo/ | 45 | Firefighter (Chicago) | ~218 |
-| Tyler | tyler_wm_16_yo/ | 16 | High school student (Ohio) | ~151 |
-| Emily | emily_af_28_yo/ | 28 | Software engineer (SF) | ~95 |
-| Rosa | rosa_hf_55_yo/ | 55 | Hospital nurse (Houston) | ~56 |
-
-### Colombia Characters
+### United States Characters (10)
 
 | Character | Directory | Age | Profession | Scenes |
 |-----------|-----------|-----|-----------|--------|
-| Catalina | catalina_lf_21_yo/ | 21 | University student (Bogota) | ~105 |
-| Jorge | jorge_lm_67_yo/ | 67 | Coffee farmer (Quindio) | ~97 |
-| Isabella | isabella_lf_9_yo/ | 9 | Elementary student (Cartagena) | ~94 |
-| Valentina | valentina_lf_34_yo/ | 34 | Doctor (Cali) | ~63 |
-| Andres | andres_lm_42_yo/ | 42 | Tienda owner (Medellin) | ~45 |
+| Matt | matt_wm_25_yo/ | 25 | Office worker | 308 |
+| Marcus | marcus_am_45_yo/ | 45 | Firefighter (Chicago) | 218 |
+| Tyler | tyler_wm_16_yo/ | 16 | High school student (Ohio) | 196 |
+| Emily | emily_af_28_yo/ | 28 | Software engineer (SF) | 195 |
+| Rosa | rosa_hf_55_yo/ | 55 | Hospital nurse (Houston) | 197 |
+| Sophie | sophie_wf_5_yo/ | 5 | Kindergartener (Portland) | 155 |
+| Raj | raj_im_72_yo/ | 72 | Retired engineer (Edison NJ) | 165 |
+| James | james_am_22_yo/ | 22 | Culinary student (New Orleans) | 232 |
+| Aisha | aisha_sf_40_yo/ | 40 | Restaurant owner (Minneapolis) | 260 |
+| David | david_nm_35_yo/ | 35 | Construction foreman (Albuquerque) | 206 |
+
+### Colombia Characters (10)
+
+| Character | Directory | Age | Profession | Scenes |
+|-----------|-----------|-----|-----------|--------|
+| Catalina | catalina_lf_21_yo/ | 21 | University student (Bogotá) | 281 |
+| Jorge | jorge_lm_67_yo/ | 67 | Coffee farmer (Quindío) | 182 |
+| Isabella | isabella_lf_9_yo/ | 9 | Elementary student (Cartagena) | 168 |
+| Valentina | valentina_lf_34_yo/ | 34 | Doctor (Cali) | 172 |
+| Andres | andres_lm_42_yo/ | 42 | Tienda owner (Medellín) | 147 |
+| Camilo | camilo_lm_14_yo/ | 14 | Student / soccer player (Barranquilla) | 195 |
+| Lucía | lucia_lf_28_yo/ | 28 | Elementary teacher (Bucaramanga) | 215 |
+| Marina | marina_af_45_yo/ | 45 | Fisherwoman (Tumaco) | 186 |
+| Carmen | carmen_lf_75_yo/ | 75 | Artisan / grandmother (Villa de Leyva) | 160 |
+| Santiago | santiago_lm_19_yo/ | 19 | Delivery rider / DJ (Bogotá) | 220 |
 
 ### Demographics Summary
 
-- **Age range:** 9 to 67
-- **Gender:** 5 male, 5 female
-- **Ethnicities:** White American, African American, Asian American, Mexican American, Colombian
+- **Age range:** 5 to 75
+- **Gender:** 10 male, 10 female
+- **Ethnicities:** White American, African American, Indian American, Somali American, Native American (Navajo), Mexican American, Colombian, Afro-Colombian
 - **Directory naming:** `{name}_{ethnicity_gender}_{age}_yo/`
 
 ---
@@ -98,7 +108,7 @@ Each character directory contains:
 
 ```
 {character}_xx_NN_yo/
-├── {character}_daily_life_scenes.md    # Full day narrative (~50-310 scenes)
+├── {character}_daily_life_scenes.md    # Full day narrative (~147-308 scenes)
 └── config/
     ├── scenes_poc.json                 # 15 POC scenes with metadata
     ├── character_profile.json          # Appearance, clothing, background
@@ -168,7 +178,17 @@ daily_life/
 ├── jorge_lm_67_yo/                    # Jorge - Colombian coffee farmer
 ├── isabella_lf_9_yo/                  # Isabella - Colombian elementary student
 ├── valentina_lf_34_yo/                # Valentina - Colombian doctor
-└── andres_lm_42_yo/                   # Andres - Colombian tienda owner
+├── andres_lm_42_yo/                   # Andres - Colombian tienda owner
+├── sophie_wf_5_yo/                    # Sophie - Portland kindergartener
+├── raj_im_72_yo/                      # Raj - Retired Indian American engineer
+├── james_am_22_yo/                    # James - New Orleans culinary student
+├── aisha_sf_40_yo/                    # Aisha - Minneapolis restaurant owner
+├── david_nm_35_yo/                    # David - Navajo construction foreman
+├── camilo_lm_14_yo/                   # Camilo - Barranquilla soccer student
+├── lucia_lf_28_yo/                    # Lucía - Bucaramanga teacher
+├── marina_af_45_yo/                   # Marina - Tumaco fisherwoman
+├── carmen_lf_75_yo/                   # Carmen - Villa de Leyva artisan
+└── santiago_lm_19_yo/                 # Santiago - Bogotá delivery rider / DJ
 ```
 
 ---
@@ -179,7 +199,7 @@ To create a new character:
 
 1. **Choose demographics:** Name, age, gender, ethnicity, profession, location, living situation
 2. **Create directory:** `{name}_{ethnicity_gender}_{age}_yo/`
-3. **Write scenes markdown:** Detailed scene descriptions covering a full day (~50-300 scenes)
+3. **Write scenes markdown:** Detailed scene descriptions covering a full day (~150-310 scenes)
    - Follow the format in existing characters' `.md` files
    - Include cultural context, vocabulary items, and object details
 4. **Create config files:**
@@ -195,7 +215,7 @@ Use existing characters as templates. Match the JSON schema exactly.
 
 1. **This is a content-only project** — no code, no scripts, no image generation
 2. **Image generation lives in `dev/imageGen`** — that project consumes this project's content
-3. **All 10 characters have complete POC configs** (scenes_poc.json, character_profile.json, locations.json)
-4. **Scene descriptions vary in completeness** — some characters have full-day coverage, others are partial
+3. **All 20 characters have complete POC configs** (scenes_poc.json, character_profile.json, locations.json)
+4. **All 20 characters have full-day scene coverage** in micro-action format (one action per scene)
 5. **Cultural authenticity matters** — each character's scenes reflect their real cultural context
 6. Check [STATUS.md](STATUS.md) for current progress

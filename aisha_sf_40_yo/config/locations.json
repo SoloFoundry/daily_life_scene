@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "project": "Daily Life Visual Vocabulary Generator",
+    "character": "Aisha",
+    "phase": "POC",
+    "total_locations": 3,
+    "location_type": "AI-generated references",
+    "created": "2026-02-10"
+  },
+  "locations": [
+    {
+      "location_id": "bedroom",
+      "name": "Aisha's Master Bedroom",
+      "description": "Master bedroom in a three-bedroom Minneapolis townhouse. Queen bed with burgundy comforter, multiple decorative pillows. Prayer rug folded neatly beside the bed. Small bookshelf with Quran, Somali novels, and family photo albums. Dresser with neatly folded and hung hijab collection in various colors (purple, teal, burgundy, cream). Family photos on the wall and dresser top. Window showing Minneapolis winter trees or gray sky. Warm beige walls. Orange tabby cat (Basra) often curled on the bed. Digital alarm clock and reading glasses on the nightstand. Warm, modest, family-centered space.",
+      "key_features": [
+        "queen bed with burgundy comforter and decorative pillows",
+        "prayer rug folded beside bed",
+        "small bookshelf with Quran and Somali novels",
+        "dresser with hijab collection (purple, teal, burgundy, cream)",
+        "family photos on wall and dresser",
+        "window showing Minneapolis winter/trees",
+        "warm beige walls",
+        "orange tabby cat (Basra) on bed",
+        "digital alarm clock on nightstand",
+        "reading glasses on nightstand",
+        "bedside lamp",
+        "closet door"
+      ],
+      "lighting_conditions": {
+        "early_morning": "dark pre-dawn, bedside lamp only",
+        "morning": "soft gray winter light through window",
+        "evening": "warm bedside lamp glow, overhead light"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["wide shot showing bed and prayer rug", "dresser with hijab collection and photos", "nightstand and window view with cat on bed"],
+        "path_template": "aisha_sf_40_yo/assets/location_refs/bedroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, master bedroom in Minneapolis townhouse, queen bed with burgundy comforter, decorative pillows, prayer rug folded beside bed, small bookshelf with books, dresser with neatly folded colorful hijabs, family photos, warm beige walls, orange tabby cat on bed, digital alarm clock, winter light through window, warm modest bedroom",
+      "negative_prompt": "photorealistic, photo, low quality, luxury bedroom, messy room, dark colors, scary, inappropriate content, summer setting",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain warm, modest bedroom atmosphere with Somali American cultural elements"
+      },
+      "vocabulary_items": ["bed", "comforter", "pillow", "prayer rug", "bookshelf", "Quran", "dresser", "hijab", "photo", "window", "alarm clock", "lamp", "cat", "nightstand", "reading glasses"]
+    },
+    {
+      "location_id": "bathroom",
+      "name": "Master Bathroom",
+      "description": "Master bathroom in Minneapolis townhouse. Bathtub/shower combo with shower curtain. Single sink with cabinet underneath. Mirror above sink. Wudu-friendly layout (ablution before prayer). Modest toiletries on counter: face cream, hair products, comb, hair ties. Towels hanging on rack. Bright overhead light. Clean and practical. Small rug on tile floor.",
+      "key_features": [
+        "bathtub/shower combo with plain shower curtain",
+        "single sink with cabinet",
+        "mirror above sink",
+        "toilet",
+        "modest toiletries (face cream, hair products, comb)",
+        "hair ties and pins on counter",
+        "towel rack with towels",
+        "bright overhead light",
+        "small rug on tile floor",
+        "soap dispenser",
+        "water cup for wudu (ablution)"
+      ],
+      "lighting_conditions": {
+        "early_morning": "bright overhead bathroom light (pre-dawn)",
+        "morning": "bright overhead light with some natural light",
+        "evening": "bright overhead light"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["facing mirror and sink area", "bathtub/shower area", "wide shot of full bathroom"],
+        "path_template": "aisha_sf_40_yo/assets/location_refs/bathroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, modest master bathroom in townhouse, bathtub shower combo with plain curtain, single sink with cabinet, mirror, modest toiletries, towel rack, bright overhead light, small rug on tile floor, clean practical bathroom, water cup near sink",
+      "negative_prompt": "photorealistic, photo, low quality, luxury bathroom, dirty bathroom, adult-only items, dark, scary, large bathroom",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain clean, modest bathroom with practical wudu-friendly elements"
+      },
+      "vocabulary_items": ["sink", "faucet", "mirror", "toilet", "bathtub", "shower curtain", "towel", "soap", "comb", "face cream", "hair tie", "toothbrush", "toothpaste", "water", "rug"]
+    },
+    {
+      "location_id": "restaurant_kitchen",
+      "name": "Hoyo's Kitchen Restaurant Kitchen",
+      "description": "Commercial kitchen of Hoyo's Kitchen, a small Somali restaurant in Cedar-Riverside, Minneapolis. Stainless steel prep tables, commercial gas stove with large pots, deep fryer for sambusa, large commercial rice cooker, well-stocked spice rack (cumin, coriander, turmeric, cardamom, cinnamon), walk-in refrigerator door visible, order tickets hanging on a wire above the pass, aprons hanging on hooks by the door, hand-washing station with soap dispenser, halal meat section in refrigerator, stacks of takeout containers, menu board visible through the service window. Bright fluorescent lighting. Busy, organized, professional cooking space.",
+      "key_features": [
+        "stainless steel prep tables",
+        "commercial gas stove with large pots",
+        "deep fryer for sambusa",
+        "large commercial rice cooker",
+        "spice rack (cumin, coriander, turmeric, cardamom, cinnamon)",
+        "walk-in refrigerator door",
+        "order tickets on wire above pass",
+        "aprons hanging on hooks",
+        "hand-washing station",
+        "halal meat section",
+        "stacks of takeout containers",
+        "menu board through service window",
+        "cutting boards and knives",
+        "exhaust hood over stove"
+      ],
+      "lighting_conditions": {
+        "morning": "bright fluorescent overhead lights",
+        "lunch_rush": "bright fluorescent, steam from cooking",
+        "afternoon": "bright fluorescent, calmer atmosphere",
+        "dinner_rush": "bright fluorescent, busy energy"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["stove area with large pots and spice rack", "prep tables with cutting boards and ingredients", "service window with order tickets and menu board"],
+        "path_template": "aisha_sf_40_yo/assets/location_refs/restaurant_kitchen_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, small commercial restaurant kitchen, stainless steel prep tables, commercial gas stove with large pots, deep fryer, large rice cooker, spice rack with colorful spices, order tickets on wire, aprons on hooks, hand-washing station, takeout containers stacked, menu board through service window, bright fluorescent lighting, busy professional kitchen",
+      "negative_prompt": "photorealistic, photo, low quality, home kitchen, dirty kitchen, dark, scary, fast food, chain restaurant, huge industrial kitchen",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain small commercial kitchen atmosphere with Somali restaurant elements"
+      },
+      "vocabulary_items": ["stove", "pot", "pan", "knife", "cutting board", "spice", "rice", "meat", "oil", "apron", "order", "fryer", "rice cooker", "refrigerator", "sink", "container", "ticket"]
+    }
+  ],
+  "generation_settings": {
+    "model": "Animagine XL 3.1 or equivalent anime SDXL model",
+    "resolution": "1024x768 (landscape) or 768x1024 (portrait)",
+    "steps": 30,
+    "cfg_scale": 7,
+    "sampler": "DPM++ 2M Karras",
+    "seed": "random",
+    "batch_size": 1,
+    "notes": "Generate 3 reference images per location. Ensure bedroom and bathroom reflect modest Somali American home. Restaurant kitchen should look like a small commercial operation, not a home kitchen."
+  },
+  "usage_instructions": {
+    "step_1": "Generate location reference images using prompts above",
+    "step_2": "Review and select best images for each location",
+    "step_3": "Save with naming convention: {location}_{number}.png",
+    "step_4": "Use selected references with IP-Adapter during scene generation",
+    "step_5": "Maintain consistency by using same references for all scenes in that location"
+  },
+  "notes": {
+    "approach": "AI-generated references instead of 3D modeling",
+    "rationale": "Capture Somali American home style and small commercial kitchen with cultural authenticity",
+    "cultural_elements": "Hijab collection, prayer rug, Quran, Somali spices, halal practices, wudu-friendly bathroom, Minneapolis winter setting",
+    "character_home_style": "Working-class Somali American family, modest but warm townhouse, strong cultural identity"
+  }
+}

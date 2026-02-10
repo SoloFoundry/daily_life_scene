@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "project": "Daily Life Visual Vocabulary Generator",
+    "character": "Lucia",
+    "phase": "POC",
+    "total_locations": 3,
+    "location_type": "AI-generated references",
+    "created": "2026-02-10"
+  },
+  "locations": [
+    {
+      "location_id": "bedroom",
+      "name": "Lucia and Andres's Bedroom",
+      "description": "A modern apartment bedroom in Bucaramanga, Colombia. Queen bed with white and mint green bedding, two wooden nightstands, reading lamp on Lucia's side with a stack of novels, architecture magazines on Andres's side. Small vanity with mirror, makeup, and glasses case. Closet with teaching clothes (blouses, pants, skirts) and Andres's work clothes. Window overlooking Bucaramanga hills with morning light. Ceiling fan overhead. Potted plant (small fern) on the windowsill. Digital alarm clock on nightstand. Warm, tidy adult bedroom.",
+      "key_features": [
+        "queen bed with white and mint green bedding",
+        "two wooden nightstands",
+        "reading lamp and stack of novels (Lucia's side)",
+        "architecture magazines (Andres's side)",
+        "small vanity with mirror and makeup",
+        "glasses case on vanity",
+        "closet with teaching clothes",
+        "window overlooking Bucaramanga hills",
+        "ceiling fan",
+        "potted fern on windowsill",
+        "digital alarm clock",
+        "framed photo of couple on nightstand"
+      ],
+      "lighting_conditions": {
+        "morning": "soft golden morning light through window, Bucaramanga hills visible",
+        "afternoon": "warm afternoon light, ceiling fan shadow",
+        "evening": "warm reading lamp glow, soft overhead light"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["wide shot showing bed and window with hills view", "vanity area with mirror and glasses", "nightstands with books and alarm clock"],
+        "path_template": "lucia_lf_28_yo/assets/location_refs/bedroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, modern apartment bedroom, queen bed with white and mint green bedding, two wooden nightstands, reading lamp and novels, small vanity with mirror, closet with professional clothes, window overlooking green hills, ceiling fan, potted fern on windowsill, digital alarm clock, warm tidy bedroom, Bucaramanga Colombia style, pleasant morning light",
+      "negative_prompt": "photorealistic, photo, low quality, child's bedroom, messy room, dark colors, luxury mansion, dark, scary",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain modern, tidy apartment bedroom atmosphere with Colombian Andean city character"
+      },
+      "vocabulary_items": ["bed", "pillow", "blanket", "bedding", "nightstand", "lamp", "book", "magazine", "alarm clock", "vanity", "mirror", "glasses", "closet", "ceiling fan", "window", "plant"]
+    },
+    {
+      "location_id": "bathroom",
+      "name": "Apartment Bathroom",
+      "description": "Modern apartment bathroom in Bucaramanga. Shower with glass door, single sink with countertop and mirror cabinet. Lucia's glasses case on counter near sink, hair ties and clips in a small basket, small makeup bag. Two toothbrushes in a cup (his and hers). Tile floor, bright overhead light, small frosted window for ventilation. Clean towels on a rack. Modest, functional, well-kept bathroom.",
+      "key_features": [
+        "shower with glass door",
+        "single sink with countertop",
+        "mirror cabinet above sink",
+        "Lucia's glasses case on counter",
+        "small basket of hair ties and clips",
+        "makeup bag",
+        "two toothbrushes in cup",
+        "tile floor (light gray)",
+        "bright overhead light",
+        "small frosted window",
+        "towel rack with clean towels",
+        "hand soap dispenser"
+      ],
+      "lighting_conditions": {
+        "morning": "bright overhead bathroom light, soft natural light from frosted window",
+        "evening": "bright overhead light"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["facing mirror and sink with glasses case", "shower area with glass door", "wide shot of bathroom"],
+        "path_template": "lucia_lf_28_yo/assets/location_refs/bathroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, modern apartment bathroom, shower with glass door, single sink with countertop, mirror cabinet, glasses case on counter, hair accessories basket, two toothbrushes in cup, light gray tile floor, bright clean lighting, small frosted window, towel rack, clean and functional, Colombian apartment style",
+      "negative_prompt": "photorealistic, photo, low quality, dirty bathroom, luxury spa, child's bathroom, dark, scary, bathtub",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain clean, modern apartment bathroom atmosphere"
+      },
+      "vocabulary_items": ["shower", "sink", "mirror", "faucet", "toothbrush", "toothpaste", "towel", "soap", "glasses case", "hair tie", "hair clip", "makeup", "tile", "window"]
+    },
+    {
+      "location_id": "elementary_classroom",
+      "name": "Lucia's 3rd Grade Classroom",
+      "description": "A 3rd grade classroom in a public elementary school in Bucaramanga, Colombia. Teacher's wooden desk at the front with a grade book, pen cup, and small plant. Large whiteboard with colored markers and eraser. 25 small student desks and chairs arranged in rows. Alphabet poster and numbers poster on walls. Class schedule chart near the door. Colombian flag displayed. Student artwork pinned on a bulletin board. Pencil sharpener mounted on wall. Small class library corner with a bookshelf and floor cushions. Globe on a shelf. Sticker reward chart near the whiteboard. Windows along one wall showing Bucaramanga hills and palm trees. Bright, organized, cheerful learning space.",
+      "key_features": [
+        "teacher's wooden desk at front",
+        "grade book and pen cup on desk",
+        "large whiteboard with colored markers",
+        "whiteboard eraser",
+        "25 small student desks and chairs",
+        "alphabet poster on wall",
+        "numbers poster on wall",
+        "class schedule chart near door",
+        "Colombian flag",
+        "student artwork on bulletin board",
+        "pencil sharpener on wall",
+        "class library corner with bookshelf and cushions",
+        "globe on shelf",
+        "sticker reward chart",
+        "windows showing Bucaramanga hills and palm trees"
+      ],
+      "lighting_conditions": {
+        "morning": "bright natural light from windows, fluorescent overhead lights",
+        "midday": "strong natural light, overhead lights",
+        "afternoon": "warm afternoon light through windows, overhead lights"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["front of classroom with whiteboard and teacher's desk", "student desks and library corner", "windows with hills view and wall decorations"],
+        "path_template": "lucia_lf_28_yo/assets/location_refs/classroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, elementary school classroom, teacher's wooden desk at front, large whiteboard with colored markers, rows of small student desks and chairs, alphabet poster and numbers poster on walls, class schedule chart, Colombian flag, student artwork on bulletin board, pencil sharpener, class library corner with bookshelf, globe on shelf, sticker reward chart, windows showing green hills and palm trees, bright cheerful learning space, Colombian public school",
+      "negative_prompt": "photorealistic, photo, low quality, empty classroom, dark room, high school, university, American classroom, messy, dirty, scary",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain bright, organized elementary classroom atmosphere with Colombian school character"
+      },
+      "vocabulary_items": ["desk", "chair", "whiteboard", "marker", "eraser", "grade book", "poster", "alphabet", "numbers", "flag", "artwork", "pencil sharpener", "bookshelf", "globe", "sticker", "chart", "window", "teacher", "classroom"]
+    }
+  ],
+  "generation_settings": {
+    "model": "Animagine XL 3.1 or equivalent anime SDXL model",
+    "resolution": "1024x768 (landscape) or 768x1024 (portrait)",
+    "steps": 30,
+    "cfg_scale": 7,
+    "sampler": "DPM++ 2M Karras",
+    "seed": "random",
+    "batch_size": 1,
+    "notes": "Generate 3 reference images per location. Ensure locations reflect Bucaramanga's Andean Colombian style — pleasant climate, green hills visible, modern but not luxury."
+  },
+  "usage_instructions": {
+    "step_1": "Generate location reference images using prompts above",
+    "step_2": "Review and select best images for each location",
+    "step_3": "Save with naming convention: {location}_{number}.png",
+    "step_4": "Use selected references with IP-Adapter during scene generation",
+    "step_5": "Maintain consistency by using same references for all scenes in that location"
+  },
+  "notes": {
+    "approach": "AI-generated references instead of 3D modeling",
+    "rationale": "Capture Colombian Andean apartment style with modern, functional character for a young professional couple",
+    "cultural_elements": "Bucaramanga hilly terrain, pleasant spring-like climate, Colombian classroom elements, Colombian flag, arepa culture",
+    "character_home_style": "Middle-class, modern apartment, young professional couple, pet parrot in living room"
+  }
+}

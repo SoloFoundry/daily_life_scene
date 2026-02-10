@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "project": "Daily Life Visual Vocabulary Generator",
+    "character": "Sophie",
+    "phase": "POC",
+    "total_locations": 3,
+    "location_type": "AI-generated references",
+    "created": "2026-02-09"
+  },
+  "locations": [
+    {
+      "location_id": "bedroom",
+      "name": "Sophie's Bedroom",
+      "description": "A 5-year-old girl's small bedroom in a Portland, Oregon apartment. Lavender-painted walls with glow-in-the-dark star stickers on the ceiling. A twin bed with a purple guardrail and purple star-print bedding. A small white bookshelf overflowing with picture books. A wooden toy chest with a painted rainbow on the front. A hamster cage sits on top of a low white dresser — golden Syrian hamster with exercise wheel, water bottle, wood shavings bedding, and a small plastic hideout. A moon-shaped nightlight plugged into the wall near the bed. Child's drawings and finger paintings taped to the walls with masking tape. A soft lavender rug on hardwood floor. A small table with crayons and coloring books. Cozy, creative, child's space.",
+      "key_features": [
+        "twin bed with purple guardrail and purple star-print bedding",
+        "lavender-painted walls",
+        "glow-in-the-dark star stickers on ceiling",
+        "small white bookshelf with picture books",
+        "wooden toy chest with painted rainbow",
+        "hamster cage on white dresser (Biscuit the golden hamster)",
+        "exercise wheel in hamster cage",
+        "moon-shaped nightlight",
+        "child's drawings taped to walls",
+        "soft lavender rug on hardwood floor",
+        "small table with crayons and coloring books",
+        "stuffed animals on bed",
+        "window with rain visible outside (Portland weather)"
+      ],
+      "lighting_conditions": {
+        "morning": "soft gray Portland morning light through curtains, overcast sky glow",
+        "afternoon": "diffused natural light through window, gray or partly sunny",
+        "evening": "warm lamp light, moon-shaped nightlight glow, glow-in-the-dark stars on ceiling"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["wide shot showing bed and dresser with hamster cage", "bookshelf and toy chest area", "bed with stuffed animals and nightlight"],
+        "path_template": "sophie_wf_5_yo/assets/location_refs/bedroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, 5-year-old girl's bedroom, small twin bed with purple star bedding and bed guardrail, lavender walls, glow-in-the-dark stars on ceiling, small white bookshelf with picture books, wooden toy chest with rainbow, hamster cage on white dresser with golden hamster, moon-shaped nightlight, child's drawings taped to walls, soft rug on hardwood floor, cozy child's room, Portland Oregon apartment",
+      "negative_prompt": "photorealistic, photo, low quality, adult bedroom, teenager room, messy, dark colors, scary, inappropriate content, large room, luxury",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain cozy, child-appropriate bedroom atmosphere with Portland apartment feel"
+      },
+      "vocabulary_items": ["bed", "pillow", "blanket", "bedding", "guardrail", "bookshelf", "book", "toy chest", "hamster", "cage", "wheel", "nightlight", "stars", "rug", "dresser", "drawing", "crayons", "stuffed animal", "lamp", "window"]
+    },
+    {
+      "location_id": "bathroom",
+      "name": "Shared Apartment Bathroom",
+      "description": "Small shared bathroom in a Portland apartment used by Sophie and her mom Kate. White subway tile walls, gray tile floor. Single sink with chrome faucet and a white plastic step stool so Sophie can reach. Round mirror above sink. Toilet with a child's potty training seat adapter still on top. Bathtub with a light blue shower curtain decorated with fish. Child-friendly elements: purple kids' toothbrush in a frog-shaped holder, bubble bath bottles on tub edge, rubber ducks (yellow and pink), a green hooded frog towel hanging on a low hook Sophie can reach. Mom's toiletries on a shelf above child's reach. Bright overhead light.",
+      "key_features": [
+        "white subway tile walls",
+        "gray tile floor",
+        "single sink with chrome faucet",
+        "white plastic step stool for reaching sink",
+        "round mirror above sink",
+        "toilet with child's potty seat adapter",
+        "bathtub with light blue fish-print shower curtain",
+        "purple kids' toothbrush in frog-shaped holder",
+        "kids' toothpaste (bubblegum flavor)",
+        "bubble bath bottles on tub edge",
+        "rubber ducks (yellow and pink)",
+        "green hooded frog towel on low hook",
+        "mom's toiletries on upper shelf",
+        "bright overhead light"
+      ],
+      "lighting_conditions": {
+        "morning": "bright overhead bathroom light, gray daylight from small window",
+        "evening": "same bright overhead light for bath time"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["facing mirror and sink with step stool", "bathtub area with rubber ducks and bubble bath", "wide shot of bathroom"],
+        "path_template": "sophie_wf_5_yo/assets/location_refs/bathroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, small apartment bathroom, white subway tile walls, gray tile floor, single sink with chrome faucet, white plastic step stool for child, round mirror, toilet with child's potty seat, bathtub with light blue fish shower curtain, purple kids toothbrush in frog holder, rubber ducks on tub edge, green frog hooded towel on low hook, bubble bath bottles, bright clean child-friendly bathroom",
+      "negative_prompt": "photorealistic, photo, low quality, dirty bathroom, luxury bathroom, adult-only items, dark, scary, large bathroom, nudity",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain small apartment bathroom with child-friendly elements"
+      },
+      "vocabulary_items": ["sink", "faucet", "mirror", "toilet", "bathtub", "shower curtain", "towel", "step stool", "toothbrush", "toothpaste", "soap", "rubber duck", "bubble bath", "shampoo", "water", "frog towel", "hook", "tile"]
+    },
+    {
+      "location_id": "kindergarten_classroom",
+      "name": "Kindergarten Classroom",
+      "description": "A bright, colorful kindergarten classroom at a Portland public elementary school. Alphabet banner running along the top of the walls. Cubbies with name labels near the door for coats and backpacks. Small round tables with tiny chairs in primary colors (red, blue, yellow, green). Art supply station with crayons, finger paint jars, construction paper, glue sticks, child-safe scissors. A cozy reading corner with bean bag chairs and a small bookshelf. Calendar wall with weather chart and class schedule. A fish tank with two goldfish on a counter near the window. Dramatic play area with a toy kitchen and plastic food. Coat hooks along one wall. Large windows showing Portland trees and gray sky. Colorful rugs with letters/numbers on the floor. Teacher's desk in the corner.",
+      "key_features": [
+        "alphabet banner along top of walls",
+        "cubbies with name labels for coats and backpacks",
+        "small round tables with tiny chairs in primary colors",
+        "art supply station (crayons, finger paint, construction paper, glue sticks, scissors)",
+        "reading corner with bean bag chairs and bookshelf",
+        "calendar wall with weather chart",
+        "class pet fish tank with two goldfish",
+        "toy kitchen and dramatic play area",
+        "coat hooks along wall",
+        "large windows showing Portland trees and gray sky",
+        "colorful alphabet and number rugs on floor",
+        "teacher's desk in corner",
+        "class schedule chart",
+        "hand-washing station"
+      ],
+      "lighting_conditions": {
+        "morning": "bright fluorescent classroom light mixed with gray Portland daylight through large windows",
+        "midday": "bright overhead lights, diffused natural light",
+        "afternoon": "warm afternoon light through windows, overhead lights"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["wide shot showing tables, cubbies, and alphabet banner", "reading corner with bean bags and art station", "toy kitchen and fish tank area"],
+        "path_template": "sophie_wf_5_yo/assets/location_refs/kindergarten_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, bright colorful kindergarten classroom, alphabet banner on wall, cubbies with name labels, small round tables with tiny chairs in primary colors, art supplies station with crayons and paint, reading corner with bean bag chairs, calendar and weather chart on wall, fish tank with goldfish, toy kitchen play area, coat hooks, large windows showing trees and gray sky, colorful rugs on floor, cheerful learning environment",
+      "negative_prompt": "photorealistic, photo, low quality, dark classroom, empty room, high school, college, adult classroom, desks in rows, scary, inappropriate",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain bright, child-appropriate kindergarten classroom atmosphere"
+      },
+      "vocabulary_items": ["alphabet", "letters", "numbers", "table", "chair", "crayons", "paint", "paper", "glue", "scissors", "book", "bean bag", "fish tank", "goldfish", "cubby", "backpack", "coat hook", "calendar", "weather chart", "rug", "toy kitchen"]
+    }
+  ],
+  "generation_settings": {
+    "model": "Animagine XL 3.1 or equivalent anime SDXL model",
+    "resolution": "1024x768 (landscape) or 768x1024 (portrait)",
+    "steps": 30,
+    "cfg_scale": 7,
+    "sampler": "DPM++ 2M Karras",
+    "seed": "random",
+    "batch_size": 1,
+    "notes": "Generate 3 reference images per location. Ensure all locations are cheerful, child-appropriate, and reflect Portland Oregon apartment/school style."
+  },
+  "usage_instructions": {
+    "step_1": "Generate location reference images using prompts above",
+    "step_2": "Review and select best images for each location",
+    "step_3": "Save with naming convention: {location}_{number}.png",
+    "step_4": "Use selected references with IP-Adapter during scene generation",
+    "step_5": "Maintain consistency by using same references for all scenes in that location"
+  },
+  "notes": {
+    "approach": "AI-generated references instead of 3D modeling",
+    "rationale": "Capture Pacific Northwest apartment living with child-friendly elements",
+    "cultural_elements": "Portland rain culture, small apartment living, single-parent household, pet hamster, eco-conscious Pacific Northwest style",
+    "character_home_style": "Modest apartment, cozy, creative, child-friendly, single-mom household with work-from-home setup"
+  }
+}

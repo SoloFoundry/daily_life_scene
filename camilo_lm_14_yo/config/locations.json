@@ -1,0 +1,150 @@
+{
+  "metadata": {
+    "project": "Daily Life Visual Vocabulary Generator",
+    "character": "Camilo",
+    "phase": "POC",
+    "total_locations": 3,
+    "location_type": "AI-generated references",
+    "created": "2026-02-10"
+  },
+  "locations": [
+    {
+      "location_id": "bedroom",
+      "name": "Camilo's Bedroom",
+      "description": "A 14-year-old boy's bedroom in Barranquilla, Colombia. Light blue walls covered with soccer posters (Messi, James Rodriguez, Junior de Barranquilla team poster), single bed with Colombia flag-themed bedding (yellow, blue, red stripes), small wooden desk with school textbooks, notebooks, and a pencil cup, shelf with soccer trophies and medals, soccer ball on the tile floor, cleats by the door, ceiling fan essential for Barranquilla heat, window with thin curtains letting in bright tropical light, tile floor, small closet with school uniforms and casual clothes, phone charging on wooden nightstand, backpack on desk chair.",
+      "key_features": [
+        "single bed with Colombia flag-themed bedding",
+        "soccer posters on walls (Messi, James Rodriguez, Junior de Barranquilla)",
+        "small wooden desk with textbooks and notebooks",
+        "shelf with soccer trophies and medals",
+        "soccer ball on tile floor",
+        "soccer cleats by bedroom door",
+        "ceiling fan (essential in Barranquilla heat)",
+        "window with thin curtains, tropical light",
+        "tile floor",
+        "small closet with uniforms and casual clothes",
+        "phone charging on nightstand",
+        "backpack on desk chair"
+      ],
+      "lighting_conditions": {
+        "morning": "bright tropical morning light through thin curtains, golden and warm",
+        "afternoon": "intense Caribbean afternoon light, ceiling fan shadow rotating",
+        "evening": "warm desk lamp light, ceiling fan on high speed"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["wide shot showing bed and soccer posters", "desk area with trophies and textbooks", "bed with Colombia bedding and soccer ball on floor"],
+        "path_template": "camilo_lm_14_yo/assets/location_refs/bedroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, teenage boy's bedroom, single bed with Colombia flag-themed bedding (yellow blue red), soccer posters on light blue walls (Messi, James Rodriguez), small desk with school textbooks, shelf with soccer trophies and medals, soccer ball on tile floor, cleats by door, ceiling fan overhead, thin curtains with tropical light, Barranquilla Colombia style, teen sports bedroom",
+      "negative_prompt": "photorealistic, photo, low quality, adult bedroom, girl's room, messy, dark colors, scary, inappropriate content",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain sporty teenage boy bedroom with Colombian soccer culture"
+      },
+      "vocabulary_items": ["bed", "bedding", "pillow", "poster", "desk", "textbook", "notebook", "trophy", "medal", "soccer ball", "cleats", "ceiling fan", "curtain", "closet", "nightstand", "phone", "backpack", "lamp"]
+    },
+    {
+      "location_id": "bathroom",
+      "name": "Family Bathroom",
+      "description": "Family bathroom used by Camilo and his family in their Barranquilla home. Shower with plastic curtain, single sink with cabinet, mirror above sink, toilet, white and light blue tile walls, bright overhead light, towel hooks on wall with colored towels, teen boy toiletries on shelf (deodorant, hair gel, toothbrush and toothpaste), small window for ventilation in the tropical heat, tile floor with rubber bath mat, soap dish.",
+      "key_features": [
+        "shower with plastic curtain",
+        "single sink with cabinet below",
+        "mirror above sink",
+        "toilet",
+        "white and light blue tile walls",
+        "bright overhead light",
+        "towel hooks with colored towels",
+        "teen toiletries (deodorant, hair gel, toothbrush, toothpaste)",
+        "small window for ventilation",
+        "tile floor with rubber bath mat",
+        "soap dish with bar soap"
+      ],
+      "lighting_conditions": {
+        "morning": "bright overhead bathroom light mixed with window light",
+        "evening": "bright overhead light for evening shower"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["facing mirror and sink area", "shower area with curtain", "wide shot of bathroom"],
+        "path_template": "camilo_lm_14_yo/assets/location_refs/bathroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, family bathroom, white and light blue tile walls, single sink with cabinet, mirror, shower with plastic curtain, towel hooks with colored towels, teen boy toiletries on shelf (deodorant, gel), bright overhead light, small ventilation window, clean simple bathroom, tropical Colombian home",
+      "negative_prompt": "photorealistic, photo, low quality, dirty bathroom, luxury bathroom, dark, scary, inappropriate content",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain clean family bathroom appropriate for Caribbean Colombian middle-class home"
+      },
+      "vocabulary_items": ["shower", "curtain", "sink", "faucet", "mirror", "toilet", "towel", "towel hook", "toothbrush", "toothpaste", "deodorant", "hair gel", "soap", "bath mat", "tile", "light"]
+    },
+    {
+      "location_id": "soccer_field",
+      "name": "Club Soccer Practice Field",
+      "description": "Local soccer club's practice field in Barranquilla where Camilo trains. Natural grass field with painted white lines (sidelines, center circle, penalty box markings), two metal goal posts with white nets, team bench along the sideline with water bottles, orange cones set up for drills, floodlights on tall poles for evening practice, palm trees visible beyond the chain-link fence, tropical sky with scattered clouds, coach's area with clipboard and whistle, small concrete equipment shed near entrance, team flag (Junior de Barranquilla red and white), players in matching practice jerseys.",
+      "key_features": [
+        "natural grass field with painted white lines",
+        "two metal goal posts with white nets",
+        "team bench on sideline",
+        "water bottles and sports bags on bench",
+        "orange cones for drills",
+        "floodlights on tall poles",
+        "palm trees beyond chain-link fence",
+        "tropical sky",
+        "coach with whistle and clipboard",
+        "small concrete equipment shed",
+        "team flag (Junior de Barranquilla red and white)",
+        "corner flags"
+      ],
+      "lighting_conditions": {
+        "afternoon": "intense Caribbean afternoon sun, harsh shadows on grass, players squinting",
+        "late_afternoon": "golden hour light, long shadows across field, warm tropical glow",
+        "evening": "floodlights on, artificial white light mixing with twilight sky"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["wide shot of full field with goal posts and palm trees", "sideline bench area with cones and water bottles", "goal area close-up with net and players"],
+        "path_template": "camilo_lm_14_yo/assets/location_refs/soccer_field_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, soccer practice field, natural grass with white painted lines, metal goal posts with white nets, team bench on sideline, orange cones for drills, water bottles, floodlights on tall poles, palm trees beyond chain-link fence, tropical Caribbean sky, warm afternoon light, youth soccer training ground, Barranquilla Colombia",
+      "negative_prompt": "photorealistic, photo, low quality, indoor field, stadium, snow, cold weather, empty field, dark, scary, inappropriate content",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain tropical outdoor soccer field with Caribbean Colombian atmosphere"
+      },
+      "vocabulary_items": ["field", "grass", "goal", "goal post", "net", "bench", "cone", "water bottle", "floodlight", "palm tree", "fence", "whistle", "clipboard", "corner flag", "sideline", "penalty box", "center circle", "cleats", "shin guards", "jersey", "shorts", "soccer ball"]
+    }
+  ],
+  "generation_settings": {
+    "model": "Animagine XL 3.1 or equivalent anime SDXL model",
+    "resolution": "1024x768 (landscape) or 768x1024 (portrait)",
+    "steps": 30,
+    "cfg_scale": 7,
+    "sampler": "DPM++ 2M Karras",
+    "seed": "random",
+    "batch_size": 1,
+    "notes": "Generate 3 reference images per location. Ensure all locations reflect Barranquilla's tropical Caribbean atmosphere. Soccer field should feel warm and vibrant."
+  },
+  "usage_instructions": {
+    "step_1": "Generate location reference images using prompts above",
+    "step_2": "Review and select best images for each location",
+    "step_3": "Save with naming convention: {location}_{number}.png",
+    "step_4": "Use selected references with IP-Adapter during scene generation",
+    "step_5": "Maintain consistency by using same references for all scenes in that location"
+  },
+  "notes": {
+    "approach": "AI-generated references instead of 3D modeling",
+    "rationale": "Capture Caribbean Colombian home and sports culture for a teenage soccer player",
+    "cultural_elements": "Barranquilla tropical style, tile floors, ceiling fans, soccer culture deeply embedded in daily life, Junior de Barranquilla team colors (red and white)",
+    "character_home_style": "Middle-class, sporty teenage boy's space, warm family home with Colombian Caribbean character"
+  }
+}

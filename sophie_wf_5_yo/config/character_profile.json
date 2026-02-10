@@ -1,0 +1,171 @@
+{
+  "character": {
+    "name": "Sophie",
+    "age": 5,
+    "gender": "female",
+    "ethnicity": "White American",
+    "appearance": {
+      "skin": "light skin with rosy cheeks",
+      "hair": "straight light brown hair, usually in a messy ponytail or pigtails with colorful hair ties",
+      "build": "small for her age, typical 5-year-old build",
+      "eyes": "hazel eyes, round face",
+      "height": "small for age",
+      "distinguishing_features": "missing one front tooth (recently lost it), cheerful curious expression"
+    },
+    "occupation": "Kindergartener at a local public elementary school in Portland, Oregon",
+    "living_situation": "Small two-bedroom apartment in Portland, Oregon with single mom (Kate, 32, graphic designer who works from home). No siblings. Has a pet golden/tan Syrian hamster named Biscuit.",
+    "transportation": "Mom drives a used Subaru Outback. Sophie rides in a car seat/booster in the back seat.",
+    "style": {
+      "school": "Colorful mix-and-match outfits (striped leggings, graphic t-shirts with animals/rainbows, sneakers with velcro straps). Yellow rain jacket and red rain boots with white polka dots for Portland weather.",
+      "home_casual": "Same as school or pajamas",
+      "sleep": "Light purple pajamas with white stars print"
+    },
+    "family": {
+      "mom": "Kate, 32 years old, graphic designer who works from home, single mom, warm and patient"
+    },
+    "pet": {
+      "name": "Biscuit",
+      "type": "golden/tan Syrian hamster",
+      "details": "Lives in a cage on the dresser in Sophie's bedroom. Cage has exercise wheel, water bottle, bedding, and small hideout."
+    }
+  },
+  "prompt_templates": {
+    "base_character": "1girl, 5-year-old girl, light skin with rosy cheeks, straight light brown hair, hazel eyes, round face, missing one front tooth, cheerful curious expression, small child, anime style, detailed",
+    "school_outfit": "1girl, 5-year-old American girl, light skin with rosy cheeks, straight light brown hair in messy ponytail with colorful hair tie, hazel eyes, round face, missing front tooth, wearing colorful graphic t-shirt with rainbow, striped leggings, velcro sneakers, kindergartener, anime style",
+    "rain_gear": "1girl, 5-year-old American girl, light skin with rosy cheeks, light brown hair in ponytail, hazel eyes, wearing yellow rain jacket, red rain boots with white polka dots, Portland Oregon rain, anime style",
+    "casual_attire": "1girl, 5-year-old American girl, light skin with rosy cheeks, straight light brown hair in pigtails, hazel eyes, round face, missing front tooth, wearing colorful t-shirt and leggings, casual child clothes, anime style",
+    "pajamas": "1girl, 5-year-old American girl, light skin with rosy cheeks, straight light brown hair loose and messy, hazel eyes, round face, wearing light purple pajamas with white stars print, sleepy, anime style"
+  },
+  "positive_prompts": {
+    "general": [
+      "anime style",
+      "high quality",
+      "detailed",
+      "masterpiece",
+      "best quality",
+      "vibrant colors",
+      "clean lines",
+      "sharp focus"
+    ],
+    "character_specific": [
+      "1girl",
+      "5 years old",
+      "child",
+      "small child",
+      "kindergartener",
+      "light skin",
+      "rosy cheeks",
+      "straight light brown hair",
+      "hazel eyes",
+      "round face",
+      "missing front tooth",
+      "cheerful",
+      "cute",
+      "curious expression"
+    ]
+  },
+  "negative_prompts": {
+    "general": [
+      "photorealistic",
+      "photo",
+      "realistic",
+      "3d render",
+      "low quality",
+      "blurry",
+      "distorted",
+      "deformed",
+      "disfigured",
+      "bad anatomy",
+      "bad proportions",
+      "watermark",
+      "text",
+      "signature",
+      "username",
+      "worst quality"
+    ],
+    "character_specific": [
+      "multiple girls",
+      "multiple people",
+      "crowd",
+      "1boy",
+      "male",
+      "adult",
+      "teenager",
+      "mature",
+      "elderly",
+      "baby",
+      "sexy",
+      "revealing",
+      "revealing clothes",
+      "dark skin",
+      "dark hair",
+      "curly hair",
+      "blonde hair",
+      "tall"
+    ],
+    "quality_issues": [
+      "bad hands",
+      "deformed hands",
+      "extra fingers",
+      "missing fingers",
+      "bad face",
+      "deformed face",
+      "extra limbs",
+      "missing limbs",
+      "floating limbs"
+    ]
+  },
+  "lora_settings": {
+    "recommended_strength": 0.8,
+    "min_strength": 0.6,
+    "max_strength": 1.0,
+    "notes": "May need child character LoRA. Ensure all depictions are age-appropriate. Focus on cute, cheerful young child appearance. Character is 5 years old — must look distinctly younger than school-age children."
+  },
+  "reference_images": {
+    "strategy": "Use existing anime character LoRA from CivitAI for POC",
+    "alternative_1": "Generate 3-5 consistent anime images and use with IP-Adapter",
+    "alternative_2": "Train custom anime LoRA with 15-20 reference images",
+    "current_approach": "existing_lora",
+    "civitai_search_terms": [
+      "anime child girl",
+      "kindergarten girl anime",
+      "young child anime",
+      "ponytail child anime",
+      "cute child anime 5 years old"
+    ]
+  },
+  "consistency_guidelines": {
+    "critical_features": [
+      "light skin with rosy cheeks",
+      "straight light brown hair",
+      "hazel eyes",
+      "round face",
+      "age approximately 5 years old",
+      "missing one front tooth",
+      "cheerful curious expression",
+      "small for her age"
+    ],
+    "flexible_features": [
+      "exact hairstyle (messy ponytail, pigtails, loose - as specified)",
+      "clothing details (as specified per scene)",
+      "facial expression (happy, curious, sleepy, excited)",
+      "body position (as specified per scene)",
+      "hair ties color"
+    ],
+    "avoid_variations": [
+      "Different skin tones",
+      "Dark hair",
+      "Curly hair",
+      "Adult appearance",
+      "Teenager appearance",
+      "Mature expressions",
+      "Tall build"
+    ]
+  },
+  "notes": {
+    "educational_context": "This character represents a 5-year-old American kindergartener. Shows young child's daily routine, kindergarten life, pet care, and single-parent family dynamics.",
+    "cultural_context": "Portland, Oregon — rainy Pacific Northwest weather, coffee culture (mom), Subaru culture, green trees and nature, diverse progressive city. Small apartment living with single mom.",
+    "pedagogical_goal": "Help young learners relate to a character their age while learning home, school, bathroom, pet care, and daily routine vocabulary",
+    "age_appropriate": "CRITICAL: All depictions must be completely age-appropriate for a 5-year-old child. No mature, sexualized, or inappropriate content. Bath scenes show child wrapped in towel only — NO nudity."
+  }
+}

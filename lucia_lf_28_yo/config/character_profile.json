@@ -1,0 +1,168 @@
+{
+  "character": {
+    "name": "Lucia",
+    "full_name": "Lucia Moreno",
+    "age": 28,
+    "gender": "female",
+    "ethnicity": "Colombian/Latina",
+    "appearance": {
+      "skin": "light olive/tan complexion",
+      "hair": "dark brown shoulder-length hair, often in a practical ponytail or low bun for teaching",
+      "build": "medium height, average build",
+      "eyes": "brown eyes behind thin black rectangular glasses",
+      "distinguishing_features": "thin black rectangular glasses, warm patient smile, small gold stud earrings"
+    },
+    "occupation": "3rd grade elementary school teacher at a public school in Bucaramanga, Colombia",
+    "living_situation": "Two-bedroom apartment with partner Andres (30, architect) in a middle-class neighborhood. Green parrot named Paco (small periquito) in living room cage.",
+    "transportation": "Walks to school (15 minutes) through hilly Bucaramanga streets. Andres has a white Renault Logan.",
+    "style": {
+      "work": "Professional but comfortable — blouses (various colors), black or navy pants or knee-length skirts, comfortable flats, sometimes a light cardigan. School ID badge on lanyard. Hair in ponytail or low bun.",
+      "home_casual": "Jeans, t-shirt, sandals, hair down, glasses on",
+      "sleep": "Light cotton pajamas — floral print top and solid lavender pants"
+    },
+    "background": {
+      "education": "Teaching degree from a Colombian university, certified elementary educator",
+      "family": "Lives with partner Andres (30, architect). Parents live in another neighborhood in Bucaramanga. One younger sister.",
+      "hobbies": "Reading novels, cooking Colombian recipes, talking to Paco the parrot, walking through Bucaramanga parks",
+      "languages": "Spanish (native), English (intermediate — teaches basic English vocabulary to students)",
+      "pet": "Green parrot named Paco — small green parakeet/periquito, lives in a cage in the living room, very vocal"
+    }
+  },
+  "prompt_templates": {
+    "base_character": "1girl, young Latina woman, 28 years old, light olive tan skin, dark brown shoulder-length hair, brown eyes, thin black rectangular glasses, small gold stud earrings, warm smile, average build, anime style, detailed",
+    "morning_appearance": "1girl, young Latina woman, dark brown shoulder-length hair messy, brown eyes, thin black rectangular glasses, sleepy expression, wearing floral pajama top and lavender pants, anime style",
+    "work_appearance": "1girl, young Latina woman, dark brown hair in ponytail or low bun, brown eyes, thin black rectangular glasses, wearing professional blouse and pants, school ID badge on lanyard, comfortable flats, warm patient expression, anime style",
+    "casual_attire": "1girl, young Latina woman, dark brown shoulder-length hair loose, brown eyes, thin black rectangular glasses, wearing jeans and t-shirt, sandals, relaxed expression, anime style",
+    "evening_appearance": "1girl, young Latina woman, dark brown shoulder-length hair loose, brown eyes, thin black rectangular glasses, wearing comfortable home clothes, relaxed expression, anime style"
+  },
+  "positive_prompts": {
+    "general": [
+      "anime style",
+      "high quality",
+      "detailed",
+      "masterpiece",
+      "best quality",
+      "vibrant colors",
+      "clean lines",
+      "sharp focus"
+    ],
+    "character_specific": [
+      "1girl",
+      "young woman",
+      "Latina",
+      "Colombian",
+      "light olive skin",
+      "tan skin",
+      "dark brown hair",
+      "shoulder-length hair",
+      "brown eyes",
+      "thin black rectangular glasses",
+      "gold stud earrings",
+      "warm smile",
+      "average build",
+      "teacher",
+      "educator"
+    ]
+  },
+  "negative_prompts": {
+    "general": [
+      "photorealistic",
+      "photo",
+      "realistic",
+      "3d render",
+      "low quality",
+      "blurry",
+      "distorted",
+      "deformed",
+      "disfigured",
+      "bad anatomy",
+      "bad proportions",
+      "watermark",
+      "text",
+      "signature",
+      "username",
+      "worst quality"
+    ],
+    "character_specific": [
+      "multiple girls",
+      "multiple people",
+      "crowd",
+      "1boy",
+      "male",
+      "child",
+      "elderly",
+      "pale skin",
+      "white skin",
+      "dark skin",
+      "blonde hair",
+      "red hair",
+      "long hair past shoulders",
+      "very short hair",
+      "overweight",
+      "skinny",
+      "no glasses"
+    ],
+    "quality_issues": [
+      "bad hands",
+      "deformed hands",
+      "extra fingers",
+      "missing fingers",
+      "bad face",
+      "deformed face",
+      "extra limbs",
+      "missing limbs",
+      "floating limbs"
+    ]
+  },
+  "lora_settings": {
+    "recommended_strength": 0.8,
+    "min_strength": 0.6,
+    "max_strength": 1.0,
+    "notes": "May need Latina female character LoRA. Search CivitAI for appropriate options. Adjust strength based on consistency results."
+  },
+  "reference_images": {
+    "strategy": "Use existing anime character LoRA from CivitAI for POC",
+    "alternative_1": "Generate 3-5 consistent anime images and use with IP-Adapter",
+    "alternative_2": "Train custom anime LoRA with 15-20 reference images",
+    "current_approach": "existing_lora",
+    "civitai_search_terms": [
+      "anime latina female character",
+      "Colombian anime",
+      "teacher anime female",
+      "glasses anime woman",
+      "olive skin anime woman",
+      "educator anime character"
+    ]
+  },
+  "consistency_guidelines": {
+    "critical_features": [
+      "light olive/tan skin",
+      "dark brown shoulder-length hair",
+      "brown eyes",
+      "thin black rectangular glasses",
+      "small gold stud earrings",
+      "warm patient expression",
+      "average build",
+      "age approximately 28"
+    ],
+    "flexible_features": [
+      "exact hair style (ponytail/bun for work, loose at home — as specified per scene)",
+      "clothing details (as specified per scene)",
+      "facial expression (warm, patient, focused, relaxed)",
+      "body position (as specified per scene)"
+    ],
+    "avoid_variations": [
+      "Different skin tones (too pale or too dark)",
+      "Long hair past shoulders or very short hair",
+      "Different eye colors",
+      "Older or younger appearance",
+      "Missing glasses",
+      "Overweight or very thin build"
+    ]
+  },
+  "notes": {
+    "educational_context": "This character represents a Colombian female elementary school teacher in Bucaramanga. Shows teaching professional life, home life with a partner and pet parrot, and daily routines in a Colombian Andean city.",
+    "cultural_context": "Bucaramanga Colombia urban lifestyle ('La Ciudad Bonita'), Andean Colombian culture, teaching profession, arepa and Colombian cuisine, hilly terrain, pleasant spring-like climate, neighborhood bakeries and corner stores",
+    "pedagogical_goal": "Help learners see diverse representation while learning vocabulary through a relatable young teacher's daily activities including classroom teaching, grading, cooking, walking through Colombian streets, and caring for a pet parrot"
+  }
+}

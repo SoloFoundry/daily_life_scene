@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "project": "Daily Life Visual Vocabulary Generator",
+    "character": "Santiago",
+    "phase": "POC",
+    "total_locations": 3,
+    "location_type": "AI-generated references",
+    "created": "2026-02-10"
+  },
+  "locations": [
+    {
+      "location_id": "bedroom",
+      "name": "Santiago's Rented Room",
+      "description": "Small rented room in a shared house in Bogotá's Kennedy neighborhood. A single bed with a dark blue cotton comforter pushed against the wall. Beside the bed, a plastic crate turned on its side serves as a nightstand, holding a smartphone with a cracked screen protector, a charger cable, and a small digital alarm clock. Against the opposite wall, a folding table holds DJ equipment: a used DJ controller (black with multicolored pads and knobs), a laptop (silver, sticker-covered lid), over-ear headphones with blue accents, a tangle of audio cables, and a small portable Bluetooth speaker. A plastic chair sits at the table. The motorcycle helmet (red and black) hangs from a wall hook near the door. The black motorcycle jacket with reflective strips hangs on a nail beside it. The orange Rappi insulated delivery backpack leans against the wall near the door. A small wooden closet (ropero) with one door slightly ajar reveals jeans, hoodies, and t-shirts on wire hangers. The walls are bare concrete painted off-white, with one reggaeton concert poster taped up. The floor is bare gray tile. A single window with thin beige curtains looks out onto a narrow street. A pair of black ankle boots sits by the door. A small electric fan sits on the floor near the bed.",
+      "key_features": [
+        "single bed with dark blue comforter",
+        "plastic crate nightstand",
+        "smartphone with cracked screen protector",
+        "charger cable",
+        "small digital alarm clock",
+        "folding table with DJ equipment",
+        "DJ controller (black with colored pads)",
+        "sticker-covered silver laptop",
+        "over-ear headphones (black with blue accents)",
+        "audio cables",
+        "small portable Bluetooth speaker",
+        "plastic chair",
+        "red and black motorcycle helmet on wall hook",
+        "black motorcycle jacket with reflective strips",
+        "orange Rappi delivery backpack",
+        "small wooden closet/ropero",
+        "reggaeton concert poster",
+        "bare concrete walls painted off-white",
+        "gray tile floor",
+        "thin beige curtains",
+        "small electric fan on floor",
+        "black ankle boots by door"
+      ],
+      "lighting_conditions": {
+        "morning": "soft gray morning light through thin beige curtains, phone screen glow",
+        "daytime": "bright daylight through window, view of narrow Kennedy neighborhood street",
+        "evening": "warm overhead bulb light, DJ controller LEDs glowing, laptop screen glow",
+        "late_night": "dim room lit by laptop screen and DJ controller LEDs, blue and purple glow"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["view from doorway showing bed and closet", "angle toward folding table with DJ setup and window", "close perspective of bed and crate nightstand"],
+        "path_template": "santiago_lm_19_yo/assets/location_refs/bedroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, small rented room in Bogotá Colombia, single bed with dark blue comforter, plastic crate nightstand, folding table with DJ controller and laptop, motorcycle helmet on wall hook, motorcycle jacket hanging, orange delivery backpack, small wooden closet, reggaeton poster, bare concrete walls, gray tile floor, thin curtains, electric fan, working-class young man's room, detailed interior",
+      "negative_prompt": "photorealistic, photo, low quality, luxury bedroom, large bedroom, modern minimalist, empty, dark room, western style, wealthy, spacious",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain working-class Bogotá rented room aesthetic with DJ equipment and delivery gear"
+      },
+      "vocabulary_items": ["bed", "comforter", "nightstand", "smartphone", "charger", "alarm clock", "table", "DJ controller", "laptop", "headphones", "speaker", "cables", "chair", "helmet", "motorcycle jacket", "backpack", "closet", "poster", "curtains", "fan", "boots", "wall hook"]
+    },
+    {
+      "location_id": "bathroom",
+      "name": "Shared Bathroom",
+      "description": "Shared bathroom in the rented house, used by Santiago and his housemates. Small and functional. White tile walls with some grout staining. Gray tile floor. A single white porcelain sink with a chrome faucet, slightly dripping. A rectangular mirror above the sink with a fluorescent tube light above it. A shower stall with a clear plastic curtain (no bathtub). A white plastic shelf mounted on the wall holds multiple residents' toiletries in separate plastic baskets — Santiago's basket contains a bar of soap, a bottle of shampoo, a disposable razor, a can of shaving cream, deodorant, and a small bottle of men's cologne. A single toothbrush holder on the sink ledge with several toothbrushes (Santiago's is blue). A tube of Colgate toothpaste. A towel hook on the back of the door with a blue towel. A small window near the ceiling with frosted glass. A rubber bathmat on the floor in front of the shower. The toilet is behind a short partition wall.",
+      "key_features": [
+        "white tile walls with grout staining",
+        "gray tile floor",
+        "white porcelain sink with chrome faucet",
+        "rectangular mirror above sink",
+        "fluorescent tube light",
+        "shower stall with clear plastic curtain",
+        "white plastic shelf with toiletry baskets",
+        "bar of soap",
+        "shampoo bottle",
+        "disposable razor",
+        "can of shaving cream",
+        "deodorant stick",
+        "small bottle of men's cologne",
+        "toothbrush holder with several toothbrushes",
+        "blue toothbrush (Santiago's)",
+        "Colgate toothpaste tube",
+        "towel hook on door",
+        "blue towel",
+        "frosted glass window near ceiling",
+        "rubber bathmat",
+        "short partition wall"
+      ],
+      "lighting_conditions": {
+        "morning": "harsh fluorescent tube light, cool white illumination",
+        "post_shower": "fluorescent light diffused through steam, fogged mirror",
+        "evening": "fluorescent light with warm tones, slightly dimmer"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["facing mirror and sink with toiletries shelf", "shower stall with plastic curtain", "wider angle showing sink, mirror, and shower entrance"],
+        "path_template": "santiago_lm_19_yo/assets/location_refs/bathroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, shared bathroom in Colombian rented house, white tile walls, gray tile floor, white porcelain sink, chrome faucet, rectangular mirror, fluorescent tube light, shower stall with clear plastic curtain, plastic shelf with toiletry baskets, towel hook, blue towel, frosted window, rubber bathmat, simple functional shared space, detailed interior",
+      "negative_prompt": "photorealistic, photo, low quality, luxury bathroom, bathtub, double vanity, modern minimalist, empty, dark bathroom, large bathroom, private bathroom, wealthy",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain shared rental bathroom feel with multiple residents' toiletries"
+      },
+      "vocabulary_items": ["sink", "mirror", "faucet", "shower", "shower curtain", "tile", "towel", "toothbrush", "toothpaste", "soap", "shampoo", "razor", "shaving cream", "deodorant", "cologne", "bathmat", "towel hook", "water", "shelf", "basket"]
+    },
+    {
+      "location_id": "street_delivery",
+      "name": "Bogotá Streets — Motorcycle Delivery",
+      "description": "The busy streets of Bogotá seen from Santiago's perspective as a motorcycle delivery rider. Typical scenes include wide avenues (carreras) with heavy traffic — yellow taxis, red TransMilenio articulated buses on dedicated lanes, cars, other motorcycles weaving between traffic. Concrete and brick buildings line the streets — a mix of small shops (tiendas), bakeries (panaderías), fruit vendors with carts, empanada stands, tinto (coffee) carts with thermoses, pharmacies (droguerías), and cell phone repair shops. Traffic lights, road signs, crosswalks with pedestrians. Street vendors on corners. Santiago's red and black Honda CB 125 motorcycle, slightly scratched, with mirrors and turn signals. The orange Rappi delivery backpack is strapped to his back. He wears his red and black helmet, black motorcycle jacket with reflective strips, black gloves. The Bogotá sky is often overcast with gray clouds, green mountains (cerros) visible in the distance. Street art and murals on some walls. Potholes in the road. The occasional ciclovía (bike lane) with cyclists.",
+      "key_features": [
+        "red and black Honda CB 125 motorcycle",
+        "orange Rappi insulated delivery backpack",
+        "red and black full-face helmet",
+        "black motorcycle jacket with reflective strips",
+        "black motorcycle gloves",
+        "yellow taxis",
+        "red TransMilenio buses on dedicated lanes",
+        "cars and other motorcycles in traffic",
+        "concrete and brick buildings",
+        "small shops/tiendas with signs",
+        "fruit vendor carts",
+        "empanada street stands",
+        "tinto (coffee) cart with thermos",
+        "traffic lights and road signs",
+        "pedestrians on crosswalks",
+        "street vendors on corners",
+        "overcast Bogotá sky with gray clouds",
+        "green mountains (cerros) in distance",
+        "street art and murals",
+        "potholes in road",
+        "ciclovía bike lane"
+      ],
+      "lighting_conditions": {
+        "morning": "soft overcast daylight, gray clouds over Bogotá, cool tones, mountains hazy in mist",
+        "midday": "bright but diffused light through thin cloud cover, occasional sun breaks",
+        "afternoon": "warm golden light breaking through clouds, long shadows on streets",
+        "evening": "dusk sky with orange and purple tones over mountains, street lights turning on, headlights, neon shop signs"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["busy avenue with traffic and TransMilenio bus", "neighborhood street with tiendas and vendors", "intersection with traffic lights and mountains in background"],
+        "path_template": "santiago_lm_19_yo/assets/location_refs/street_delivery_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, busy Bogotá Colombia street scene, motorcycle in traffic, yellow taxis, red TransMilenio bus, concrete buildings, small shops with signs, street vendors, empanada stand, fruit cart, traffic lights, overcast sky, green mountains in distance, urban Latin American city, motorcycles and cars, pedestrians, detailed urban scene",
+      "negative_prompt": "photorealistic, photo, low quality, empty street, rural, quiet, night only, American city, European city, wealthy neighborhood, clean perfect roads",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain busy Bogotá working-class street atmosphere with typical Colombian urban elements"
+      },
+      "vocabulary_items": ["motorcycle", "helmet", "backpack", "traffic", "taxi", "bus", "car", "street", "road", "building", "shop/tienda", "traffic light", "crosswalk", "pedestrian", "sidewalk", "mountains", "clouds", "sky", "delivery", "gloves", "jacket", "mirror", "wheel", "headlight", "sign"]
+    }
+  ],
+  "generation_settings": {
+    "model": "Animagine XL 3.1 or equivalent anime SDXL model",
+    "resolution": "1024x768 (landscape) or 768x1024 (portrait)",
+    "steps": 30,
+    "cfg_scale": 7,
+    "sampler": "DPM++ 2M Karras",
+    "seed": "random",
+    "batch_size": 1,
+    "notes": "Generate 3 reference images per location with slight angle variations to capture Bogotá working-class and street-level details"
+  },
+  "usage_instructions": {
+    "step_1": "Generate location reference images using prompts above",
+    "step_2": "Review and select best images for Bogotá working-class authenticity and consistency",
+    "step_3": "Save with naming convention: {location}_{number}.png",
+    "step_4": "Use selected references with IP-Adapter during scene generation",
+    "step_5": "Maintain consistency by using same references for all scenes in that location"
+  },
+  "notes": {
+    "approach": "AI-generated references instead of 3D modeling",
+    "rationale": "Faster iteration, maintains Bogotá urban authenticity and cultural details",
+    "cultural_elements": "Working-class Bogotá: Kennedy neighborhood rental houses, shared living spaces, motorcycle delivery culture (Rappi/iFood), TransMilenio public transit, tienda culture, tinto carts, street food vendors, urban street art, overcast skies with mountain backdrop, busy traffic with motorcycles weaving",
+    "character_home_style": "Working-class shared rental house, small functional rooms, basic furnishings, personal touches through DJ equipment and music gear, young urban Colombian aesthetic"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "metadata": {
+    "project": "Daily Life Visual Vocabulary Generator",
+    "character": "Raj",
+    "phase": "POC",
+    "total_locations": 3,
+    "location_type": "AI-generated references",
+    "created": "2026-02-09"
+  },
+  "locations": [
+    {
+      "location_id": "bedroom",
+      "name": "Raj and Sunita's Master Bedroom",
+      "description": "Master bedroom in a two-story suburban New Jersey house. Queen bed with floral bedspread (Sunita's choice), wooden nightstands on each side with reading lamps, Raj's thick-framed glasses case and weekly pill organizer on his nightstand. A small puja corner with brass Ganesh and Lakshmi statues, incense holder, and marigold garland. Framed photos of grandchildren on dresser. Closet with neatly hung clothes. Ceiling fan, paisley-patterned curtains, beige carpet. Warm, lived-in feel of a long-married couple's bedroom.",
+      "key_features": [
+        "queen bed with floral bedspread",
+        "wooden nightstands with reading lamps",
+        "glasses case on nightstand",
+        "weekly pill organizer on nightstand",
+        "small puja corner with brass Ganesh and Lakshmi statues",
+        "incense holder with sandalwood incense",
+        "marigold garland on puja shelf",
+        "framed photos of grandchildren on dresser",
+        "wooden dresser with mirror",
+        "closet with neatly hung clothes",
+        "ceiling fan",
+        "paisley-patterned curtains",
+        "beige wall-to-wall carpet",
+        "digital alarm clock",
+        "stack of books on nightstand"
+      ],
+      "lighting_conditions": {
+        "early_morning": "soft gray-blue pre-dawn light through paisley curtains",
+        "morning": "warm golden morning light streaming through curtains",
+        "evening": "warm reading lamp glow, ceiling light",
+        "night": "dim reading lamp on nightstand"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["wide shot showing bed, nightstands, and puja corner", "nightstand close-up with glasses and pill organizer", "puja corner with brass deities and incense"],
+        "path_template": "raj_im_72_yo/assets/location_refs/bedroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, suburban New Jersey master bedroom, queen bed with floral bedspread, wooden nightstands with reading lamps, glasses case and pill organizer on nightstand, small Hindu puja corner with brass Ganesh and Lakshmi statues, incense holder, framed family photos on dresser, ceiling fan, paisley curtains, beige carpet, warm lived-in elderly couple bedroom, Indian American home",
+      "negative_prompt": "photorealistic, photo, low quality, modern minimalist, young person's room, messy, dark colors, empty room, no cultural items",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain warm suburban Indian American bedroom with puja corner and elderly details"
+      },
+      "vocabulary_items": ["bed", "bedspread", "pillow", "nightstand", "lamp", "glasses", "glasses case", "pill organizer", "alarm clock", "dresser", "mirror", "curtain", "carpet", "ceiling fan", "closet", "incense", "statue", "photo frame"]
+    },
+    {
+      "location_id": "bathroom",
+      "name": "Master Bathroom",
+      "description": "Master bathroom adapted for elderly comfort and safety. Walk-in shower with glass door (no tub — easier for seniors), installed grab bars in chrome finish, non-slip mat on tile floor. Medicine cabinet with prescription bottles and reading glasses holder. Electric toothbrush in charging stand, aftershave bottle, wooden comb on counter. Small plastic stool inside shower for sitting. White tile walls with beige accent tile border. Bright overhead light. Clean, practical, safety-conscious bathroom.",
+      "key_features": [
+        "walk-in shower with glass door (no tub)",
+        "chrome grab bars installed on walls",
+        "non-slip rubber mat on floor",
+        "medicine cabinet with mirror",
+        "prescription bottles in cabinet",
+        "electric toothbrush in charging stand",
+        "wooden comb on counter",
+        "aftershave bottle",
+        "reading glasses holder",
+        "small plastic stool inside shower",
+        "white tile walls with beige accent border",
+        "single sink vanity with granite counter",
+        "chrome faucet",
+        "towel rack with folded towels",
+        "bright overhead light"
+      ],
+      "lighting_conditions": {
+        "morning": "bright overhead bathroom light, some natural light from small window",
+        "evening": "bright overhead light"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["facing mirror and sink with medicine cabinet", "walk-in shower with grab bars and stool", "wide shot of full bathroom"],
+        "path_template": "raj_im_72_yo/assets/location_refs/bathroom_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, elderly-adapted master bathroom, walk-in shower with glass door, chrome grab bars on walls, non-slip mat, medicine cabinet with mirror, electric toothbrush on counter, small shower stool, white tile walls with beige accent border, single sink vanity, clean practical safety-conscious bathroom, suburban American home",
+      "negative_prompt": "photorealistic, photo, low quality, luxury spa bathroom, bathtub, young person bathroom, dirty, dark, cluttered",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain elderly-adapted bathroom with safety features (grab bars, non-slip mat, shower stool)"
+      },
+      "vocabulary_items": ["shower", "grab bar", "non-slip mat", "mirror", "medicine cabinet", "toothbrush", "toothpaste", "comb", "aftershave", "sink", "faucet", "towel", "soap", "stool", "tile", "counter"]
+    },
+    {
+      "location_id": "garden_living_room",
+      "name": "Backyard Garden and Living Room",
+      "description": "Combined location showing two connected spaces. GARDEN: Backyard with raised vegetable beds containing tomatoes, cilantro, mint, curry leaves, and chili peppers. Garden hose coiled on wall hook, kneeling pad, sun hat, gardening gloves, small tool caddy with trowel and pruning shears. Buddy's outdoor water bowl near back door. Green lawn, wooden fence, mature trees. LIVING ROOM: Large comfortable brown sofa with throw pillows, TV mounted on wall (often showing cricket), wooden bookshelf with engineering textbooks and Hindi novels, chess set on wooden coffee table, framed family photos and Indian artwork on walls, Buddy's dog bed near sofa.",
+      "key_features": [
+        "raised vegetable beds (tomatoes, cilantro, mint, curry leaves, chili peppers)",
+        "garden hose on wall hook",
+        "kneeling pad for gardening",
+        "sun hat and gardening gloves",
+        "trowel and pruning shears",
+        "Buddy's outdoor water bowl",
+        "green lawn and wooden fence",
+        "large brown comfortable sofa with throw pillows",
+        "wall-mounted TV (cricket on screen)",
+        "wooden bookshelf with engineering textbooks and Hindi novels",
+        "chess set on wooden coffee table",
+        "framed family photos on walls",
+        "Indian artwork (Mughal miniature painting, brass wall hanging)",
+        "Buddy's dog bed near sofa",
+        "Buddy's leash hanging by back door"
+      ],
+      "lighting_conditions": {
+        "morning": "bright morning sunlight in garden, natural light through sliding glass door into living room",
+        "midday": "full sun in garden, bright indirect light in living room",
+        "afternoon": "warm golden afternoon light in both spaces",
+        "evening": "warm lamp light in living room, sunset colors through windows"
+      },
+      "reference_images": {
+        "count": 3,
+        "variations": ["backyard garden with raised beds and gardening tools", "living room with sofa, TV, and bookshelf", "view from garden through sliding door into living room"],
+        "path_template": "raj_im_72_yo/assets/location_refs/garden_living_room_{number}.png",
+        "status": "not_generated"
+      },
+      "prompt_template": "anime illustration, masterpiece, suburban New Jersey backyard garden with raised vegetable beds (tomatoes, herbs), gardening tools, green lawn, wooden fence, AND cozy living room with large brown sofa, wall-mounted TV showing cricket, bookshelf with books, chess set on coffee table, Indian artwork on walls, dog bed, warm family home atmosphere, Indian American suburban home",
+      "negative_prompt": "photorealistic, photo, low quality, apartment, urban, modern minimalist, empty room, no garden, no cultural items, dark, cold atmosphere",
+      "ip_adapter_strength": {
+        "recommended": 0.6,
+        "min": 0.4,
+        "max": 0.8,
+        "notes": "Maintain suburban Indian American home atmosphere with garden and culturally-decorated living room"
+      },
+      "vocabulary_items": ["garden", "vegetable", "tomato", "herb", "mint", "hose", "gloves", "hat", "trowel", "fence", "lawn", "sofa", "television", "bookshelf", "chess", "coffee table", "dog bed", "leash", "artwork", "photo frame", "pillow", "lamp"]
+    }
+  ],
+  "generation_settings": {
+    "model": "Animagine XL 3.1 or equivalent anime SDXL model",
+    "resolution": "1024x768 (landscape) or 768x1024 (portrait)",
+    "steps": 30,
+    "cfg_scale": 7,
+    "sampler": "DPM++ 2M Karras",
+    "seed": "random",
+    "batch_size": 1,
+    "notes": "Generate 3 reference images per location. Ensure locations reflect Indian American suburban home with cultural touches and elderly-adapted features."
+  },
+  "usage_instructions": {
+    "step_1": "Generate location reference images using prompts above",
+    "step_2": "Review and select best images for each location",
+    "step_3": "Save with naming convention: {location}_{number}.png",
+    "step_4": "Use selected references with IP-Adapter during scene generation",
+    "step_5": "Maintain consistency by using same references for all scenes in that location"
+  },
+  "notes": {
+    "approach": "AI-generated references instead of 3D modeling",
+    "rationale": "Capture suburban New Jersey Indian American home with cultural elements and elderly-friendly adaptations",
+    "cultural_elements": "Puja corner with Hindu deities, Indian artwork, Hindi novels, cricket on TV, chai culture, Indian garden herbs (curry leaves, cilantro)",
+    "character_home_style": "Upper-middle-class suburban, warm and lived-in, Indian American cultural decor, elderly-adapted safety features, pet-friendly"
+  }
+}

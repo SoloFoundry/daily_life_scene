@@ -1,0 +1,166 @@
+{
+  "character": {
+    "name": "Camilo",
+    "age": 14,
+    "gender": "male",
+    "ethnicity": "Colombian/Latino",
+    "appearance": {
+      "skin": "light brown skin (costeño coloring, Caribbean coast Colombian)",
+      "hair": "short black hair, slightly wavy, kept neat",
+      "build": "slim, athletic teenage build",
+      "eyes": "brown eyes",
+      "height": "average height for 14",
+      "distinguishing_features": "athletic posture, often has a soccer ball under his arm or at his feet"
+    },
+    "occupation": "8th grade student at a public secondary school, soccer team member (school team and local club Junior de Barranquilla youth academy)",
+    "living_situation": "Two-story house in a middle-class neighborhood in Barranquilla, Colombia, with father (Carlos, 45, works at a shipping company), mother (Diana, 42, elementary school administrator), and younger sister (Valentina, 10)",
+    "transportation": "Walks to school (10 minutes), takes a bus to soccer club practice",
+    "style": {
+      "school": "White short-sleeve button-up shirt, navy blue pants, black belt, black shoes, white socks",
+      "soccer_practice": "Red and white club jersey (Junior de Barranquilla colors), black shorts, soccer cleats, shin guards, long soccer socks",
+      "home_casual": "Shorts, t-shirts, flip-flops (chanclas), sometimes a baseball cap",
+      "sleep": "Light cotton shorts and an old soccer jersey (Colombia national team or Junior de Barranquilla)"
+    },
+    "family": {
+      "papa": "Carlos, 45 years old, works at a shipping company in Barranquilla port, calm and supportive",
+      "mama": "Diana, 42 years old, elementary school administrator, organized and nurturing",
+      "hermana": "Valentina, 10 years old, younger sister, playful, sometimes annoying but loved"
+    }
+  },
+  "prompt_templates": {
+    "base_character": "1boy, 14-year-old boy, light brown skin, short black slightly wavy hair, brown eyes, slim athletic build, anime style, teenager, detailed",
+    "school_uniform": "1boy, 14-year-old Colombian boy, light brown skin, short black slightly wavy hair, brown eyes, wearing white short-sleeve button-up shirt, navy blue pants, black belt, black shoes, white socks, secondary school student, anime style",
+    "soccer_practice": "1boy, 14-year-old Colombian boy, light brown skin, short black slightly wavy hair, brown eyes, wearing red and white soccer jersey, black shorts, soccer cleats, shin guards, long soccer socks, athletic teenager, anime style",
+    "casual_attire": "1boy, 14-year-old Colombian boy, light brown skin, short black slightly wavy hair, brown eyes, wearing casual t-shirt and shorts, flip-flops, relaxed teenager, anime style",
+    "pajamas": "1boy, 14-year-old Colombian boy, light brown skin, short black slightly wavy hair, brown eyes, wearing light cotton shorts and old soccer jersey, sleepy teenager, anime style"
+  },
+  "positive_prompts": {
+    "general": [
+      "anime style",
+      "high quality",
+      "detailed",
+      "masterpiece",
+      "best quality",
+      "vibrant colors",
+      "clean lines",
+      "sharp focus"
+    ],
+    "character_specific": [
+      "1boy",
+      "14 years old",
+      "teenager",
+      "light brown skin",
+      "latino",
+      "short black hair",
+      "slightly wavy hair",
+      "brown eyes",
+      "athletic build",
+      "slim",
+      "soccer player"
+    ]
+  },
+  "negative_prompts": {
+    "general": [
+      "photorealistic",
+      "photo",
+      "realistic",
+      "3d render",
+      "low quality",
+      "blurry",
+      "distorted",
+      "deformed",
+      "disfigured",
+      "bad anatomy",
+      "bad proportions",
+      "watermark",
+      "text",
+      "signature",
+      "username",
+      "worst quality"
+    ],
+    "character_specific": [
+      "multiple boys",
+      "multiple people",
+      "crowd",
+      "1girl",
+      "female",
+      "adult",
+      "child",
+      "elderly",
+      "baby",
+      "toddler",
+      "pale skin",
+      "white skin",
+      "blonde hair",
+      "long hair",
+      "sexy",
+      "mature",
+      "revealing clothes",
+      "muscular",
+      "beard",
+      "facial hair"
+    ],
+    "quality_issues": [
+      "bad hands",
+      "deformed hands",
+      "extra fingers",
+      "missing fingers",
+      "bad face",
+      "deformed face",
+      "extra limbs",
+      "missing limbs",
+      "floating limbs"
+    ]
+  },
+  "lora_settings": {
+    "recommended_strength": 0.8,
+    "min_strength": 0.6,
+    "max_strength": 1.0,
+    "notes": "May need teenage boy character LoRA. Ensure all depictions are age-appropriate. Focus on athletic, clean-cut teenage appearance."
+  },
+  "reference_images": {
+    "strategy": "Use existing anime character LoRA from CivitAI for POC",
+    "alternative_1": "Generate 3-5 consistent anime images and use with IP-Adapter",
+    "alternative_2": "Train custom anime LoRA with 15-20 reference images",
+    "current_approach": "existing_lora",
+    "civitai_search_terms": [
+      "anime teenage boy",
+      "school boy anime",
+      "latino boy anime",
+      "soccer player anime",
+      "sports anime boy",
+      "short black hair anime boy"
+    ]
+  },
+  "consistency_guidelines": {
+    "critical_features": [
+      "light brown skin",
+      "short black slightly wavy hair",
+      "brown eyes",
+      "age approximately 14 years old",
+      "slim athletic build",
+      "average height for age"
+    ],
+    "flexible_features": [
+      "exact hairstyle details (as specified per scene)",
+      "clothing details (as specified per scene)",
+      "facial expression (focused, happy, tired, determined)",
+      "body position (as specified per scene)"
+    ],
+    "avoid_variations": [
+      "Different skin tones",
+      "Long hair",
+      "Blonde or light hair",
+      "Adult appearance",
+      "Child appearance (under 12)",
+      "Muscular or bulky build",
+      "Facial hair"
+    ]
+  },
+  "notes": {
+    "educational_context": "This character represents a Colombian teenage boy passionate about soccer. Shows secondary school routine, sports training, and family life in a Caribbean Colombian city.",
+    "cultural_context": "Barranquilla, Colombia Caribbean coast, public secondary school, soccer culture (Junior de Barranquilla), tropical climate, Colombian Caribbean food and customs",
+    "pedagogical_goal": "Help learners connect with a teenage character while learning school, sports, home, and daily routine vocabulary in a Caribbean Colombian context",
+    "age_appropriate": "CRITICAL: All depictions must be completely age-appropriate for a 14-year-old boy. No mature, sexualized, or inappropriate content."
+  }
+}

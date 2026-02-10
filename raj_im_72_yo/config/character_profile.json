@@ -1,0 +1,179 @@
+{
+  "character": {
+    "name": "Raj",
+    "age": 72,
+    "gender": "male",
+    "ethnicity": "Indian American",
+    "appearance": {
+      "skin": "medium brown skin",
+      "hair": "thin white/silver hair, neatly combed",
+      "facial_hair": "trim gray mustache",
+      "build": "average height, slightly stooped posture from age",
+      "height": "average (5'8\")",
+      "eyes": "warm brown eyes behind thick-framed rectangular glasses",
+      "distinguishing_features": "thick-framed rectangular glasses, age spots on hands, warm gentle smile, slightly stooped posture"
+    },
+    "occupation": "Retired electrical engineer (worked at Bell Labs for 35 years). Enjoys a leisurely retirement.",
+    "living_situation": "Two-story suburban house in Edison, New Jersey (large Indian American community) with wife Sunita (69, retired school teacher). Adult children live elsewhere.",
+    "transportation": "Silver Toyota Camry. Daily walks with dog Buddy around the neighborhood.",
+    "pet": {
+      "name": "Buddy",
+      "type": "dog",
+      "breed": "medium-sized golden-brown mixed breed",
+      "age": 8,
+      "temperament": "friendly, calm, older dog"
+    },
+    "style": {
+      "sleep": "Light blue cotton kurta pajama (traditional Indian sleepwear)",
+      "morning_home": "White undershirt (banian) with loose cotton pants, house slippers. Cardigan or light sweater if cool.",
+      "going_out": "Collared polo shirt or button-down, khaki pants, walking shoes, light jacket",
+      "puja": "Clean kurta, sometimes a small tilak on forehead"
+    },
+    "family": {
+      "wife": "Sunita, 69 years, retired school teacher, warm face, gray-streaked dark hair often in a bun, wears salwar kameez at home",
+      "son": "Vikram, 42, lives in California, software engineer",
+      "daughter": "Priya, 38, lives in nearby Princeton, pediatrician",
+      "grandchildren": "Visit on weekends sometimes"
+    }
+  },
+  "prompt_templates": {
+    "base_character": "1boy, elderly man, 72 years old, medium brown skin, thin white silver hair neatly combed, trim gray mustache, thick-framed rectangular glasses, slightly stooped posture, warm gentle smile, Indian American, anime style, detailed",
+    "morning_attire": "1boy, elderly Indian American man, 72 years old, medium brown skin, white silver hair, gray mustache, rectangular glasses, wearing white undershirt banian, loose cotton pants, house slippers, relaxed home appearance, anime style",
+    "going_out_attire": "1boy, elderly Indian American man, 72 years old, medium brown skin, white silver hair, gray mustache, rectangular glasses, wearing collared polo shirt, khaki pants, walking shoes, light jacket, neat appearance, anime style",
+    "puja_attire": "1boy, elderly Indian American man, 72 years old, medium brown skin, white silver hair, gray mustache, rectangular glasses, wearing clean kurta, small tilak on forehead, prayer pose, serene expression, anime style",
+    "sleep_appearance": "1boy, elderly Indian American man, white silver hair slightly mussed, wearing light blue cotton kurta pajama, waking up, kind expression, anime style"
+  },
+  "positive_prompts": {
+    "general": [
+      "anime style",
+      "high quality",
+      "detailed",
+      "masterpiece",
+      "best quality",
+      "vibrant colors",
+      "clean lines",
+      "sharp focus"
+    ],
+    "character_specific": [
+      "1boy",
+      "elderly man",
+      "72 years old",
+      "medium brown skin",
+      "thin white hair",
+      "silver hair",
+      "neatly combed",
+      "trim gray mustache",
+      "thick-framed rectangular glasses",
+      "slightly stooped",
+      "warm smile",
+      "gentle expression",
+      "brown eyes",
+      "age spots on hands",
+      "Indian American",
+      "retired"
+    ]
+  },
+  "negative_prompts": {
+    "general": [
+      "photorealistic",
+      "photo",
+      "realistic",
+      "3d render",
+      "low quality",
+      "blurry",
+      "distorted",
+      "deformed",
+      "disfigured",
+      "bad anatomy",
+      "bad proportions",
+      "watermark",
+      "text",
+      "signature",
+      "username",
+      "worst quality"
+    ],
+    "character_specific": [
+      "multiple men",
+      "multiple people",
+      "crowd",
+      "1girl",
+      "female",
+      "young man",
+      "middle-aged",
+      "child",
+      "muscular",
+      "overweight",
+      "dark hair",
+      "black hair",
+      "long hair",
+      "clean-shaven",
+      "no mustache",
+      "no glasses",
+      "pale skin",
+      "white skin"
+    ],
+    "quality_issues": [
+      "bad hands",
+      "deformed hands",
+      "extra fingers",
+      "missing fingers",
+      "bad face",
+      "deformed face",
+      "extra limbs",
+      "missing limbs",
+      "floating limbs"
+    ]
+  },
+  "lora_settings": {
+    "recommended_strength": 0.8,
+    "min_strength": 0.6,
+    "max_strength": 1.0,
+    "notes": "May need elderly male character LoRA or Indian/South Asian male LoRA. Focus on warm, gentle elderly appearance with glasses."
+  },
+  "reference_images": {
+    "strategy": "Use existing anime character LoRA from CivitAI for POC",
+    "alternative_1": "Generate 3-5 consistent anime images and use with IP-Adapter",
+    "alternative_2": "Train custom anime LoRA with 15-20 reference images",
+    "current_approach": "existing_lora",
+    "civitai_search_terms": [
+      "anime elderly man",
+      "old man glasses anime",
+      "gray hair old man anime",
+      "brown skin elderly anime",
+      "Indian elderly anime",
+      "grandfather anime"
+    ]
+  },
+  "consistency_guidelines": {
+    "critical_features": [
+      "medium brown skin",
+      "thin white/silver hair neatly combed",
+      "trim gray mustache",
+      "thick-framed rectangular glasses",
+      "slightly stooped posture",
+      "age approximately 72",
+      "warm brown eyes",
+      "age spots on hands"
+    ],
+    "flexible_features": [
+      "exact wrinkle placement",
+      "clothing details (as specified per scene)",
+      "facial expression (warm, peaceful, contemplative, amused)",
+      "body position (as specified per scene)"
+    ],
+    "avoid_variations": [
+      "Different skin tones",
+      "No mustache or full beard",
+      "Different hair colors",
+      "Young or middle-aged appearance",
+      "Muscular or overweight build",
+      "No glasses"
+    ]
+  },
+  "notes": {
+    "educational_context": "This character represents a retired Indian American man living in Edison, New Jersey. Shows suburban elderly life, Indian American cultural traditions blended with American daily routines, pet care, gardening, and community involvement.",
+    "cultural_context": "Indian American community in Edison NJ, Hindu prayer traditions (puja), chai culture, Indian cuisine (paratha, dal, curry), cricket fandom, Hindi/English bilingual household, community center activities",
+    "pedagogical_goal": "Teach vocabulary related to elderly daily routines, pet care (dog), gardening, Indian American food and culture, suburban home life, retirement activities, and family relationships",
+    "language_notes": "Some Hindi terms naturally used: puja (prayer), chai (tea), kurta (tunic shirt), banian (undershirt), paratha (flatbread), dal (lentils), namaste (greeting), beta (term of endearment for child/young person)"
+  }
+}

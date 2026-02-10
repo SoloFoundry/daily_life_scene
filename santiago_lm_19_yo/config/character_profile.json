@@ -1,0 +1,168 @@
+{
+  "character": {
+    "name": "Santiago",
+    "full_name": "Santiago (goes by 'Santi' with friends and family)",
+    "age": 19,
+    "gender": "male",
+    "ethnicity": "Colombian / Latino",
+    "appearance": {
+      "skin": "medium brown, warm olive-brown complexion",
+      "hair": "short dark brown hair with a sharp fade cut on the sides, slightly longer on top and styled forward",
+      "build": "slim athletic build, wiry and lean from riding motorcycle all day",
+      "eyes": "dark brown eyes",
+      "nails": "short, clean, slightly roughened from motorcycle work",
+      "distinguishing_features": "Young Colombian delivery rider look, thin silver chain necklace always worn, small scar on left knuckle from a minor motorcycle fall, always has earbuds or over-ear headphones around his neck"
+    },
+    "occupation": "Motorcycle delivery rider (Rappi platform) by day, aspiring DJ by night",
+    "living_situation": "Rented room in a shared house with other young workers in the Kennedy neighborhood of Bogotá",
+    "transportation": "Honda CB 125 motorcycle (red and black, slightly scratched), public transit (TransMilenio) when motorcycle is in the shop",
+    "style": {
+      "sleep": "Black athletic shorts and a loose gray cotton t-shirt, bare feet",
+      "delivery": "Dark blue jeans, black hoodie layered under a black motorcycle jacket with reflective strips, black motorcycle gloves, red and black full-face helmet, bright orange Rappi insulated delivery backpack, black ankle boots",
+      "dj_outfit": "Black slim-fit jeans, black graphic tee with electronic music logo, thin silver chain necklace, black canvas sneakers, over-ear headphones (black with blue accents)",
+      "casual": "Gray jogger pants, white t-shirt, black slides (chanclas), silver chain necklace",
+      "post_shower": "Blue towel wrapped around waist, smaller towel over one shoulder"
+    },
+    "background": {
+      "education": "Graduated from public high school in Soacha, no university — chose to work and save money for DJ equipment",
+      "family": "Parents live in Soacha (south of Bogotá): mamá Gloria (~43, works in a laundry), papá Hernán (~46, construction worker), younger sister Camila (15, high school student). Visits family on Sundays.",
+      "hobbies": "DJing and music production (reggaeton, electronic, guaracha), watching DJ tutorials on YouTube, riding motorcycle through Bogotá, playing mobile games, hanging out with friends at tiendas",
+      "languages": "Spanish (primary), basic English learned from music and social media"
+    }
+  },
+  "prompt_templates": {
+    "base_character": "1boy, young Latino man, 19 years old, medium brown skin, short dark brown hair with fade cut, dark brown eyes, slim athletic build, thin silver chain necklace, anime style, detailed",
+    "morning_appearance": "1boy, young Latino man, short dark brown hair messy, wearing black shorts gray t-shirt, sleepy expression, bare feet, anime style",
+    "delivery_appearance": "1boy, young Latino man, short dark brown hair with fade, wearing black motorcycle jacket with reflective strips over black hoodie, dark blue jeans, black ankle boots, red and black helmet, orange Rappi delivery backpack, slim athletic build, anime style",
+    "bathroom_appearance": "1boy, young Latino man, short dark brown hair messy, at bathroom mirror, anime style",
+    "post_shower_appearance": "1boy, young Latino man, wet dark hair, blue towel wrapped at waist, towel over shoulder, anime style",
+    "dj_appearance": "1boy, young Latino man, short dark brown hair with fade styled, wearing black graphic tee, black jeans, over-ear headphones with blue accents, silver chain necklace, focused expression, anime style",
+    "evening_appearance": "1boy, young Latino man, short dark brown hair, wearing gray jogger pants white t-shirt, relaxed expression, silver chain necklace, anime style"
+  },
+  "positive_prompts": {
+    "general": [
+      "anime style",
+      "high quality",
+      "detailed",
+      "masterpiece",
+      "best quality",
+      "vibrant colors",
+      "clean lines",
+      "sharp focus"
+    ],
+    "character_specific": [
+      "1boy",
+      "young man",
+      "Latino",
+      "Colombian",
+      "medium brown skin",
+      "short dark brown hair",
+      "fade haircut",
+      "dark brown eyes",
+      "slim athletic build",
+      "silver chain necklace",
+      "delivery rider",
+      "DJ"
+    ]
+  },
+  "negative_prompts": {
+    "general": [
+      "photorealistic",
+      "photo",
+      "realistic",
+      "3d render",
+      "low quality",
+      "blurry",
+      "distorted",
+      "deformed",
+      "disfigured",
+      "bad anatomy",
+      "bad proportions",
+      "watermark",
+      "text",
+      "signature",
+      "username",
+      "worst quality"
+    ],
+    "character_specific": [
+      "multiple boys",
+      "multiple people",
+      "crowd",
+      "1girl",
+      "female",
+      "child",
+      "elderly",
+      "blonde hair",
+      "long hair",
+      "light skin",
+      "pale skin",
+      "curly hair",
+      "overweight",
+      "muscular",
+      "beard",
+      "tattoos"
+    ],
+    "quality_issues": [
+      "bad hands",
+      "deformed hands",
+      "extra fingers",
+      "missing fingers",
+      "bad face",
+      "deformed face",
+      "extra limbs",
+      "missing limbs",
+      "floating limbs"
+    ]
+  },
+  "lora_settings": {
+    "recommended_strength": 0.8,
+    "min_strength": 0.6,
+    "max_strength": 1.0,
+    "notes": "Search CivitAI for anime Latino male character LoRA. Adjust strength based on consistency results."
+  },
+  "reference_images": {
+    "strategy": "Use existing anime character LoRA from CivitAI for POC",
+    "alternative_1": "Generate 3-5 consistent anime images and use with IP-Adapter",
+    "alternative_2": "Train custom anime LoRA with 15-20 reference images",
+    "current_approach": "existing_lora",
+    "civitai_search_terms": [
+      "anime Latino character",
+      "Colombian anime boy",
+      "Latin American anime male",
+      "motorcycle rider anime",
+      "DJ anime character",
+      "young man anime fade haircut"
+    ]
+  },
+  "consistency_guidelines": {
+    "critical_features": [
+      "short dark brown hair with fade cut",
+      "medium brown / olive-brown skin",
+      "dark brown eyes",
+      "slim athletic build",
+      "age approximately 19",
+      "thin silver chain necklace"
+    ],
+    "flexible_features": [
+      "exact hair style (messy from sleep, styled for DJ gig, helmet-flattened)",
+      "clothing details (as specified per scene)",
+      "facial expression (sleepy, focused, energetic, tired)",
+      "body position (as specified per scene)",
+      "headphones position (around neck, on ears, off)"
+    ],
+    "avoid_variations": [
+      "Different skin tones (too pale or too dark)",
+      "Long or curly hair",
+      "Different eye colors",
+      "Older or younger appearance",
+      "Overweight or muscular build",
+      "Blonde or light hair",
+      "Beard or facial hair"
+    ]
+  },
+  "notes": {
+    "educational_context": "This character represents a young Colombian working-class man hustling in Bogotá's gig economy while pursuing his passion for music. Shows motorcycle delivery work, urban Colombian life, shared housing, and youth music culture.",
+    "cultural_context": "Working-class Bogotá, Kennedy neighborhood. Colombian gig economy culture (Rappi delivery). Motorcycle culture prevalent in Colombian cities. Reggaeton and electronic music scene. Corrientazo (cheap set lunch) culture. Tinto (street coffee) culture. Tienda social life. Family bonds despite living apart. Sunday family visits. Soacha working-class origins. Young Colombian hustle culture — working multiple gigs to pursue dreams.",
+    "pedagogical_goal": "Help learners see diverse representation and learn vocabulary through a young Colombian delivery rider and aspiring DJ's daily activities including motorcycle riding, urban navigation, food delivery, music production, and working-class urban life. Supports bilingual Spanish-English learning with street-level Bogotá vocabulary."
+  }
+}

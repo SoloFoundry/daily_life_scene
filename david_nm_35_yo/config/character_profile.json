@@ -1,0 +1,164 @@
+{
+  "character": {
+    "name": "David",
+    "age": 35,
+    "gender": "male",
+    "ethnicity": "Native American (Navajo/Diné)",
+    "appearance": {
+      "skin": "dark brown/copper-toned skin",
+      "hair": "black hair, kept short on the sides, slightly longer on top",
+      "build": "muscular, stocky build from construction work",
+      "facial_hair": "none",
+      "height": "medium (5'10\")",
+      "eyes": "dark brown eyes",
+      "distinguishing_features": "strong jaw, broad nose, calloused strong hands, small turquoise pendant necklace (gift from grandmother)"
+    },
+    "occupation": "Construction foreman for a residential building company, manages a crew of 8, oversees house-building projects in Albuquerque, NM",
+    "living_situation": "Three-bedroom ranch-style house in Albuquerque, New Mexico with wife Sarah (33, dental hygienist), son Nathan (7, 2nd grade), and daughter Emma (4, preschool)",
+    "car": "Dark blue Ford F-150 pickup truck with toolbox in the bed, 2022 model",
+    "style": {
+      "work": "Hard hat (yellow), orange reflective safety vest, cargo pants (tan), company polo or flannel shirt, brown leather steel-toe work boots, tool belt, safety glasses",
+      "home_casual": "Jeans, t-shirt or flannel shirt, sneakers or western boots, sometimes an Albuquerque Isotopes baseball cap",
+      "sleep": "Gray sweatpants and a t-shirt",
+      "reservation_visit": "Clean jeans, western button-up shirt, turquoise jewelry (necklace, occasionally a bracelet)"
+    },
+    "family": {
+      "wife": "Sarah (33, dental hygienist, light brown hair in ponytail)",
+      "son": "Nathan (7, 2nd grade, dark hair, energetic, loves dinosaurs)",
+      "daughter": "Emma (4, preschool, dark curly hair, shy but sweet, carries a stuffed rabbit)"
+    }
+  },
+  "prompt_templates": {
+    "base_character": "1boy, Native American man, dark brown copper-toned skin, short black hair longer on top, strong jaw, broad nose, muscular stocky build, dark brown eyes, small turquoise pendant necklace, anime style, detailed",
+    "morning_appearance": "1boy, Native American man, dark brown copper-toned skin, short black hair slightly messy, strong jaw, tired dark brown eyes, anime style, sleepy expression, wearing gray sweatpants and t-shirt",
+    "casual_attire": "1boy, Native American man, dark brown copper-toned skin, short black hair, strong jaw, broad nose, muscular stocky build, wearing jeans and flannel shirt, baseball cap, anime style",
+    "work_attire": "1boy, Native American man, dark brown copper-toned skin, short black hair, strong jaw, muscular stocky build, wearing yellow hard hat, orange reflective safety vest, tan cargo pants, brown work boots, tool belt, anime style",
+    "evening_appearance": "1boy, Native American man, dark brown copper-toned skin, short black hair, strong jaw, relaxed expression, wearing jeans and t-shirt, anime style"
+  },
+  "positive_prompts": {
+    "general": [
+      "anime style",
+      "high quality",
+      "detailed",
+      "masterpiece",
+      "best quality",
+      "vibrant colors",
+      "clean lines",
+      "sharp focus"
+    ],
+    "character_specific": [
+      "1boy",
+      "adult man",
+      "Native American",
+      "Navajo",
+      "dark brown skin",
+      "copper-toned skin",
+      "short black hair",
+      "strong jaw",
+      "broad nose",
+      "muscular build",
+      "stocky build",
+      "dark brown eyes",
+      "turquoise pendant"
+    ]
+  },
+  "negative_prompts": {
+    "general": [
+      "photorealistic",
+      "photo",
+      "realistic",
+      "3d render",
+      "low quality",
+      "blurry",
+      "distorted",
+      "deformed",
+      "disfigured",
+      "bad anatomy",
+      "bad proportions",
+      "watermark",
+      "text",
+      "signature",
+      "username",
+      "worst quality"
+    ],
+    "character_specific": [
+      "multiple boys",
+      "multiple people",
+      "crowd",
+      "1girl",
+      "female",
+      "child",
+      "elderly",
+      "white skin",
+      "pale skin",
+      "light skin",
+      "long hair",
+      "bald",
+      "beard",
+      "facial hair",
+      "slim build",
+      "thin build"
+    ],
+    "quality_issues": [
+      "bad hands",
+      "deformed hands",
+      "extra fingers",
+      "missing fingers",
+      "bad face",
+      "deformed face",
+      "extra limbs",
+      "missing limbs",
+      "floating limbs"
+    ]
+  },
+  "lora_settings": {
+    "recommended_strength": 0.8,
+    "min_strength": 0.6,
+    "max_strength": 1.0,
+    "notes": "May need Native American male character LoRA. Search CivitAI for appropriate options. Adjust strength based on consistency results."
+  },
+  "reference_images": {
+    "strategy": "Use existing anime character LoRA from CivitAI for POC",
+    "alternative_1": "Generate 3-5 consistent anime images and use with IP-Adapter",
+    "alternative_2": "Train custom anime LoRA with 15-20 reference images",
+    "current_approach": "existing_lora",
+    "civitai_search_terms": [
+      "anime Native American male character",
+      "indigenous male anime",
+      "dark skin male anime",
+      "adult male anime construction worker",
+      "muscular male anime"
+    ]
+  },
+  "consistency_guidelines": {
+    "critical_features": [
+      "dark brown/copper-toned skin",
+      "short black hair, longer on top",
+      "strong jaw, broad nose",
+      "muscular/stocky build",
+      "age approximately 35",
+      "dark brown eyes",
+      "small turquoise pendant necklace"
+    ],
+    "flexible_features": [
+      "exact hair styling (as long as short sides, slightly longer top)",
+      "clothing details (as specified per scene)",
+      "facial expression (warm, focused, content)",
+      "body position (as specified per scene)"
+    ],
+    "avoid_variations": [
+      "Different skin tones",
+      "Long hair or bald",
+      "Facial hair",
+      "Different hair colors",
+      "Young appearance (under 30)",
+      "Slim or overweight build",
+      "Stereotypical headdress or face paint"
+    ]
+  },
+  "notes": {
+    "educational_context": "This character represents a Native American (Navajo/Diné) father and construction foreman. Shows family life, skilled trades profession, and Indigenous cultural identity in a modern urban setting.",
+    "cultural_context": "Navajo heritage respected through turquoise jewelry, Navajo-pattern blanket, family values, and connection to reservation. David lives in Albuquerque but maintains ties to the Navajo Nation. Culture shown naturally, not stereotypically.",
+    "pedagogical_goal": "Help learners see Native American representation while learning construction vocabulary, family life vocabulary, and New Mexico regional context through a relatable father figure's daily activities."
+  }
+}

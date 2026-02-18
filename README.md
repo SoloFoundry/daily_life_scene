@@ -4,7 +4,7 @@ Content authoring project for educational anime illustrations. Creates detailed 
 
 ## What's Here
 
-Scene narratives and character profiles for **20 characters** (10 USA, 10 Colombia) spanning ages 5-75, covering **4,058 daily life scenes** total. All scenes use micro-action format (one action per scene with detailed visual descriptions).
+Scene narratives for **20 characters** (10 USA, 10 Colombia) spanning ages 5-75, covering **4,058 daily life scenes** total. All scenes use micro-action format (one action per scene with detailed visual descriptions).
 
 ### United States Characters (10)
 
@@ -42,11 +42,7 @@ Each character has their own directory:
 
 ```
 {character}_xx_NN_yo/
-├── {character}_daily_life_scenes.md    # Full day narrative
-└── config/
-    ├── scenes_poc.json                 # 15 POC scenes
-    ├── character_profile.json          # Appearance & background
-    └── locations.json                  # 3 POC locations
+└── {character}_daily_life_scenes.md    # Full day narrative
 ```
 
 ## Image Generation

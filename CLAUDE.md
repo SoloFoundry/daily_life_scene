@@ -1,6 +1,6 @@
 # Daily Life Visual Vocabulary Generator - Content Project
 
-**Last Updated:** 2026-02-10
+**Last Updated:** 2026-02-17
 
 ---
 
@@ -15,11 +15,10 @@ A **content authoring project** that creates detailed scene descriptions for 20 
 ```
 daily_life (this project)          dev/imageGen
 ├── Scene narratives (.md)    →    illustrations.json (FLUX.2-dev prompts)
-├── Character profiles (.json)→    Generated PNG images
-└── Location configs (.json)  →    Final flashcard assets
+└── (source content)          →    Generated PNG images
 ```
 
-- **This project** = content authoring (scene descriptions, character profiles, vocabulary, locations)
+- **This project** = content authoring (scene descriptions, vocabulary)
 - **dev/imageGen** = image generation pipeline (FLUX.2-dev prompts, GPU scripts, generated PNGs)
 
 This project produces **raw content only**. The transformation from scene descriptions to image generation prompts happens in `dev/imageGen`.
@@ -108,11 +107,7 @@ Each character directory contains:
 
 ```
 {character}_xx_NN_yo/
-├── {character}_daily_life_scenes.md    # Full day narrative (~147-308 scenes)
-└── config/
-    ├── scenes_poc.json                 # 15 POC scenes with metadata
-    ├── character_profile.json          # Appearance, clothing, background
-    └── locations.json                  # 3 POC locations with details
+└── {character}_daily_life_scenes.md    # Full day narrative (~147-308 scenes)
 ```
 
 ### Scene Descriptions (.md)
@@ -124,26 +119,6 @@ Detailed prose descriptions covering a full day (6 AM - 11 PM). Each scene inclu
 - All visible objects with details (color, material, cultural items)
 - Room/environment details
 - Atmospheric details
-
-### Config Files (.json)
-
-**scenes_poc.json** — 15 selected scenes (5 per location: bedroom, bathroom, kitchen) with:
-- Scene ID, location, time, lighting, title
-- Description, character state, objects list, actions list
-- Prompt template and negative prompt
-
-**character_profile.json** — Character details:
-- Demographics and appearance
-- Clothing styles (sleep, work/school, casual)
-- Background (family, education, hobbies)
-- Prompt templates for different states
-- Consistency guidelines
-
-**locations.json** — 3 POC locations with:
-- Detailed environment descriptions
-- Key features and vocabulary items
-- Lighting conditions by time of day
-- Cultural context notes
 
 ---
 
@@ -158,18 +133,10 @@ daily_life/
 ├── .gitignore
 │
 ├── matt_wm_25_yo/                     # Matt - American office worker
-│   ├── matt_daily_life_scenes.md
-│   └── config/
-│       ├── scenes_poc.json
-│       ├── character_profile.json
-│       └── locations.json
+│   └── matt_daily_life_scenes.md
 │
 ├── catalina_lf_21_yo/                 # Catalina - Colombian student
-│   ├── catalina_daily_life_scenes.md
-│   └── config/
-│       ├── scenes_poc.json
-│       ├── character_profile.json
-│       └── locations.json
+│   └── catalina_daily_life_scenes.md
 │
 ├── marcus_am_45_yo/                   # Marcus - Chicago firefighter
 ├── tyler_wm_16_yo/                    # Tyler - Ohio high school student
@@ -202,12 +169,8 @@ To create a new character:
 3. **Write scenes markdown:** Detailed scene descriptions covering a full day (~150-310 scenes)
    - Follow the format in existing characters' `.md` files
    - Include cultural context, vocabulary items, and object details
-4. **Create config files:**
-   - `config/character_profile.json` — appearance, clothing, background
-   - `config/locations.json` — 3 POC locations with descriptions and vocabulary
-   - `config/scenes_poc.json` — select 15 representative scenes (5 per location)
 
-Use existing characters as templates. Match the JSON schema exactly.
+Use existing characters as templates.
 
 ---
 
@@ -215,7 +178,6 @@ Use existing characters as templates. Match the JSON schema exactly.
 
 1. **This is a content-only project** — no code, no scripts, no image generation
 2. **Image generation lives in `dev/imageGen`** — that project consumes this project's content
-3. **All 20 characters have complete POC configs** (scenes_poc.json, character_profile.json, locations.json)
-4. **All 20 characters have full-day scene coverage** in micro-action format (one action per scene)
-5. **Cultural authenticity matters** — each character's scenes reflect their real cultural context
-6. Check [STATUS.md](STATUS.md) for current progress
+3. **All 20 characters have full-day scene coverage** in micro-action format (one action per scene)
+4. **Cultural authenticity matters** — each character's scenes reflect their real cultural context
+5. Check [STATUS.md](STATUS.md) for current progress

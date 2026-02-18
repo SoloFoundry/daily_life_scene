@@ -1,6 +1,6 @@
 # Project Status - Daily Life Visual Vocabulary Generator
 
-**Last Updated:** 2026-02-17
+**Last Updated:** 2026-02-18
 **Phase:** Content Authoring Complete — 20 Characters
 **Started:** 2026-01-17
 
@@ -144,3 +144,9 @@ All characters cover a full day:
 - Project total: 20 characters, 4,058 scenes
 - Age range expanded: 5 to 75
 - New ethnicities: Somali American, Indian American, Native American (Navajo), Afro-Colombian
+
+**2026-02-18 — POC Config Cleanup**
+- Removed all legacy POC config files (scenes_poc.json, character_profile.json, locations.json) from all 20 characters
+- These files were unused — imageGen pipeline uses its own illustrations.json files
+- Updated CLAUDE.md, STATUS.md, README.md to reflect simplified structure
+- 60 config files deleted, ~11K lines removed
